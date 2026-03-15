@@ -1,0 +1,839 @@
+{
+  "objects": [
+    {
+      "name": "Sketchfab_model",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "e1f6536d5af54f39934be133be79a767.fbx",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "RootNode",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube1",
+      "translation": [
+        -0.002036489313468337,
+        0.462973952293396,
+        -0.02004886232316494
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        0.881076991558075,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube1_wood_grain_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube1_wood_grain_0"
+    },
+    {
+      "name": "pCube2",
+      "translation": [
+        3.6117312908172607,
+        1.535605788230896,
+        -2.683117151260376
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube2_Yellow_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube2_Yellow_0"
+    },
+    {
+      "name": "pCube3",
+      "translation": [
+        1.4824455976486206,
+        1.4842625856399536,
+        1.4324238300323486
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.979096531867981,
+        0.979096531867981,
+        0.979096531867981
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube3_green_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube3_green_0"
+    },
+    {
+      "name": "pCube4",
+      "translation": [
+        -3.474390745162964,
+        1.4968217611312866,
+        -3.7735702991485596
+      ],
+      "rotation": [
+        6.145669015350451e-17,
+        0.9999932631282945,
+        6.145669015350451e-17,
+        -0.003670653623752748
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube4_Yellow_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube4_Yellow_0"
+    },
+    {
+      "name": "pCube5",
+      "translation": [
+        7.024886608123779,
+        1.5527105331420898,
+        -5.243630409240723
+      ],
+      "rotation": [
+        0.6882702152218625,
+        0.6882702152218627,
+        -0.1621237516172474,
+        0.1621237516172475
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube5_red_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube5_red_0"
+    },
+    {
+      "name": "pCube6",
+      "translation": [
+        -3.401942729949951,
+        1.48334801197052,
+        -1.7349226474761963
+      ],
+      "rotation": [
+        -1.9259299443872363e-34,
+        1.1792919708879344e-50,
+        1,
+        6.123233995736766e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube6_white_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube6_white_0"
+    },
+    {
+      "name": "pCube7",
+      "translation": [
+        -0.4702518880367279,
+        1.4619593620300293,
+        0.41570478677749634
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube7_red_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube7_red_0"
+    },
+    {
+      "name": "pCube8",
+      "translation": [
+        3.737924337387085,
+        0.6603175401687622,
+        -6.656938552856445
+      ],
+      "rotation": [
+        0,
+        0,
+        0.205738584178829,
+        0.9786069869871618
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube8_white_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube8_white_0"
+    },
+    {
+      "name": "pCube9",
+      "translation": [
+        6.187354564666748,
+        0.5149551033973694,
+        -8.742170333862305
+      ],
+      "rotation": [
+        0.7071067811865476,
+        -4.329780281177465e-17,
+        -0.7071067811865475,
+        -4.329780281177465e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube9_green_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube9_green_0"
+    },
+    {
+      "name": "pCube10",
+      "translation": [
+        0.5486173629760742,
+        1.4835617542266846,
+        3.397979497909546
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube10_red_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube10_red_0"
+    },
+    {
+      "name": "pCube11",
+      "translation": [
+        -0.42908143997192383,
+        1.4619593620300293,
+        3.070070266723633
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        2
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube11_green_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube11_green_0"
+    },
+    {
+      "name": "pCube12",
+      "translation": [
+        8.010150909423828,
+        0.4996986985206604,
+        -3.615231513977051
+      ],
+      "rotation": [
+        -8.659285792227713e-17,
+        -0.7127172619353347,
+        -8.659285792227713e-17,
+        0.701451427070613
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube12_Yellow_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube12_Yellow_0"
+    },
+    {
+      "name": "pCube13",
+      "translation": [
+        0.5437471866607666,
+        1.4835617542266846,
+        -3.6689748764038086
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube13_red_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube13_red_0"
+    },
+    {
+      "name": "pCube14",
+      "translation": [
+        3.6054575443267822,
+        1.48334801197052,
+        1.5910695791244507
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube14_white_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube14_white_0"
+    },
+    {
+      "name": "pCube15",
+      "translation": [
+        3.509162664413452,
+        1.4870656728744507,
+        -0.14906705915927887
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        2
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube15_green_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube15_green_0"
+    },
+    {
+      "name": "pCube16",
+      "translation": [
+        2.4968597888946533,
+        1.4835617542266846,
+        -0.6569097638130188
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "pCube16_red_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "pCube16_red_0"
+    }
+  ],
+  "materials": [
+    {
+      "name": "wood_grain",
+      "baseColorFactor": [
+        0.19025534900296948,
+        0.14467206249601994,
+        0.0803686106955643,
+        1
+      ],
+      "roughnessFactor": 0,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Yellow",
+      "baseColorFactor": [
+        0.5652347962630602,
+        0.6373541190018339,
+        0.028600449977587383,
+        1
+      ],
+      "roughnessFactor": 0.6,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "green",
+      "baseColorFactor": [
+        0.020422113140332612,
+        0.27213930446296286,
+        0.003254543353723569,
+        1
+      ],
+      "roughnessFactor": 0.332272599501757,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "material",
+      "baseColorFactor": [
+        0.9041773379690979,
+        0.002620995704416579,
+        0.002620995704416579,
+        1
+      ],
+      "roughnessFactor": 0.31405357033309134,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "white",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 0.6,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    }
+  ],
+  "cameras": [],
+  "animations": [],
+  "meshes": [
+    {
+      "name": "pCube1_wood_grain_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube2_Yellow_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube3_green_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube4_Yellow_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube5_red_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube6_white_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube7_red_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube8_white_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube9_green_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube10_red_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube11_green_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube12_Yellow_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube13_red_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube14_white_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube15_green_0",
+      "primitives": 1
+    },
+    {
+      "name": "pCube16_red_0",
+      "primitives": 1
+    }
+  ]
+}

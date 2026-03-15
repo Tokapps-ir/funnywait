@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "فوتر",
+    "description": "تنظیمات فوتر سایت — شامل اطلاعات تماس، لینک‌های سریع و متن کپی‌رایت"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "brand_name": {
+      "type": "string",
+      "required": true,
+      "description": "نام برند — مثلاً فانی‌ویت",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "brand_description": {
+      "type": "text",
+      "description": "توضیح کوتاه درباره برند که در فوتر نمایش داده می‌شود",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "quick_links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.link",
+      "description": "لیست لینک‌های سریع فوتر",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "contact_address": {
+      "type": "string",
+      "description": "آدرس فیزیکی",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "contact_phone": {
+      "type": "string",
+      "description": "شماره تلفن",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "contact_email": {
+      "type": "string",
+      "description": "آدرس ایمیل",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "copyright_text": {
+      "type": "string",
+      "description": "متن کپی‌رایت",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "terms_link": {
+      "type": "string",
+      "description": "لینک به صفحه قوانین و مقررات",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "privacy_link": {
+      "type": "string",
+      "description": "لینک به صفحه حریم خصوصی",
+      "pluginOptions": { "i18n": { "localized": true } }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "objects": [
+    {
+      "name": "Sketchfab_model",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "mesh": null
+    },
+    {
+      "name": "ed931da4118147d6940cbf2b7a779160.fbx",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "RootNode",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "SM_Gameboy",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "SM_Gameboy_lambert1_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "SM_Gameboy_lambert1_0"
+    }
+  ],
+  "materials": [
+    {
+      "name": "lambert1",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 1,
+      "alphaMode": "BLEND",
+      "doubleSided": false
+    }
+  ],
+  "cameras": [],
+  "animations": [],
+  "meshes": [
+    {
+      "name": "SM_Gameboy_lambert1_0",
+      "primitives": 1
+    }
+  ]
+}

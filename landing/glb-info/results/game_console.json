@@ -1,0 +1,739 @@
+{
+  "objects": [
+    {
+      "name": "Sketchfab_model",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.1654328209871212,
+        0,
+        0,
+        0.9862210612941924
+      ],
+      "scale": [
+        1,
+        1.0000000194005774,
+        1.0000000194005774
+      ],
+      "mesh": null
+    },
+    {
+      "name": "60f882d93fbd40959c4d906147ad3f33.fbx",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.009999999776482582
+      ],
+      "mesh": null
+    },
+    {
+      "name": "RootNode",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "ABXY",
+      "translation": [
+        135.4169921875,
+        0,
+        -32.29159927368164
+      ],
+      "rotation": [
+        1.3767876844722781e-7,
+        0.7071068078790721,
+        0.7071067544939952,
+        -1.3767877875509047e-7
+      ],
+      "scale": [
+        199.99999999999997,
+        199.99999999999997,
+        199.99999999999997
+      ],
+      "mesh": null
+    },
+    {
+      "name": "ABXY_Black_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "ABXY_Black_0"
+    },
+    {
+      "name": "D Pad",
+      "translation": [
+        -135.4169921875,
+        0,
+        16.66670036315918
+      ],
+      "rotation": [
+        -0.7071067966408576,
+        0,
+        0,
+        0.7071067657322372
+      ],
+      "scale": [
+        600.0003662109375,
+        600.0003662109375,
+        133.9470062255859
+      ],
+      "mesh": null
+    },
+    {
+      "name": "D Pad_Black_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "D Pad_Black_0"
+    },
+    {
+      "name": "D Pad_White_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "D Pad_White_0"
+    },
+    {
+      "name": "Joystick",
+      "translation": [
+        -135.41700744628906,
+        10.237899780273438,
+        -32.29159927368164
+      ],
+      "rotation": [
+        -0.7071067966408576,
+        0,
+        0,
+        0.7071067657322372
+      ],
+      "scale": [
+        200,
+        199.99999999999997,
+        199.99999999999997
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Joystick_Grey_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Joystick_Grey_0"
+    },
+    {
+      "name": "Power/Volume button",
+      "translation": [
+        -66.66670227050781,
+        -8.33332347869873,
+        -73.95838165283203
+      ],
+      "rotation": [
+        -0.7071067966408576,
+        0,
+        0,
+        0.7071067657322372
+      ],
+      "scale": [
+        200,
+        199.99999999999997,
+        199.99999999999997
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Power/Volume button_Black_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Power/Volume button_Black_0"
+    },
+    {
+      "name": "Case",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067966408576,
+        0,
+        0,
+        0.7071067657322372
+      ],
+      "scale": [
+        200,
+        199.99999999999997,
+        199.99999999999997
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Case_Grey_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Case_Grey_0"
+    },
+    {
+      "name": "Case_Black_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Case_Black_0"
+    },
+    {
+      "name": "Case_White_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Case_White_0"
+    },
+    {
+      "name": "Triggers",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067966408576,
+        0,
+        0,
+        0.7071067657322372
+      ],
+      "scale": [
+        200,
+        199.99999999999997,
+        199.99999999999997
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Triggers_Black_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Triggers_Black_0"
+    },
+    {
+      "name": "Vent",
+      "translation": [
+        0.0000029802322387695312,
+        -8.33329963684082,
+        72.91670227050781
+      ],
+      "rotation": [
+        1.376787764532152e-7,
+        0.7071067966408442,
+        -0.7071067657322238,
+        -1.376787704350846e-7
+      ],
+      "scale": [
+        200,
+        199.99999999999997,
+        200.00000000000003
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Vent_Black_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Vent_Black_0"
+    },
+    {
+      "name": "Text",
+      "translation": [
+        135.4169921875,
+        1.862645149230957e-7,
+        -32.291595458984375
+      ],
+      "rotation": [
+        -0.7071067966408576,
+        0,
+        0,
+        0.7071067657322372
+      ],
+      "scale": [
+        6.7273945808410645,
+        6.727394580841064,
+        6.727394580841064
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Text_White_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Text_White_0"
+    },
+    {
+      "name": "Crystal",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067966408576,
+        0,
+        0,
+        0.7071067657322372
+      ],
+      "scale": [
+        200,
+        199.99999999999997,
+        199.99999999999997
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Crystal_Crystal_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Crystal_Crystal_0"
+    },
+    {
+      "name": "Crystal_Screen_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Crystal_Screen_0"
+    },
+    {
+      "name": "Touchpad",
+      "translation": [
+        135.41664123535156,
+        2.9103830456733704e-8,
+        16.66666030883789
+      ],
+      "rotation": [
+        -0.7071067966408576,
+        0,
+        0,
+        0.7071067657322372
+      ],
+      "scale": [
+        200,
+        199.99999999999997,
+        199.99999999999997
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Touchpad_Black_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Touchpad_Black_0"
+    },
+    {
+      "name": "Touchpad_White_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Touchpad_White_0"
+    },
+    {
+      "name": "Speaker",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        1.3767876844722781e-7,
+        0.7071068078790721,
+        0.7071067544939952,
+        -1.3767877875509047e-7
+      ],
+      "scale": [
+        199.99999999999997,
+        199.99999999999997,
+        199.99999999999997
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Speaker_Black_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Speaker_Black_0"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Black",
+      "baseColorFactor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "roughnessFactor": 0.4,
+      "metallicFactor": 0.5,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "White",
+      "baseColorFactor": [
+        0.3,
+        0.3,
+        0.3,
+        1
+      ],
+      "roughnessFactor": 0.9296437636026486,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Grey",
+      "baseColorFactor": [
+        0.0175,
+        0.0175,
+        0.0175,
+        1
+      ],
+      "roughnessFactor": 0.6,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Crystal",
+      "baseColorFactor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "roughnessFactor": 0,
+      "metallicFactor": 1,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Screen",
+      "baseColorFactor": [
+        0.0396792,
+        0.0396792,
+        0.0396792,
+        1
+      ],
+      "roughnessFactor": 0,
+      "metallicFactor": 1,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    }
+  ],
+  "cameras": [],
+  "animations": [],
+  "meshes": [
+    {
+      "name": "ABXY_Black_0",
+      "primitives": 1
+    },
+    {
+      "name": "D Pad_Black_0",
+      "primitives": 1
+    },
+    {
+      "name": "D Pad_White_0",
+      "primitives": 1
+    },
+    {
+      "name": "Joystick_Grey_0",
+      "primitives": 1
+    },
+    {
+      "name": "Power/Volume button_Black_0",
+      "primitives": 1
+    },
+    {
+      "name": "Case_Grey_0",
+      "primitives": 1
+    },
+    {
+      "name": "Case_Black_0",
+      "primitives": 1
+    },
+    {
+      "name": "Case_White_0",
+      "primitives": 1
+    },
+    {
+      "name": "Triggers_Black_0",
+      "primitives": 1
+    },
+    {
+      "name": "Vent_Black_0",
+      "primitives": 1
+    },
+    {
+      "name": "Text_White_0",
+      "primitives": 1
+    },
+    {
+      "name": "Crystal_Crystal_0",
+      "primitives": 1
+    },
+    {
+      "name": "Crystal_Screen_0",
+      "primitives": 1
+    },
+    {
+      "name": "Touchpad_Black_0",
+      "primitives": 1
+    },
+    {
+      "name": "Touchpad_White_0",
+      "primitives": 1
+    },
+    {
+      "name": "Speaker_Black_0",
+      "primitives": 1
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "خدمات",
+    "description": "خدمات و امکانات ارائه شده توسط FunnyWait که در بخش خدمات ما نمایش داده می‌شوند"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "description": "عنوان خدمات — عنوان اصلی خدمات که در کارت خدمات نمایش داده می‌شود. مختصر، واضح و ترغیب‌کننده باشد.",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "description": "توضیح کوتاه خدمات — یک یا دو جمله که مخاطب هدف و مزیت اصلی خدمات را بیان می‌کند.",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "features": {
+      "type": "text",
+      "description": "لیست امکانات خدمات — ویژگی‌ها و امکانات خدمات را با ویرگول از هم جدا کنید. هر آیتم در سایت به صورت جداگانه با تیک نمایش داده می‌شود.",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": ["Code", "Wrench", "Server", "Smartphone", "Package", "Star"],
+      "description": "آیکون خدمات — نوع آیکونی که در نمایش خدمات استفاده می‌شود.",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}

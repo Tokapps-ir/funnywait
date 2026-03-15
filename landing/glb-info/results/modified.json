@@ -1,0 +1,826 @@
+{
+  "objects": [
+    {
+      "name": "Light",
+      "translation": [
+        3.092541456222534,
+        7.854917049407959,
+        0.7796056270599365
+      ],
+      "rotation": [
+        -0.28416627645492554,
+        0.7269423007965088,
+        0.34203392267227173,
+        0.5232754945755005
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null,
+      "light": {
+        "name": "Light",
+        "type": "point",
+        "intensity": 54351.41306588226,
+        "color": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "Camera",
+      "translation": [
+        7.591592788696289,
+        4.34655237197876,
+        7.366891860961914
+      ],
+      "rotation": [
+        -0.041767437011003494,
+        0.8501421809196472,
+        0.04613705724477768,
+        0.522862434387207
+      ],
+      "scale": [
+        1.0897976160049438,
+        1.0207222700119019,
+        1.0813544988632202
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Object_8",
+      "translation": [
+        -0.000003814697265625,
+        0,
+        -0.000002081214915961027
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Object_0"
+    },
+    {
+      "name": "01_Wood_Material #3_0_0",
+      "translation": [
+        -0.000003814697265625,
+        0,
+        -0.000002081214915961027
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "01_Wood_1",
+      "translation": [
+        201.18630981445312,
+        -958.16455078125,
+        -156.98118591308594
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        5.531080722808838,
+        5.531080722808838,
+        5.531080722808838
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Object_11",
+      "translation": [
+        0,
+        -0.0000034570693969726562,
+        0.000002682209014892578
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Object_1"
+    },
+    {
+      "name": "02_Base_Material #2_0_2",
+      "translation": [
+        0,
+        -0.000011086463928222656,
+        0.000002682209014892578
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "02_Base_3",
+      "translation": [
+        31.05181884765625,
+        -1027.7982177734375,
+        0.000002652406692504883
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Object_14",
+      "translation": [
+        0,
+        -0.0000034570693969726562,
+        0.000002682209014892578
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Object_2"
+    },
+    {
+      "name": "Object001_Material #5_0_4",
+      "translation": [
+        0,
+        -0.000011086463928222656,
+        0.000002682209014892578
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Object001_5",
+      "translation": [
+        31.05181884765625,
+        -1027.7982177734375,
+        0.000002652406692504883
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "RootNode_6",
+      "translation": [
+        0,
+        -0.00009512901306152344,
+        0.00002002716064453125
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "74cbb7007938420a968fc3d316d5a917.fbx_7",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -1,
+        0,
+        0,
+        2.2737363380986864e-10
+      ],
+      "scale": [
+        0.0010000000474974513,
+        0.0010000001639127731,
+        0.0010000001639127731
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Sketchfab_model_8",
+      "translation": [
+        0.007096882443875074,
+        0.3462953567504883,
+        -1.3946665525436401
+      ],
+      "rotation": [
+        0.7077003717422485,
+        0,
+        0,
+        0.7065127491950989
+      ],
+      "scale": [
+        1.4560452699661255,
+        1.456045389175415,
+        1.456045389175415
+      ],
+      "mesh": null
+    },
+    {
+      "name": "GLTF_SceneRootNode",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.70710688829422,
+        0,
+        0,
+        0.7071066498756409
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "root",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Sketchfab_model",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.705867350101471,
+        0,
+        0,
+        0.708344042301178
+      ],
+      "scale": [
+        5.62713098526001,
+        5.627131938934326,
+        5.627131938934326
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Object_5",
+      "translation": [
+        0,
+        -0.000007152557373046875,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Object_4",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7071068286895752,
+        0,
+        0,
+        0.7071067094802856
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Light.001",
+      "translation": [
+        2247.945556640625,
+        3683.119140625,
+        1354.3604736328125
+      ],
+      "rotation": [
+        0.16907571256160736,
+        0.7558803558349609,
+        -0.27217134833335876,
+        0.570947527885437
+      ],
+      "scale": [
+        100.00001525878906,
+        100,
+        100
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Plane_Material.002_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Plane_Material.002_0"
+    },
+    {
+      "name": "Plane",
+      "translation": [
+        -19.47625732421875,
+        0,
+        162.8955078125
+      ],
+      "rotation": [
+        -0.70710688829422,
+        0,
+        0,
+        0.7071066498756409
+      ],
+      "scale": [
+        100,
+        59.56843948364258,
+        99.99999237060547
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Plane.001_Material.002_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Plane.001_Material.002_0"
+    },
+    {
+      "name": "Plane.001",
+      "translation": [
+        0.00054931640625,
+        0,
+        1250.9710693359375
+      ],
+      "rotation": [
+        -0.70710688829422,
+        0,
+        0,
+        0.7071066498756409
+      ],
+      "scale": [
+        100,
+        64.17616271972656,
+        99.99999237060547
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Plane.002_Wood.001_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Plane.002_Wood.001_0"
+    },
+    {
+      "name": "Plane.002",
+      "translation": [
+        -167.4981689453125,
+        387.04644775390625,
+        705.0524291992188
+      ],
+      "rotation": [
+        -0.7070678472518921,
+        -0.0015087866922840476,
+        0.002002344699576497,
+        0.7071413397789001
+      ],
+      "scale": [
+        431.846435546875,
+        675.1471557617188,
+        93.43547058105469
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Object_14.001",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Object_13",
+      "translation": [
+        0.0000025667900445114356,
+        0,
+        0
+      ],
+      "rotation": [
+        0.70710688829422,
+        0,
+        0,
+        0.7071066498756409
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Point",
+      "translation": [
+        16.808231353759766,
+        175.40133666992188,
+        137.22091674804688
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        100,
+        99.99999237060547,
+        100.00000762939453
+      ],
+      "mesh": null
+    },
+    {
+      "name": "RootNode",
+      "translation": [
+        0.000640869140625,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "uxla.fbx",
+      "translation": [
+        0.0000026226043701171875,
+        0,
+        0
+      ],
+      "rotation": [
+        0.70710688829422,
+        0,
+        0,
+        0.7071066498756409
+      ],
+      "scale": [
+        0.009999999776482582,
+        0.010000000707805157,
+        0.010000000707805157
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Sketchfab_model.001",
+      "translation": [
+        -3.286834239959717,
+        0,
+        -38.2164306640625
+      ],
+      "rotation": [
+        -0.4677288830280304,
+        -0.5303109884262085,
+        -0.5303110480308533,
+        0.4677288830280304
+      ],
+      "scale": [
+        0.6032408475875854,
+        0.6032408475875854,
+        0.6032408475875854
+      ],
+      "mesh": null
+    }
+  ],
+  "materials": [
+    {
+      "name": "Material_3",
+      "baseColorFactor": null,
+      "roughnessFactor": 0.3763819932937622,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Material_2",
+      "baseColorFactor": null,
+      "roughnessFactor": null,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Material_5",
+      "baseColorFactor": null,
+      "roughnessFactor": 0.6000000238418579,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Material.002",
+      "baseColorFactor": null,
+      "roughnessFactor": 0.8040408492088318,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Wood.001",
+      "baseColorFactor": null,
+      "roughnessFactor": 0.8211145401000977,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    }
+  ],
+  "cameras": [
+    {
+      "name": "Camera",
+      "type": "perspective",
+      "aspectRatio": 1.7777777777777777,
+      "yfov": 1.2653874422331708,
+      "zfar": 100,
+      "znear": 0.10000000149011612
+    }
+  ],
+  "animations": [
+    {
+      "name": "CameraAction",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Sketchfab_model.001Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "uxla.fbxAction",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "RootNodeAction",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Light.001Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Object_4Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Object_5Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "PlaneAction",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Plane_Material.002_0Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Plane.001Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Plane.001_Material.002_0Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Plane.002Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Plane.002_Wood.001_0Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "PointAction",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Object_13Action",
+      "channels": 3,
+      "samplers": 3
+    },
+    {
+      "name": "Object_14.001Action",
+      "channels": 3,
+      "samplers": 3
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": 1
+    },
+    {
+      "name": "Object_1",
+      "primitives": 1
+    },
+    {
+      "name": "Object_2",
+      "primitives": 1
+    },
+    {
+      "name": "Plane_Material.002_0",
+      "primitives": 1
+    },
+    {
+      "name": "Plane.001_Material.002_0",
+      "primitives": 1
+    },
+    {
+      "name": "Plane.002_Wood.001_0",
+      "primitives": 1
+    }
+  ],
+  "lights": [
+    {
+      "name": "Light",
+      "type": "point",
+      "intensity": 54351.41306588226,
+      "color": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

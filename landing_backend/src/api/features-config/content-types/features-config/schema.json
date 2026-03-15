@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "features_configs",
+  "info": {
+    "singularName": "features-config",
+    "pluralName": "features-configs",
+    "displayName": "تنظیمات بخش ویژگی‌ها",
+    "description": "عنوان و زیرعنوان بخش «چرا فانی‌ویت؟» در صفحه اصلی"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "section_title": {
+      "type": "string",
+      "required": true,
+      "description": "عنوان اصلی بخش ویژگی‌ها — مثلاً «چرا فانی‌ویت؟». با فونت بزرگ در بالای بخش نمایش داده می‌شود.",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "section_subtitle": {
+      "type": "string",
+      "description": "زیرعنوان توضیحی زیر عنوان بخش — جمله کوتاهی که کاربر را ترغیب به خواندن می‌کند.",
+      "pluginOptions": { "i18n": { "localized": true } }
+    }
+  }
+}

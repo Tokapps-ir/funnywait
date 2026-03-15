@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_groups",
+  "info": {
+    "singularName": "gallery-group",
+    "pluralName": "gallery-groups",
+    "displayName": "گروه گالری",
+    "description": "گروه‌بندی تصاویر گالری — هر تصویر می‌تواند عضو چند گروه باشد. برچسب‌های فیلتر بالای گالری از این گروه‌ها می‌آید."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "description": "نام گروه — نمایش‌داده‌شده در تب‌های فیلتر بالای گالری. برای هر زبان جداگانه تنظیم کنید.",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "description": "شناسه یکتا گروه — برای فیلتر در فرانت‌اند استفاده می‌شود. فقط حروف لاتین، اعداد و خط تیره مجاز است. مشترک بین زبان‌ها.",
+      "pluginOptions": { "i18n": { "localized": false } }
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0,
+      "description": "ترتیب نمایش گروه در تب‌های فیلتر — عدد کمتر = اول. مشترک بین زبان‌ها.",
+      "pluginOptions": { "i18n": { "localized": false } }
+    },
+    "gallery_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::gallery-item.gallery-item",
+      "mappedBy": "gallery_groups",
+      "description": "تصاویر عضو این گروه — از طریق آیتم تصویر (Gallery Item) قابل تنظیم است."
+    }
+  }
+}

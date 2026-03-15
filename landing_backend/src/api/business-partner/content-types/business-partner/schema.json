@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_partners",
+  "info": {
+    "singularName": "business-partner",
+    "pluralName": "business-partners",
+    "displayName": "همکاران تجاری",
+    "description": "لیست همکاران تجاری فانی‌ویت — نمایش‌داده‌شده در بخش «همکاران تجاری ما» در صفحه اصلی"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "description": "نام نمایشی همکار — معمولاً نام شخص یا نام تجاری کوتاه",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "company": {
+      "type": "string",
+      "required": true,
+      "description": "نام کامل شرکت یا سازمان همکار",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "location": {
+      "type": "string",
+      "description": "شهر یا منطقه جغرافیایی همکار — مثلاً تهران یا Tehran",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "since": {
+      "type": "string",
+      "description": "سال یا تاریخ شروع همکاری — مثلاً ۱۴۰۰. برای همه زبان‌ها یکسان است.",
+      "pluginOptions": { "i18n": { "localized": false } }
+    },
+    "achievements": {
+      "type": "text",
+      "description": "دستاوردهای همکاری — هر دستاورد را در یک خط جداگانه بنویسید. هر خط به صورت یک badge نمایش داده می‌شود.",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "description": {
+      "type": "text",
+      "description": "توضیح کوتاه از این همکاری و ویژگی‌های مثبت همکار",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"],
+      "description": "لوگوی شرکت همکار — از Media Center ادمین آپلود کنید. فرمت‌های مجاز: JPG، PNG، WebP، SVG. برای همه زبان‌ها یکسان است.",
+      "pluginOptions": { "i18n": { "localized": false } }
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0,
+      "description": "ترتیب نمایش در صفحه — عدد کمتر = نمایش زودتر",
+      "pluginOptions": { "i18n": { "localized": false } }
+    }
+  }
+}

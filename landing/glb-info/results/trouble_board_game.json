@@ -1,0 +1,1054 @@
+{
+  "objects": [
+    {
+      "name": "Sketchfab_model",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "a68338daaf0247379ed3815c98e9aca3.fbx",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.009999999776482582
+      ],
+      "mesh": null
+    },
+    {
+      "name": "RootNode",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_CardBoard",
+      "translation": [
+        -0.0007163526606746018,
+        -0.0583236962556839,
+        0.00009018066339194775
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.0202182531356812,
+        1.0202182531356812,
+        1.0202182531356812
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_CardBoard_TroubleBoard_CardBoard_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_CardBoard_TroubleBoard_CardBoard_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Plastic_GEO",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Plastic_GEO_TroubleBoard_Plastic_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Plastic_GEO_TroubleBoard_Plastic_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Tumbler_GEO",
+      "translation": [
+        -0.043054644018411636,
+        1.9684785604476929,
+        -0.042751528322696686
+      ],
+      "rotation": [
+        -0.0004471302519671977,
+        -0.38268317114979616,
+        -3.696625721370894e-18,
+        0.9238795325112867
+      ],
+      "scale": [
+        6.183069229125977,
+        0.5312835574150085,
+        6.183069229125977
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Tumbler_GEO_TroubleBoard_Tumbler_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Tumbler_GEO_TroubleBoard_Tumbler_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO",
+      "translation": [
+        7.049190044403076,
+        2.646477222442627,
+        10.762894630432129
+      ],
+      "rotation": [
+        6.123233995736767e-17,
+        1,
+        6.123233995736767e-17,
+        -6.123233995736765e-17
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO_TroubleBoard_Peg_RED_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Red_GEO_TroubleBoard_Peg_RED_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO",
+      "translation": [
+        -10.568458557128906,
+        2.6061129570007324,
+        7.32210111618042
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO_TroubleBoard_Peg_GREEN_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Green_GEO_TroubleBoard_Peg_GREEN_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO",
+      "translation": [
+        10.568620681762695,
+        2.609684705734253,
+        -7.39792537689209
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO_TroubleBoard_Peg_BLUE_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Blue_GEO_TroubleBoard_Peg_BLUE_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO",
+      "translation": [
+        -7.017421245574951,
+        2.6322250366210938,
+        -10.81112289428711
+      ],
+      "rotation": [
+        6.123233995736767e-17,
+        1,
+        6.123233995736767e-17,
+        -6.123233995736765e-17
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO_TroubleBoard_Peg_YELLOW_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_YellowGEO_TroubleBoard_Peg_YELLOW_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO1",
+      "translation": [
+        8.473956108093262,
+        2.5974228382110596,
+        10.045607566833496
+      ],
+      "rotation": [
+        6.123233995736767e-17,
+        1,
+        6.123233995736767e-17,
+        -6.123233995736765e-17
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO1_TroubleBoard_Peg_RED_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Red_GEO1_TroubleBoard_Peg_RED_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO2",
+      "translation": [
+        9.819969177246094,
+        2.6486082077026367,
+        8.805641174316406
+      ],
+      "rotation": [
+        6.123233995736767e-17,
+        1,
+        6.123233995736767e-17,
+        -6.123233995736765e-17
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO2_TroubleBoard_Peg_RED_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Red_GEO2_TroubleBoard_Peg_RED_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO3",
+      "translation": [
+        10.596954345703125,
+        2.650637626647949,
+        7.319948196411133
+      ],
+      "rotation": [
+        6.123233995736767e-17,
+        1,
+        6.123233995736767e-17,
+        -6.123233995736765e-17
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO3_TroubleBoard_Peg_RED_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Red_GEO3_TroubleBoard_Peg_RED_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO1",
+      "translation": [
+        -9.8514986038208,
+        2.651102066040039,
+        8.801395416259766
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO1_TroubleBoard_Peg_GREEN_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Green_GEO1_TroubleBoard_Peg_GREEN_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO2",
+      "translation": [
+        -8.531147956848145,
+        2.649559497833252,
+        10.050675392150879
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO2_TroubleBoard_Peg_GREEN_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Green_GEO2_TroubleBoard_Peg_GREEN_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO3",
+      "translation": [
+        -7.063207149505615,
+        2.6478443145751953,
+        10.759031295776367
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO3_TroubleBoard_Peg_GREEN_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Green_GEO3_TroubleBoard_Peg_GREEN_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO1",
+      "translation": [
+        -8.538487434387207,
+        2.6437811851501465,
+        -10.165287971496582
+      ],
+      "rotation": [
+        6.123233995736767e-17,
+        1,
+        6.123233995736767e-17,
+        -6.123233995736765e-17
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO1_TroubleBoard_Peg_YELLOW_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_YellowGEO1_TroubleBoard_Peg_YELLOW_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO2",
+      "translation": [
+        -9.827730178833008,
+        2.6433963775634766,
+        -8.878491401672363
+      ],
+      "rotation": [
+        6.123233995736767e-17,
+        1,
+        6.123233995736767e-17,
+        -6.123233995736765e-17
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO2_TroubleBoard_Peg_YELLOW_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_YellowGEO2_TroubleBoard_Peg_YELLOW_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO3",
+      "translation": [
+        -10.56502914428711,
+        2.5386266708374023,
+        -7.45377779006958
+      ],
+      "rotation": [
+        6.123233995736767e-17,
+        1,
+        6.123233995736767e-17,
+        -6.123233995736765e-17
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO3_TroubleBoard_Peg_YELLOW_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_YellowGEO3_TroubleBoard_Peg_YELLOW_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO1",
+      "translation": [
+        9.83556079864502,
+        2.649930238723755,
+        -8.86320972442627
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO1_TroubleBoard_Peg_BLUE_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Blue_GEO1_TroubleBoard_Peg_BLUE_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO2",
+      "translation": [
+        8.526697158813477,
+        2.6514594554901123,
+        -10.140334129333496
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO2_TroubleBoard_Peg_BLUE_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Blue_GEO2_TroubleBoard_Peg_BLUE_MAT_0"
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO3",
+      "translation": [
+        7.0376811027526855,
+        2.6531991958618164,
+        -10.836884498596191
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5706455111503601,
+        1.1704660654067993,
+        0.5706455111503601
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO3_TroubleBoard_Peg_BLUE_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Trouble_BoardGame_Piece_Blue_GEO3_TroubleBoard_Peg_BLUE_MAT_0"
+    },
+    {
+      "name": "Dice_GEO_REF",
+      "translation": [
+        0,
+        2.497504949569702,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.090515375137329,
+        1.090515375137329,
+        1.090515375137329
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Dice_GEO_REF_Dice_MAT_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Dice_GEO_REF_Dice_MAT_0"
+    }
+  ],
+  "materials": [
+    {
+      "name": "TroubleBoard_CardBoard_MAT",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "TroubleBoard_Plastic_MAT",
+      "baseColorFactor": [
+        0.49111729511191243,
+        0.49111729511191243,
+        0.49111729511191243,
+        0.5368927031998587
+      ],
+      "roughnessFactor": 0,
+      "metallicFactor": 0,
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    },
+    {
+      "name": "TroubleBoard_Tumbler_MAT",
+      "baseColorFactor": [
+        0.072,
+        0.072,
+        0.072,
+        1
+      ],
+      "roughnessFactor": 0.6,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "TroubleBoard_Peg_RED_MAT",
+      "baseColorFactor": [
+        0.5,
+        0.07350000000000004,
+        0.07350000000000004,
+        1
+      ],
+      "roughnessFactor": 0.21312836911823763,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "TroubleBoard_Peg_GREEN_MAT",
+      "baseColorFactor": [
+        0.28501931946590287,
+        0.44672920812723993,
+        0.13437717558429355,
+        1
+      ],
+      "roughnessFactor": 0.21299999999999997,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "TroubleBoard_Peg_BLUE_MAT",
+      "baseColorFactor": [
+        0,
+        0.38461699999999965,
+        0.5,
+        1
+      ],
+      "roughnessFactor": 0.21299999999999997,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "TroubleBoard_Peg_YELLOW_MAT",
+      "baseColorFactor": [
+        0.53,
+        0.4099,
+        0,
+        1
+      ],
+      "roughnessFactor": 0.21299999999999997,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Dice_MAT",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 0.6,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    }
+  ],
+  "cameras": [],
+  "animations": [],
+  "meshes": [
+    {
+      "name": "Trouble_BoardGame_CardBoard_TroubleBoard_CardBoard_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Plastic_GEO_TroubleBoard_Plastic_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Tumbler_GEO_TroubleBoard_Tumbler_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO_TroubleBoard_Peg_RED_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO_TroubleBoard_Peg_GREEN_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO_TroubleBoard_Peg_BLUE_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO_TroubleBoard_Peg_YELLOW_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO1_TroubleBoard_Peg_RED_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO2_TroubleBoard_Peg_RED_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Red_GEO3_TroubleBoard_Peg_RED_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO1_TroubleBoard_Peg_GREEN_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO2_TroubleBoard_Peg_GREEN_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Green_GEO3_TroubleBoard_Peg_GREEN_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO1_TroubleBoard_Peg_YELLOW_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO2_TroubleBoard_Peg_YELLOW_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_YellowGEO3_TroubleBoard_Peg_YELLOW_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO1_TroubleBoard_Peg_BLUE_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO2_TroubleBoard_Peg_BLUE_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Trouble_BoardGame_Piece_Blue_GEO3_TroubleBoard_Peg_BLUE_MAT_0",
+      "primitives": 1
+    },
+    {
+      "name": "Dice_GEO_REF_Dice_MAT_0",
+      "primitives": 1
+    }
+  ]
+}

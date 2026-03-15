@@ -1,0 +1,235 @@
+{
+  "objects": [
+    {
+      "name": "Sketchfab_model",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "board game_SCENE.obj.cleaner.materialmerger.gles",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Object_2",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Object_0"
+    },
+    {
+      "name": "Object_3",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Object_1"
+    },
+    {
+      "name": "Object_4",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Object_2"
+    },
+    {
+      "name": "Object_5",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Object_3"
+    },
+    {
+      "name": "Object_6",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Object_4"
+    }
+  ],
+  "materials": [
+    {
+      "name": "aiStandardSurface3SG",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "BLEND",
+      "doubleSided": true
+    },
+    {
+      "name": "blue_initialShadingGroup",
+      "baseColorFactor": [
+        0.5671661528920344,
+        0.5671661528920344,
+        0.5671661528920344,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "initialShadingGroup",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "lambert2SG",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 0.6,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "lambert3SG",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    }
+  ],
+  "cameras": [],
+  "animations": [],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": 1
+    },
+    {
+      "name": "Object_1",
+      "primitives": 1
+    },
+    {
+      "name": "Object_2",
+      "primitives": 1
+    },
+    {
+      "name": "Object_3",
+      "primitives": 1
+    },
+    {
+      "name": "Object_4",
+      "primitives": 1
+    }
+  ]
+}

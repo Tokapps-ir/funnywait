@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_cards",
+  "info": {
+    "singularName": "feature-card",
+    "pluralName": "feature-cards",
+    "displayName": "کارت ویژگی",
+    "description": "هر آیتم در بخش «چرا فانی‌ویت؟» — سوال/عنوان، توضیح کوتاه و محتوای پنل جزئیات"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "description": "عنوان یا سوال کارت — متنی که در ستون چپ به عنوان تیتر کارت نمایش داده می‌شود. مثلاً «چگونه سرعت عمل بالا را تضمین می‌کنید؟»",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "description": {
+      "type": "string",
+      "description": "توضیح کوتاه زیر عنوان کارت — یک جمله که موضوع کارت را خلاصه می‌کند",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "content_title": {
+      "type": "string",
+      "description": "عنوان پنل جزئیات — نمایش‌داده‌شده در ستون راست هنگام انتخاب این کارت",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "content_description": {
+      "type": "text",
+      "description": "متن کامل توضیحات در پنل جزئیات — می‌تواند چند جمله باشد و اطلاعات دقیق‌تری ارائه دهد",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "videos"],
+      "description": "تصویر یا ویدیوی نمایشی در پنل جزئیات — از Media Center ادمین آپلود کنید. فرمت‌های مجاز: JPG، PNG، WebP، MP4. برای همه زبان‌ها یکسان است.",
+      "pluginOptions": { "i18n": { "localized": false } }
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0,
+      "description": "ترتیب نمایش کارت‌ها در بخش — عدد کمتر = نمایش زودتر. برای تنظیم ترتیب دلخواه استفاده کنید.",
+      "pluginOptions": { "i18n": { "localized": false } }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_footer_links",
+  "info": {
+    "displayName": "لینک فوتر",
+    "description": "یک لینک در بخش لینک‌های سریع فوتر"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true,
+      "description": "متن نمایشی لینک",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "description": "آدرس لینک — می‌تواند نسبی (#calculator) یا مطلق باشد",
+      "pluginOptions": { "i18n": { "localized": false } }
+    }
+  }
+}

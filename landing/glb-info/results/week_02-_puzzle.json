@@ -1,0 +1,834 @@
+{
+  "objects": [
+    {
+      "name": "Sketchfab_model",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "70cccb503bf84c5a8e6da80efdc672a2.fbx",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.009999999776482582
+      ],
+      "mesh": null
+    },
+    {
+      "name": "RootNode",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Corner",
+      "translation": [
+        0,
+        0,
+        -7.099999904632568
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Corner_Blue_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Corner_Blue_Mat_0"
+    },
+    {
+      "name": "L3",
+      "translation": [
+        0,
+        0,
+        -7.099999904632568
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "L3_Orange_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "L3_Orange_Mat_0"
+    },
+    {
+      "name": "L4",
+      "translation": [
+        0,
+        0,
+        -7.099999904632568
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "L4_Purple_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "L4_Purple_Mat_0"
+    },
+    {
+      "name": "L2",
+      "translation": [
+        0,
+        0,
+        -7.099999904632568
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "L2_Yellow_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "L2_Yellow_Mat_0"
+    },
+    {
+      "name": "L1",
+      "translation": [
+        0,
+        0,
+        -7.099999904632568
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "L1_Red_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "L1_Red_Mat_0"
+    },
+    {
+      "name": "T",
+      "translation": [
+        0,
+        0,
+        -7.099999904632568
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "T_Green_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "T_Green_Mat_0"
+    },
+    {
+      "name": "ZigZag",
+      "translation": [
+        0,
+        0,
+        -7.099999904632568
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "ZigZag_Pink_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "ZigZag_Pink_Mat_0"
+    },
+    {
+      "name": "L1_2",
+      "translation": [
+        -4.464829921722412,
+        -1.0713812112808228,
+        18.451711654663086
+      ],
+      "rotation": [
+        -0.01030090618790286,
+        0.024491952202200372,
+        -0.38722275589850347,
+        0.9216032622139535
+      ],
+      "scale": [
+        0.9999999999999999,
+        1,
+        1.0000000000000002
+      ],
+      "mesh": null
+    },
+    {
+      "name": "L1_2_Red_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "L1_2_Red_Mat_0"
+    },
+    {
+      "name": "ZigZag_2",
+      "translation": [
+        -10.699999809265137,
+        -1.5,
+        20.19999885559082
+      ],
+      "rotation": [
+        -0.34607162933825497,
+        0.34607168653049414,
+        -0.6166315344051588,
+        0.6166314668635103
+      ],
+      "scale": [
+        1,
+        1,
+        0.9999999999999999
+      ],
+      "mesh": null
+    },
+    {
+      "name": "ZigZag_2_Pink_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "ZigZag_2_Pink_Mat_0"
+    },
+    {
+      "name": "L2_2",
+      "translation": [
+        2.093106746673584,
+        -3.0000693798065186,
+        17.982318878173828
+      ],
+      "rotation": [
+        -0.00000397494578253529,
+        0.0264621218929106,
+        0.000029099412893737843,
+        0.9996498163068649
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "L2_2_Yellow_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "L2_2_Yellow_Mat_0"
+    },
+    {
+      "name": "T_2",
+      "translation": [
+        -6.400000095367432,
+        -1.5,
+        8.799999237060547
+      ],
+      "rotation": [
+        -0.5333170814337347,
+        -0.46429824283253907,
+        -0.46429791639627205,
+        0.5333174262891663
+      ],
+      "scale": [
+        1,
+        0.9999999999999999,
+        0.9999999999999998
+      ],
+      "mesh": null
+    },
+    {
+      "name": "T_2_Green_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "T_2_Green_Mat_0"
+    },
+    {
+      "name": "Corner_2",
+      "translation": [
+        5.865165710449219,
+        0,
+        15.063654899597168
+      ],
+      "rotation": [
+        4.8281867699853546e-11,
+        0.06981131701018078,
+        -1.1270906569185298e-8,
+        0.9975602137301307
+      ],
+      "scale": [
+        0.9999999999999999,
+        1,
+        0.9999999999999999
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Corner_2_Blue_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Corner_2_Blue_Mat_0"
+    },
+    {
+      "name": "L4_2",
+      "translation": [
+        6.599999904632568,
+        -1.5,
+        27.299999237060547
+      ],
+      "rotation": [
+        -0.19800233256433455,
+        -0.19800246407374147,
+        0.6788188115730796,
+        0.6788189166297013
+      ],
+      "scale": [
+        0.9999999999999998,
+        1,
+        1
+      ],
+      "mesh": null
+    },
+    {
+      "name": "L4_2_Purple_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "L4_2_Purple_Mat_0"
+    },
+    {
+      "name": "L3_2",
+      "translation": [
+        7.599999904632568,
+        -1.5,
+        8.09999942779541
+      ],
+      "rotation": [
+        0.6781705415923331,
+        0.20021164879727898,
+        -0.20021170213507505,
+        0.6781705438386517
+      ],
+      "scale": [
+        1,
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "mesh": null
+    },
+    {
+      "name": "L3_2_Orange_Mat_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "L3_2_Orange_Mat_0"
+    },
+    {
+      "name": "Ground",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.6288749575614929,
+        1,
+        0.6288749575614929
+      ],
+      "mesh": null
+    },
+    {
+      "name": "Ground_Floor_0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mesh": "Ground_Floor_0"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Blue_Mat",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Orange_Mat",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Purple_Mat",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Yellow_Mat",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Red_Mat",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Green_Mat",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Pink_Mat",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    },
+    {
+      "name": "Floor",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "roughnessFactor": 1,
+      "metallicFactor": 0,
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    }
+  ],
+  "cameras": [],
+  "animations": [],
+  "meshes": [
+    {
+      "name": "Corner_Blue_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "L3_Orange_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "L4_Purple_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "L2_Yellow_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "L1_Red_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "T_Green_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "ZigZag_Pink_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "L1_2_Red_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "ZigZag_2_Pink_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "L2_2_Yellow_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "T_2_Green_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "Corner_2_Blue_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "L4_2_Purple_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "L3_2_Orange_Mat_0",
+      "primitives": 1
+    },
+    {
+      "name": "Ground_Floor_0",
+      "primitives": 1
+    }
+  ]
+}
