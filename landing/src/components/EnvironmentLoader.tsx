@@ -85,13 +85,13 @@ export const EnvironmentLoader: React.FC<EnvironmentLoaderProps> = ({
         <Suspense fallback={null}>
           <DreiEnvironment 
             preset="night" 
-            intensity={intensity} 
+            // intensity={intensity}
             blur={0.8} 
             background={background} 
           />
           <DreiEnvironment 
             preset="studio" 
-            intensity={intensity * 0.5} 
+            // intensity={intensity * 0.5}
             blur={0.3} 
             background={background} 
           />
@@ -174,7 +174,7 @@ interface IEnvironmentStatus {
   hasError: boolean;
 }
 
-export type EnvironmentStatus = IEnvironmentStatus;
+type EnvironmentStatus = IEnvironmentStatus;
 
 /**
  * Custom hook to load HDR environment maps with caching and fallback.
