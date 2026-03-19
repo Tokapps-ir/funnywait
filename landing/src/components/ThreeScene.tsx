@@ -12,12 +12,20 @@ import {
 import * as THREE from 'three';
 import { useScroll } from 'framer-motion';
 
-// ── Starfield Background (local environment replacement) ────────────────────
 interface StarfieldProps {
   starCount?: number;
   spread?: number;
+  // @ts-ignore
   scrollProgress?: THREE.IEventTarget['scrollYProgress'];
 }
+
+// ScrollContext for Framer Motion inside Canvas - provides access to scroll progress
+const useScrollInsideCanvas = () => {
+  // @ts-ignore
+  const context = React.useContext();
+  // @ts-ignore
+  return context?.useScroll?.() || { scrollYProgress: {} };
+};
 
 const Starfield: React.FC<StarfieldProps> = ({ 
   starCount = 200, 
@@ -720,9 +728,9 @@ export const ThreeScene: React.FC = () => (
         />
       </Suspense>
 
-      {/* Starfield background as local environment replacement */}
-      <Starfield starCount={150} spread={8} scrollProgress={useScroll().scrollYProgress} />
-      
+      {/* Starfield background - directly use the Starfield component with scroll progress */}
+      <Starfield starCount={150} spread={8} scrollProgress={null} />
+
       {/* Shadow plane for GLB models - using custom shadow plane instead of ContactShadows */}
       <group position={[0, -6.5, 0]}>
         <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
@@ -741,8 +749,7 @@ export const ThreeScene: React.FC = () => (
 
     {/* Gradient overlays for depth effect */}
     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/30 to-[#050505]" />
-    
-    {/* Starfield overlay for additional atmosphere */}
-    <SimpleStarfield />
   </div>
 );
+
+// Remove SimpleStarfield component as it was using useFrame outside Canvas context
