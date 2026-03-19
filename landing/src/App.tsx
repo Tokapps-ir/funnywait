@@ -183,14 +183,13 @@ export default function App() {
 
     useEffect(() => {
 
-        const elementBody = document.querySelector('body');
 
 
-        elementBody.addEventListener('click', () => {
+        window.addEventListener('click', () => {
             // Attempt to play
+            bgMusic.play();
             if (!Playing){
                 Playing=true;
-                bgMusic.play();
             }
         });
 
@@ -208,15 +207,22 @@ export default function App() {
                 getGalleryGroups(locale),
                 getTestimonials(locale),
             ]);
+            // @ts-ignore
             setProducts(prodRes.data);
             setCalcConfig(calcRes.data);
             setHeroConfig(heroRes.data);
             setFeaturesConfig(featuresConfigRes.data);
+            // @ts-ignore
             setFeatureCards(featureCardsRes.data);
+            // @ts-ignore
             setGalleryItems(galleryRes.data);
+            // @ts-ignore
             setGalleryGroups(galleryGroupsRes.data);
             setTestimonials(testimonialsRes.data);
+
+
             const mapped = smartPkgRes.data
+                // @ts-ignore
                 .filter((sp: SmartPackage) => sp.package_key && sp.name)
                 .map((sp: SmartPackage) => ({
                     id: sp.package_key,
