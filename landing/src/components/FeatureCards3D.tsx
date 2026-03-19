@@ -33,7 +33,7 @@ const FeatureCards3DComponent = ({ config, cards }: FeatureCards3DProps) => {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-8">
       {/* Hidden audio element for click sound */}
-      <audio ref={audioRef} src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" preload="auto" />
+      <audio ref={audioRef} src="/Musics/Click.mp3" preload="auto" />
 
       {/* Section header */}
       <div className="text-center mb-8">

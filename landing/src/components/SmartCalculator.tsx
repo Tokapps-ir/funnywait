@@ -1,22 +1,17 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CalculatorState, RecommendationResult, QualityLevel, Package } from '../types';
+import {CalculatorState, RecommendationResult, QualityLevel, Package, CalculatorConfig} from '../types';
 import { calculateRecommendation } from '../lib/calculatePackage';
 import { toPersianDigits, formatCurrency } from '../lib/helpers';
 import { Zap, Users, Clock, Shield, CheckCircle2, AlertTriangle, Info, ArrowLeft } from 'lucide-react';
 import { Howl } from 'howler';
 
-const clickSound = new Howl({
-  src: ['https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3'],
-  volume: 0.1,
-});
+interface Props {
+  successSound:Howl,
+  clickSound:Howl,
+}
 
-const successSound = new Howl({
-  src: ['https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3'],
-  volume: 0.2,
-});
-
-export const SmartCalculator: React.FC = () => {
+export const SmartCalculator: React.FC<Props> = ({ successSound,clickSound}) => {
   const [state, setState] = useState<CalculatorState>({
     budget: 5000000,
     seats: 20,

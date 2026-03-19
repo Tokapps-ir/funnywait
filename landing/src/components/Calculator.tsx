@@ -5,21 +5,17 @@ import { toPersianDigits, formatCurrency } from '../lib/helpers';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { Howl } from 'howler';
 
-const clickSound = new Howl({
-  src: ['https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3'],
-  volume: 0.1,
-});
 
-const resultSound = new Howl({
-  src: ['https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3'],
-  volume: 0.2,
-});
+
+
 
 interface Props {
   config: CalculatorConfig;
+  resultSound:Howl,
+  clickSound:Howl,
 }
 
-export const Calculator: React.FC<Props> = ({ config }) => {
+export const Calculator: React.FC<Props> = ({ config ,resultSound,clickSound}) => {
   const [inputs, setInputs] = useState<CalculatorInputs>({
     visitors: config.default_visitors,
     waitTime: config.default_wait_time,

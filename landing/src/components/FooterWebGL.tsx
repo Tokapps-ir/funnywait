@@ -19,7 +19,8 @@ export const FooterWebGL: React.FC = () => {
       try {
         // Dynamically import the Grid2Background
         // @ts-ignore
-        const grid2Module = await import('https://cdn.jsdelivr.net/npm/threejs-components@0.0.17/build/backgrounds/grid2.cdn.min.js');
+        const grid2Module = await import('http://127.0.0.1:3000/js/grid2.cdn.min.js');
+        console.log(grid2Module);
         const bg = grid2Module.default(canvasRef.current);
         setBgInstance(bg);
 
