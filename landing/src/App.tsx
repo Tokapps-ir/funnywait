@@ -187,9 +187,9 @@ export default function App() {
 
         window.addEventListener('click', () => {
             // Attempt to play
-            bgMusic.play();
             if (!Playing){
                 Playing=true;
+                bgMusic.play();
             }
         });
 
