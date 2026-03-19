@@ -4,14 +4,162 @@ import {
   Float,
   MeshDistortMaterial,
   PerspectiveCamera,
-  Environment,
-  ContactShadows,
   OrbitControls,
+  OrthographicCamera,
   useGLTF,
   useAnimations,
 } from '@react-three/drei';
 import * as THREE from 'three';
 import { useScroll } from 'framer-motion';
+
+// ── Starfield Background (local environment replacement) ────────────────────
+interface StarfieldProps {
+  starCount?: number;
+  spread?: number;
+  scrollProgress?: THREE.IEventTarget['scrollYProgress'];
+}
+
+const Starfield: React.FC<StarfieldProps> = ({ 
+  starCount = 200, 
+  spread = 8,
+  scrollProgress 
+}) => {
+  const pointsRef = useRef<THREE.Points>(null);
+
+  // Generate random positions for stars distributed in a spherical volume
+  const generateStars = useCallback((count: number) => {
+    const positions = new Float32Array(count * 3);
+    const colors = new Float32Array(count * 3);
+    
+    for (let i = 0; i < count; i++) {
+      // Uniform distribution on a sphere using spherical coordinates
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+      const radius = spread * Math.cbrt(Math.random());
+      
+      const x = radius * Math.sin(phi) * Math.cos(theta);
+      const y = radius * Math.sin(phi) * Math.sin(theta);
+      const z = radius * Math.cos(phi);
+      
+      positions[i * 3]     = x;
+      positions[i * 3 + 1] = y;
+      positions[i * 3 + 2] = z;
+      
+      // Stars have varying colors from white to light green/teal
+      const colorTint = new THREE.Color().setHSL(0.5, 0.5, 0.8);
+      colors[i * 3]     = colorTint.r;
+      colors[i * 3 + 1] = colorTint.g;
+      colors[i * 3 + 2] = colorTint.b;
+    }
+    
+    return { positions, colors };
+  }, [spread]);
+
+  const starData = useMemo(() => generateStars(starCount), [starCount, generateStars]);
+
+  useFrame((state) => {
+    if (!pointsRef.current || !pointsRef.current.material) return;
+    
+    const t = state.clock.getElapsedTime();
+    const progress = scrollProgress?.get() ?? 0;
+    
+    // Rotate the starfield slowly for dynamic effect
+    pointsRef.current.rotation.y = t * 0.03;
+    pointsRef.current.rotation.x = Math.sin(t * 0.1) * 0.05;
+    
+    const material = pointsRef.current.material as THREE.PointsMaterial & { 
+      uniforms?: any;
+      onBeforeRender?: (renderer: any, scene: any, camera: any) => void;
+    };
+    
+    // Update starfield appearance based on scroll position for section highlighting
+    if (material) {
+      const transitions = [0.16, 0.36, 0.56, 0.74];
+      const pulse = transitions.reduce(
+        (acc: number, tp: number) => acc + Math.max(0, 1 - Math.abs(progress - tp) * 14),
+        0 as number
+      );
+      
+      // Animate opacity and size based on scroll position
+      material.opacity = 0.12 + pulse * 0.5;
+      material.size    = 0.018 + pulse * 0.04;
+    }
+  });
+
+  return (
+    <points ref={pointsRef} matrixAutoUpdate={false}>
+      <bufferGeometry>
+        <bufferAttribute
+          attach="attributes-position"
+          args={[starData.positions, 3]}
+          count={starCount}
+        />
+        <bufferAttribute
+          attach="attributes-color"
+          args={[starData.colors, 3]}
+          count={starCount}
+        />
+      </bufferGeometry>
+      <pointsMaterial
+        vertexColors
+        size={0.018}
+        transparent
+        opacity={0.12}
+        depthWrite={false}
+        blending={THREE.AdditiveBlending}
+        sizeAttenuation
+      />
+    </points>
+  );
+};
+
+// ── Simple Starfield Background (fallback/enhancement) ────────────────────
+const SimpleStarfield: React.FC = () => {
+  const starFieldRef = useRef<THREE.Points>(null);
+  
+  const generateStars = useMemo(() => {
+    const positions = new Float32Array(400 * 3);
+    for (let i = 0; i < 400; i++) {
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+      const radius = 8 * Math.cbrt(Math.random());
+      
+      positions[i * 3]     = radius * Math.sin(phi) * Math.cos(theta);
+      positions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+      positions[i * 3 + 2] = radius * Math.cos(phi);
+    }
+    return positions;
+  }, []);
+
+  useFrame((state) => {
+    if (starFieldRef.current) {
+      const t = state.clock.getElapsedTime();
+      starFieldRef.current.rotation.y = t * 0.02;
+      starFieldRef.current.rotation.x = Math.sin(t * 0.15) * 0.05;
+    }
+  });
+
+  return (
+    <points ref={starFieldRef}>
+      <bufferGeometry>
+        <bufferAttribute
+          attach="attributes-position"
+          args={[generateStars, 3]}
+          count={400}
+        />
+      </bufferGeometry>
+      <pointsMaterial
+        color="#a7f3d0"
+        size={0.025}
+        transparent
+        opacity={0.6}
+        sizeAttenuation
+        depthWrite={false}
+        blending={THREE.AdditiveBlending}
+      />
+    </points>
+  );
+};
 
 // ── Preload GLB models ───────────────────────────────────────────────────────
 useGLTF.preload('/models/maze.glb');
@@ -264,7 +412,7 @@ const GLBModel: React.FC<GLBModelProps> = ({
   const innerRef = useRef<THREE.Group>(null);
 
   // Calculate effective tilt based on mode if provided
-  const effectiveTilt = useMemo(() => {
+  const effectiveTilt = useMemo((): [number, number, number] => {
     if (mode) {
       switch (mode) {
         case 'top':
@@ -276,13 +424,13 @@ const GLBModel: React.FC<GLBModelProps> = ({
         case 'back':
           return [0, Math.PI, 0]; // Back view
         case 'front':
-          return [0, 0, 0]; // Front view
+          return [0, 0, 0] as [number, number, number]; // Front view
         case 'perspective':
         default:
-          return tilt; // Use provided tilt for perspective
+          return tilt as [number, number, number]; // Use provided tilt for perspective
       }
     }
-    return tilt;
+    return tilt as [number, number, number];
   }, [mode, tilt]);
 
   // Clone for isolation — never mutate useGLTF cache
@@ -572,13 +720,29 @@ export const ThreeScene: React.FC = () => (
         />
       </Suspense>
 
-      <MorphParticles />
+      {/* Starfield background as local environment replacement */}
+      <Starfield starCount={150} spread={8} scrollProgress={useScroll().scrollYProgress} />
+      
+      {/* Shadow plane for GLB models - using custom shadow plane instead of ContactShadows */}
+      <group position={[0, -6.5, 0]}>
+        <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
+          <ringGeometry args={[0.1, 3, 32]} />
+          <meshBasicMaterial color="#10b981" transparent opacity={0.1} side={THREE.DoubleSide} />
+        </mesh>
+      </group>
 
-      <ContactShadows position={[0, -6, 0]} opacity={0.3} scale={30} blur={2.5} far={10} />
-      <Environment preset="night" />
+      <MorphParticles />
+      
+      {/* Native shadow camera for proper shadow casting */}
+      <OrthographicCamera args={[-20, 20, 7, -5, 1, 30]} position={[0, 0, 10]} rotation={[Math.PI / 4, 0, 0]} />
+
       <OrbitControls enableZoom={false} enablePan={false} />
     </Canvas>
 
+    {/* Gradient overlays for depth effect */}
     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/30 to-[#050505]" />
+    
+    {/* Starfield overlay for additional atmosphere */}
+    <SimpleStarfield />
   </div>
 );
