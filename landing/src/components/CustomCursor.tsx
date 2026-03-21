@@ -242,6 +242,15 @@ export const CustomCursor: React.FC<CustomCursorProps> = ({ locale }) => {
 
   return (
     <>
+      {/* Hide default system cursor */}
+      <style>{`
+        * {
+          cursor: none !important;
+        }
+        .no-cursor-hover { --tw-ring-offset-width: 0 !important; }
+        a:not(.not-custom-cursor), button, input, select, textarea, [role="button"], .cursor-pointer { outline: none; }
+      `}</style>
+
       {/* Nested circles with spring animations */}
       <OuterCircle mouseX={pos.x} mouseY={pos.y} />
       <InnerCircle mouseX={pos.x} mouseY={pos.y} />
@@ -272,11 +281,6 @@ export const CustomCursor: React.FC<CustomCursorProps> = ({ locale }) => {
       {/* Debug info */}
       <div className="fixed bottom-2 right-2 text-[10px] text-emerald-500/50 z-[999]" style={{ display: dir === 'rtl' ? 'block' : 'none' }}>RTL Mode</div>
       <div className="fixed bottom-2 right-2 text-[10px] text-emerald-500/50 z-[999]" style={{ display: dir === 'ltr' ? 'block' : 'none' }}>LTR Mode</div>
-
-      <style>{`
-        .no-cursor-hover { --tw-ring-offset-width: 0 !important; }
-        a:not(.not-custom-cursor), button, input, select, textarea, [role="button"], .cursor-pointer { outline: none; }
-      `}</style>
     </>
   );
 };
