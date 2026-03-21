@@ -505,7 +505,7 @@ export default function App() {
                     {/*<FooterWebGL/>*/}
 
                     {/* Custom Cursor Effect */}
-                    <div className="fixed inset-0 pointer-events-none z-[100] hidden lg:block">
+                    <div className="fixed inset-0 pointer-events-none z-[100] lg:block">
                         <CustomCursor/>
                     </div>
                 </div>
