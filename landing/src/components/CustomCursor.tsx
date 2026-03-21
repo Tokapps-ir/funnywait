@@ -90,9 +90,9 @@ const OuterCircle: React.FC<CursorCircleProps> = ({ mouseX, mouseY }) => {
         y: smoothY,
         width: OUTER_CIRCLE_RADIUS * 2,
         height: OUTER_CIRCLE_RADIUS * 2,
-        borderColor: 'rgba(16, 185, 129, 0.3)', // emerald-500/30
-        marginLeft: -OUTER_CIRCLE_RADIUS,
-        marginTop: -OUTER_CIRCLE_RADIUS,
+        borderColor: 'rgba(16,185,129,0.15)', // emerald-500/30
+        left: -OUTER_CIRCLE_RADIUS,
+        top: OUTER_CIRCLE_RADIUS,
       }}
     />
   );
@@ -119,9 +119,9 @@ const InnerCircle: React.FC<CursorCircleProps> = ({ mouseX, mouseY }) => {
         y: smoothY,
         width: INNER_CIRCLE_RADIUS * 2,
         height: INNER_CIRCLE_RADIUS * 2,
-        backgroundColor: 'rgba(16, 185, 129, 1)', // emerald-500 solid
-        marginLeft: -INNER_CIRCLE_RADIUS,
-        marginTop: -INNER_CIRCLE_RADIUS,
+        backgroundColor: 'rgba(16,185,129,0.52)', // emerald-500 solid
+        left: -INNER_CIRCLE_RADIUS,
+        top: INNER_CIRCLE_RADIUS-4,
       }}
     />
   );
@@ -149,8 +149,8 @@ const CentralDot: React.FC<CursorCircleProps> = ({ mouseX, mouseY }) => {
         width: DOT_SIZE,
         height: DOT_SIZE,
         backgroundColor: 'rgba(16, 185, 129, 1)', // emerald-500 solid
-        marginLeft: -DOT_SIZE / 2,
-        marginTop: -DOT_SIZE / 2,
+        left: -DOT_SIZE / 2,
+        top: -DOT_SIZE,
       }}
     />
   );
@@ -220,7 +220,7 @@ export const CustomCursor: React.FC<CustomCursorProps> = ({ locale }) => {
 
   useEffect(() => {
     if (isHovered) {
-      animate(mouseXVal, mouseXVal.get() * 1.3, { type: 'spring', damping: 25, stiffness: 180 });
+      animate(mouseXVal, -mouseXVal.get() * 1.3, { type: 'spring', damping: 25, stiffness: 180 });
     } else {
       animate(mouseXVal, mouseXVal.get(), { type: 'spring', damping: 25, stiffness: 180 });
     }
