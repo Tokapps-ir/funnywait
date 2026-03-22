@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, useMotionValue, animate, useSpring, type SpringConfig } from 'framer-motion';
 import { Howl } from 'howler';
 import { LanguageContext, Locale as ILocale, translations, useI18n } from '../lib/i18n';
@@ -29,8 +29,13 @@ const INNER_CIRCLE_SPRING: Required<SpringConfig> = { ...SPRING_CONFIG, damping:
 const DOT_SPRING: Required<SpringConfig> = { ...SPRING_CONFIG, damping: 15, stiffness: 250 };
 
 // ============================================================================
-// Interface Definitions
+// Badge Detection Constants & Interfaces
 // ============================================================================
+
+const BADGE_DEBOUNCE_MS = 100; // Prevent flickering on rapid hover
+const BADGE_AUTO_HIDE_MS = 2000; // Auto-hide after inactivity
+const BADGE_OFFSET_X = 24; // Horizontal offset from cursor
+const BADGE_OFFSET_Y = -36; // Vertical offset (above cursor)
 
 export interface BadgeData {
   type: string;
@@ -64,6 +69,166 @@ function useElementHovered() {
   const [isHovered, setIsHovered] = useState(false);
   return { isHovered, setIsHovered };
 }
+
+/**
+ * Custom Hook for Badge Detection System
+ * Listens to mouse events on interactive elements, reads 'badge' attribute,
+ * and manages state with debouncing and auto-hide logic.
+ */
+function useBadgeDetection() {
+  const [visible, setVisible] = useState(false);
+  const [text, setText] = useState('');
+  const [x, setX] = useState(0);
+  const [y, setY] = useState(0);
+
+  // Refs for managing timeouts and debounce logic
+  const hoverTimeoutRef = useRef<number | null>(null);
+  const autoHideTimeoutRef = useRef<number | null>(null);
+
+  // Debounce function to prevent flickering on rapid entry/exit
+  const scheduleBadgeShow = useCallback((element: HTMLElement, mouseX: number, mouseY: number) => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+
+    hoverTimeoutRef.current = window.setTimeout(() => {
+      const badgeText = element.getAttribute('data-tooltip');
+
+
+      if (badgeText && typeof badgeText === 'string') {
+        setText(badgeText);
+        setX(mouseX + BADGE_OFFSET_X);
+        setY(mouseY + BADGE_OFFSET_Y);
+
+        // Ensure RTL layout for Farsi text by checking direction context later in render
+        setVisible(true);
+
+        // Reset auto-hide timer
+        if (autoHideTimeoutRef.current) clearTimeout(autoHideTimeoutRef.current);
+        autoHideTimeoutRef.current = window.setTimeout(() => {
+          setVisible(false);
+        }, BADGE_AUTO_HIDE_MS);
+      } else {
+        setVisible(false);
+      }
+    }, BADGE_DEBOUNCE_MS);
+  }, []);
+
+  // Cleanup function to run on unmount or when mouse leaves
+  const clearBadges = useCallback(() => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    if (autoHideTimeoutRef.current) clearTimeout(autoHideTimeoutRef.current);
+    setVisible(false);
+  }, []);
+
+  // Attach event listeners to interactive elements dynamically
+  useEffect(() => {
+    const handleMouseEnter = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target && ['DIV','SPAN','A', 'BUTTON', 'INPUT', 'SELECT', 'TEXTAREA'].includes(target.tagName)) {
+          console.log('Targeted',target);
+        scheduleBadgeShow(target, e.clientX, e.clientY);
+      }
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      // Update position continuously while visible to keep it near cursor
+        console.log('Move',e);
+      if (visible && hoverTimeoutRef.current === null) {
+         setX(e.clientX + BADGE_OFFSET_X);
+         setY(e.clientY + BADGE_OFFSET_Y);
+      }
+    };
+
+    const handleMouseLeave = () => {
+      clearBadges();
+    };
+
+    window.addEventListener('mousemove', handleMouseEnter, true); // Use capture to catch early
+    window.addEventListener('mousemove', handleMouseMove, false);
+    window.addEventListener('mouseleave', handleMouseLeave, false);
+
+    // return () => {
+    //   window.removeEventListener('mouseenter', handleMouseEnter as EventListener, true);
+    //   window.removeEventListener('mousemove', handleMouseMove, false);
+    //   window.removeEventListener('mouseleave', handleMouseLeave as EventListener, false);
+    //   clearBadges();
+    // };
+  }, [scheduleBadgeShow, visible, clearBadges]);
+
+  return { visible, text, x, y };
+}
+
+// ============================================================================
+// Badge Component with Boundary Detection & RTL Support
+// ============================================================================
+
+const BadgeTooltip: React.FC<{
+  visible: boolean;
+  text: string;
+  x: number;
+  y: number;
+  dir: 'ltr' | 'rtl';
+}> = ({ visible, text, x, y, dir }) => {
+  // Calculate safe position to prevent overflow
+  const [safeX, setSafeX] = useState(x);
+  const [safeY, setSafeY] = useState(y);
+
+  useEffect(() => {
+    if (!visible) return;
+
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Approximate badge width (max content + padding)
+    const badgeWidth = Math.min(text.length * 8, 160);
+    const badgeHeight = 32; // Fixed height for consistency
+
+    let newX = x;
+    let newY = y;
+
+    // RTL Logic: In RTL mode, we might want to position the badge to the left of the cursor
+    if (dir === 'rtl') {
+      newX -= BADGE_OFFSET_X * 2;
+    }
+
+    // Boundary Checks
+    if (newX + badgeWidth > viewportWidth) {
+      newX = viewportWidth - badgeWidth - 10; // Keep 10px margin from right edge
+    }
+
+    if (newY + badgeHeight > viewportHeight) {
+      newY = viewportHeight - badgeHeight - 10; // Keep 10px margin from bottom edge
+    }
+
+    if (newX < 10) {
+      newX = 10; // Keep 10px margin from left edge
+    }
+
+    setSafeX(newX);
+    setSafeY(newY);
+  }, [visible, x, y, text, dir]);
+
+  return (
+    <motion.div
+      className={`fixed pointer-events-none z-[200] px-3 py-1.5 rounded-full shadow-lg backdrop-blur-md border 
+        ${dir === 'rtl' ? 'text-right' : 'text-left'}
+        bg-emerald-900/80 text-emerald-100 border-emerald-500/40`}
+      style={{
+        x: safeX,
+        y: safeY,
+        transformOrigin: dir === 'rtl' ? 'right center' : 'left center',
+      }}
+      initial={{ opacity: 0, scale: 0.9, y: safeY - 10 }}
+      animate={{
+        opacity: visible ? 1 : 0,
+        scale: visible ? 1 : 0.9,
+        y: visible ? safeY : safeY - 10
+      }}
+      transition={{ duration: 0.2, ease: 'easeOut' }}
+    >
+      <span className="text-xs font-medium tracking-wide">{text}</span>
+    </motion.div>
+  );
+};
 
 // ============================================================================
 // Cursor Circle Components with Spring Animations
@@ -168,6 +333,9 @@ export const CustomCursor: React.FC<CustomCursorProps> = ({ locale }) => {
   const [clicking, setClicking] = useState(false);
   const { isHovered, setIsHovered } = useElementHovered();
   
+  // Badge Detection Hook Integration
+  const { visible, text, badgeX, badgeY } = useBadgeDetection();
+
   // GPU-accelerated motion values for smooth animation
   const mouseXVal = useMotionValue(0);
   const mouseYVal = useMotionValue(0);
@@ -277,6 +445,15 @@ export const CustomCursor: React.FC<CustomCursorProps> = ({ locale }) => {
           transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 0.3 }}
         />
       )}
+
+      {/* Badge Tooltip Component */}
+      <BadgeTooltip
+        visible={visible}
+        text={text}
+        x={badgeX}
+        y={badgeY}
+        dir={dir}
+      />
 
       {/* Debug info */}
       <div className="fixed bottom-2 right-2 text-[10px] text-emerald-500/50 z-[999]" style={{ display: dir === 'rtl' ? 'block' : 'none' }}>RTL Mode</div>
