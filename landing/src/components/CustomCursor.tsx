@@ -124,14 +124,12 @@ function useBadgeDetection() {
     const handleMouseEnter = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       if (target && ['DIV','SPAN','A', 'BUTTON', 'INPUT', 'SELECT', 'TEXTAREA'].includes(target.tagName)) {
-          console.log('Targeted',target);
         scheduleBadgeShow(target, e.clientX, e.clientY);
       }
     };
 
     const handleMouseMove = (e: MouseEvent) => {
       // Update position continuously while visible to keep it near cursor
-        console.log('Move',e);
       if (visible && hoverTimeoutRef.current === null) {
          setX(e.clientX + BADGE_OFFSET_X);
          setY(e.clientY + BADGE_OFFSET_Y);
