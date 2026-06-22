@@ -33,19 +33,19 @@ export const Hero: React.FC<Props> = ({
   // Build subtitle with highlighted words
   const renderedSubtitle = () => {
     if (!subtitle_highlight_1 && !subtitle_highlight_2) {
-      return <span>{subtitle}</span>;
+      return <span data-tooltip="Hello">{subtitle}</span>;
     }
     const parts = subtitle.split(new RegExp(`(${subtitle_highlight_1}|${subtitle_highlight_2})`, 'g'));
     return (
       <>
         {parts.map((part, i) => {
           if (part === subtitle_highlight_1) {
-            return <span key={i} className="text-white font-medium">{part}</span>;
+            return <span data-tooltip="Hello" key={i} className="text-white font-medium">{part}</span>;
           }
           if (part === subtitle_highlight_2) {
-            return <span key={i} className="text-emerald-400 font-medium">{part}</span>;
+            return <span data-tooltip="Hello" key={i} className="text-emerald-400 font-medium">{part}</span>;
           }
-          return <span key={i}>{part}</span>;
+          return <span data-tooltip="Hello" key={i}>{part}</span>;
         })}
       </>
     );
