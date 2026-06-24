@@ -18,42 +18,65 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "description": "نام پکیج — عنوانی که در کارت محصول به عنوان تیتر اصلی نمایش داده می‌شود. مختصر، واضح و ترغیب‌کننده باشد. مثلاً «پکیج پایه فانی‌ویت».",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
     },
     "description": {
       "type": "text",
-      "description": "توضیح کوتاه پکیج — یک یا دو جمله که مخاطب هدف و مزیت اصلی پکیج را بیان می‌کند. این متن زیر عنوان پکیج در کارت محصول نشان داده می‌شود.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "features": {
       "type": "text",
-      "description": "لیست امکانات پکیج — ویژگی‌ها و امکانات را با ویرگول از هم جدا کنید. مثلاً: «مدیریت صف پایه، ۳ بازی انتخابی، گزارش ماهانه». هر آیتم در سایت به صورت جداگانه با تیک نمایش داده می‌شود.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "price": {
       "type": "string",
-      "description": "قیمت پکیج به صورت متن — شامل عدد قیمت و واحد پولی و دوره زمانی. مثلاً «۹۵۰,۰۰۰ تومان / ماه». به عنوان رشته ذخیره می‌شود تا انعطاف فرمت‌بندی وجود داشته باشد.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "shop_url": {
       "type": "string",
-      "description": "آدرس URL صفحه خرید این پکیج در سایت فروشگاه — وقتی کاربر روی دکمه «خرید» کلیک می‌کند به این آدرس هدایت می‌شود. باید با https شروع شود. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "image": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"],
-      "description": "تصویر بصری پکیج — عکسی که در کارت محصول نمایش داده می‌شود. فرمت‌های مجاز: JPG, PNG, WebP. ابعاد پیشنهادی: ۸۰۰×۶۰۰ پیکسل. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "allowedTypes": [
+        "images"
+      ]
     },
     "long_description": {
       "type": "richtext",
-      "description": "متن بلند ساختاریافته — توضیح کامل و مفصل پکیج که در پنل شیشه‌ای (مودال) نمایش داده می‌شود. از Markdown استفاده کنید: تیتر (#)، لیست (-)، بولد (**) و غیره.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

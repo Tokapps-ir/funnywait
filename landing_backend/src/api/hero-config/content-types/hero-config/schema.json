@@ -18,80 +18,122 @@
   "attributes": {
     "badge": {
       "type": "string",
-      "description": "متن نشان‌واره کوچک بالای تیتر — مثلاً «آینده مدیریت زمان انتظار اینجاست». این متن در یک باکس کوچک رنگی بالای عنوان اصلی نمایش داده می‌شود و توجه کاربر را جلب می‌کند.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "heading": {
       "type": "string",
-      "description": "عنوان اصلی و بزرگ صفحه — معمولاً نام محصول یا برند مثل «فانی‌ویت». این تیتر بزرگ‌ترین متن صفحه است و با فونت درشت نمایش داده می‌شود.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "subtitle": {
       "type": "text",
-      "description": "جمله توضیحی زیر تیتر اصلی — ماهیت محصول را به شکل جذاب شرح می‌دهد. این متن می‌تواند چند جمله باشد. دو کلمه کلیدی داخل این متن (subtitle_highlight_1 و subtitle_highlight_2) با رنگ ویژه‌ای برجسته می‌شوند.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "subtitle_highlight_1": {
       "type": "string",
-      "description": "اولین کلمه‌ای که باید در متن زیرنویس با رنگ گرادیانت روشن برجسته شود. این کلمه باید عیناً در متن subtitle وجود داشته باشد تا جایگزینی صحیح انجام شود.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "subtitle_highlight_2": {
       "type": "string",
-      "description": "دومین کلمه‌ای که باید در متن زیرنویس با رنگ گرادیانت روشن برجسته شود. این کلمه باید عیناً در متن subtitle وجود داشته باشد تا جایگزینی صحیح انجام شود.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "cta_text": {
       "type": "string",
-      "description": "متن دکمه اقدام (Call to Action) — کاربر را به کلیک و آشنایی بیشتر با محصول دعوت می‌کند. مثلاً «معرفی فانی ویت» یا «شروع رایگان». کوتاه و ترغیب‌کننده باشد.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "scroll_hint": {
       "type": "string",
-      "description": "متن راهنمای اسکرول در پایین صفحه هیرو — کاربر را به پایین‌کشیدن صفحه تشویق می‌کند. مثلاً «اسکرول کنید» یا «بیشتر ببینید». معمولاً با یک آیکون فلش رو به پایین همراه است.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "scroll_fade_start": {
       "type": "decimal",
-      "default": 0,
-      "description": "درصد اسکرول که از آن نقطه هیرو شروع به محو (fade) می‌شود — مقدار بین ۰ و ۱. مثلاً ۰ یعنی از همان ابتدای اسکرول. این مقدار برای هر دو زبان یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0
     },
     "scroll_fade_end": {
       "type": "decimal",
-      "default": 0.08,
-      "description": "درصد اسکرول که در آن نقطه هیرو کاملاً ناپدید می‌شود — مقدار بین ۰ و ۱. مثلاً ۰.۰۸ یعنی در ۸٪ اسکرول هیرو به طور کامل fade out می‌شود. عدد کوچک‌تر = محو سریع‌تر.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0.08
     },
     "scroll_scale_end": {
       "type": "decimal",
-      "default": 0.85,
-      "description": "نسبت کوچک‌شدن (scale) هیرو در پایان انیمیشن اسکرول — مقدار بین ۰ و ۱. مثلاً ۰.۸۵ یعنی هیرو تا ۸۵٪ اندازه اصلی خود کوچک می‌شود. ۱ = بدون تغییر اندازه.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0.85
     },
     "scroll_y_end": {
       "type": "integer",
-      "default": -60,
-      "description": "میزان جابجایی عمودی (translateY) هیرو هنگام اسکرول به پیکسل — عدد منفی = حرکت به بالا. مثلاً ‎-60 یعنی هیرو ۶۰ پیکسل به سمت بالا می‌رود و حس عمق ایجاد می‌کند.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": -60
     },
     "morph_1_threshold": {
       "type": "decimal",
-      "default": 0.15,
-      "description": "آستانه اسکرول تبدیل اول — درصدی از scrollYProgress که در آن ساختار سه‌بعدی از شکل مکعب روبیک شروع به تبدیل به کارت‌های باز شده می‌کند. بین ۰ و morph_2 باشد.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0.15
     },
     "morph_2_threshold": {
       "type": "decimal",
-      "default": 0.45,
-      "description": "آستانه اسکرول تبدیل دوم — درصدی از scrollYProgress که در آن کارت‌های باز شده به شکل رقص تانگو (دو شخصیت) تبدیل می‌شوند. بین morph_1 و morph_3 باشد.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0.45
     },
     "morph_3_threshold": {
       "type": "decimal",
-      "default": 0.75,
-      "description": "آستانه اسکرول تبدیل سوم — درصدی از scrollYProgress که در آن تبدیل نهایی کامل شده و صحنه سه‌بعدی به حالت پایانی خود می‌رسد. باید بزرگ‌تر از morph_2 باشد.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0.75
     }
   }
 }

@@ -1334,6 +1334,37 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSettingSetting extends Struct.SingleTypeSchema {
+  collectionName: 'settings';
+  info: {
+    displayName: '\u062A\u0646\u0638\u06CC\u0645\u0627\u062A';
+    pluralName: 'settings';
+    singularName: 'setting';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::setting.setting'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSmartPackageSmartPackage
   extends Struct.CollectionTypeSchema {
   collectionName: 'smart_packages';
@@ -2035,6 +2066,7 @@ declare module '@strapi/strapi' {
       'api::hero-config.hero-config': ApiHeroConfigHeroConfig;
       'api::product.product': ApiProductProduct;
       'api::service.service': ApiServiceService;
+      'api::setting.setting': ApiSettingSetting;
       'api::smart-package.smart-package': ApiSmartPackageSmartPackage;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'plugin::content-releases.release': PluginContentReleasesRelease;

@@ -18,48 +18,78 @@
   "attributes": {
     "package_key": {
       "type": "enumeration",
-      "enum": ["economic", "standard", "professional", "enterprise", "premium"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "required": true,
-      "description": "شناسه یکتای پکیج برای منطق پیشنهاددهی — نباید تغییر کند. economic=اقتصادی، standard=استاندارد، professional=حرفه‌ای، enterprise=سازمانی، premium=پریمیوم",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "enum": [
+        "economic",
+        "standard",
+        "professional",
+        "enterprise",
+        "premium"
+      ]
     },
     "name": {
       "type": "string",
-      "required": true,
-      "description": "نام نمایشی پکیج — در کارت نتیجه به عنوان تیتر اصلی نمایش داده می‌شود",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
     },
     "products": {
       "type": "text",
-      "description": "ویژگی‌های پکیج — هر ویژگی در یک خط جداگانه بنویسید. هر خط به عنوان یک آیتم در لیست امکانات نمایش داده می‌شود",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "advantage": {
       "type": "text",
-      "description": "توضیح مزیت اصلی پکیج — چند جمله که دلیل انتخاب این پکیج را توضیح می‌دهد",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "response_time": {
       "type": "string",
-      "description": "زمان پاسخ تیم پشتیبانی — مثال: ۲۴ ساعت یا آنی",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "price_range": {
       "type": "string",
-      "description": "بازه قیمت نمایشی — مثال: ۳ تا ۷ میلیون تومان",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "min_budget": {
       "type": "integer",
-      "required": true,
-      "description": "حداقل بودجه موردنیاز برای این پکیج به تومان — برای منطق پیشنهاددهی استفاده می‌شود. مثال: 3000000",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true
     },
     "sort_order": {
       "type": "integer",
-      "default": 0,
-      "description": "ترتیب نمایش پکیج‌ها در ماشین‌حساب هوشمند — عدد کمتر = نمایش زودتر",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0
     }
   }
 }

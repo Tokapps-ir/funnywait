@@ -22,11 +22,15 @@ const MOCK_SMART_PACKAGES: Record<string, StrapiResponse<SmartPackage[]>> = {
 export async function getSmartPackages(locale = 'fa'): Promise<StrapiResponse<SmartPackage|any[]>> {
   try {
     const smartPackageService=strapiSDK.collection('smart-packages');
-
-    return await smartPackageService.find({
+    const response = await smartPackageService.find({
       locale:locale,
       sort:'sort_order:asc',
     });
+    // Filter by enabled field
+    if (response.data && Array.isArray(response.data)) {
+      response.data = response.data.filter((item: any) => item.enabled !== false);
+    }
+    return response;
   } catch {
     console.warn('Using mock smart packages due to API error');
     return MOCK_SMART_PACKAGES[locale] ?? MOCK_SMART_PACKAGES.fa;

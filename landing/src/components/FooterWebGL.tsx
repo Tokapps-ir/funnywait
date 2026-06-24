@@ -19,8 +19,7 @@ export const FooterWebGL: React.FC = () => {
       try {
         // Dynamically import the Grid2Background
         // @ts-ignore
-        const grid2Module = await import('http://127.0.0.1:3000/js/grid2.cdn.min.js');
-        console.log(grid2Module);
+        const grid2Module = await import('./../../public/js/grid2.cdn.min');
         const bg = grid2Module.default(canvasRef.current);
         setBgInstance(bg);
 
@@ -96,7 +95,7 @@ export const FooterWebGL: React.FC = () => {
           <div>
             <h4 className="font-bold mb-6 text-white">لینک‌های سریع</h4>
             <ul className="space-y-4 text-white/40 text-sm">
-              {footerData.quick_links.map((link, index) => (
+              {footerData.quick_links.length>0 && footerData.quick_links.map((link, index) => (
                 <li key={index}>
                   <div className="relative group">
                     <PixelCanvas

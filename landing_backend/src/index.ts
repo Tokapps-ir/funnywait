@@ -3,41 +3,41 @@ import type { Core } from '@strapi/strapi';
 // ─── Seed data ────────────────────────────────────────────────────────────────
 
 const GALLERY_ITEMS_FA = [
-  { title: 'بازی تعاملی',      caption: 'مشتریان با سرگرمی‌های تعاملی وقت انتظار را فراموش می‌کنند', category: 'بازی و سرگرمی',  sort_order: 1 },
-  { title: 'لبخند مشتریان',    caption: 'رضایت مشتریان ما را به پیش می‌برد',                           category: 'رضایت مشتری',   sort_order: 2 },
-  { title: 'تعامل هدفمند',     caption: 'هر تعامل یک فرصت برای ایجاد ارزش',                           category: 'رضایت مشتری',   sort_order: 3 },
-  { title: 'افزایش درآمد',     caption: 'رشد درآمد کسب‌وکار با مدیریت هوشمند انتظار',                 category: 'رشد کسب‌وکار',  sort_order: 4 },
-  { title: 'مدیریت انتظار',    caption: 'سیستم نوبت‌دهی هوشمند برای صف‌های شلوغ',                    category: 'مدیریت',         sort_order: 5 },
-  { title: 'رضایت مشتری',      caption: 'مشتریان راضی بازمی‌گردند و توصیه می‌کنند',                   category: 'رضایت مشتری',   sort_order: 6 },
-  { title: 'رشد کسب‌وکار',     caption: 'فانی‌ویت موتور رشد کسب‌وکار شماست',                         category: 'رشد کسب‌وکار',  sort_order: 7 },
-  { title: 'تجربه منحصربفرد',  caption: 'هر مشتری یک تجربه به یادماندنی می‌برد',                      category: 'بازی و سرگرمی',  sort_order: 8 },
+  { title: 'بازی تعاملی',      caption: 'مشتریان با سرگرمی‌های تعاملی وقت انتظار را فراموش می‌کنند', category: 'بازی و سرگرمی',  sort_order: 1, enabled: true },
+  { title: 'لبخند مشتریان',    caption: 'رضایت مشتریان ما را به پیش می‌برد',                           category: 'رضایت مشتری',   sort_order: 2, enabled: true },
+  { title: 'تعامل هدفمند',     caption: 'هر تعامل یک فرصت برای ایجاد ارزش',                           category: 'رضایت مشتری',   sort_order: 3, enabled: true },
+  { title: 'افزایش درآمد',     caption: 'رشد درآمد کسب‌وکار با مدیریت هوشمند انتظار',                 category: 'رشد کسب‌وکار',  sort_order: 4, enabled: true },
+  { title: 'مدیریت انتظار',    caption: 'سیستم نوبت‌دهی هوشمند برای صف‌های شلوغ',                    category: 'مدیریت',         sort_order: 5, enabled: true },
+  { title: 'رضایت مشتری',      caption: 'مشتریان راضی بازمی‌گردند و توصیه می‌کنند',                   category: 'رضایت مشتری',   sort_order: 6, enabled: true },
+  { title: 'رشد کسب‌وکار',     caption: 'فانی‌ویت موتور رشد کسب‌وکار شماست',                         category: 'رشد کسب‌وکار',  sort_order: 7, enabled: true },
+  { title: 'تجربه منحصربفرد',  caption: 'هر مشتری یک تجربه به یادماندنی می‌برد',                      category: 'بازی و سرگرمی',  sort_order: 8, enabled: true },
 ];
 
 const GALLERY_ITEMS_EN = [
-  { title: 'Interactive Games',     caption: 'Customers forget waiting time with interactive entertainment', category: 'Games & Fun' },
-  { title: 'Happy Customers',       caption: 'Customer satisfaction drives us forward',                      category: 'Satisfaction' },
-  { title: 'Targeted Engagement',   caption: 'Every interaction is an opportunity to create value',          category: 'Satisfaction' },
-  { title: 'Revenue Growth',        caption: 'Grow your business revenue with smart wait management',        category: 'Business Growth' },
-  { title: 'Wait Management',       caption: 'Smart queue system for busy waiting rooms',                    category: 'Management' },
-  { title: 'Customer Satisfaction', caption: 'Satisfied customers return and recommend',                     category: 'Satisfaction' },
-  { title: 'Business Growth',       caption: 'FunnyWait is your business growth engine',                     category: 'Business Growth' },
-  { title: 'Unique Experience',     caption: 'Every customer leaves with a memorable experience',            category: 'Games & Fun' },
+  { title: 'Interactive Games',     caption: 'Customers forget waiting time with interactive entertainment', category: 'Games & Fun',      enabled: true },
+  { title: 'Happy Customers',       caption: 'Customer satisfaction drives us forward',                      category: 'Satisfaction',    enabled: true },
+  { title: 'Targeted Engagement',   caption: 'Every interaction is an opportunity to create value',          category: 'Satisfaction',    enabled: true },
+  { title: 'Revenue Growth',        caption: 'Grow your business revenue with smart wait management',        category: 'Business Growth', enabled: true },
+  { title: 'Wait Management',       caption: 'Smart queue system for busy waiting rooms',                    category: 'Management',      enabled: true },
+  { title: 'Customer Satisfaction', caption: 'Satisfied customers return and recommend',                     category: 'Satisfaction',    enabled: true },
+  { title: 'Business Growth',       caption: 'FunnyWait is your business growth engine',                     category: 'Business Growth', enabled: true },
+  { title: 'Unique Experience',     caption: 'Every customer leaves with a memorable experience',            category: 'Games & Fun',     enabled: true },
 ];
 
 // slug ← matches gallery-group.slug (localization-independent)
 // category (fa) is used to link items → groups during seed
 const GALLERY_GROUPS_FA = [
-  { name: 'بازی و سرگرمی',  slug: 'games-fun',       sort_order: 1 },
-  { name: 'رضایت مشتری',    slug: 'satisfaction',    sort_order: 2 },
-  { name: 'رشد کسب‌وکار',   slug: 'business-growth', sort_order: 3 },
-  { name: 'مدیریت',          slug: 'management',      sort_order: 4 },
+  { name: 'بازی و سرگرمی',  slug: 'games-fun',       sort_order: 1, enabled: true },
+  { name: 'رضایت مشتری',    slug: 'satisfaction',    sort_order: 2, enabled: true },
+  { name: 'رشد کسب‌وکار',   slug: 'business-growth', sort_order: 3, enabled: true },
+  { name: 'مدیریت',          slug: 'management',      sort_order: 4, enabled: true },
 ];
 
 const GALLERY_GROUPS_EN = [
-  { name: 'Games & Fun'    },
-  { name: 'Satisfaction'   },
-  { name: 'Business Growth'},
-  { name: 'Management'     },
+  { name: 'Games & Fun',     enabled: true },
+  { name: 'Satisfaction',    enabled: true },
+  { name: 'Business Growth', enabled: true },
+  { name: 'Management',      enabled: true },
 ];
 
 // Persian category → group slug mapping (for seed linking)
@@ -57,6 +57,7 @@ const BUSINESS_PARTNERS_FA = [
     achievements: 'همکاری طولانی مدت\nپروژه‌های موفق متعدد',
     description: 'همکاری بسیار موثر و حرفه‌ای. تیم پویا و دارای دانش فنی بالا.',
     sort_order: 1,
+    enabled: true,
   },
   {
     name: 'نرگس حسنی',
@@ -66,6 +67,7 @@ const BUSINESS_PARTNERS_FA = [
     achievements: 'راهکارهای نوآورانه\nپیاده‌سازی موفق پروژه‌ها',
     description: 'ارائه راهکارهای نوآورانه و پیاده‌سازی موفق پروژه‌ها.',
     sort_order: 2,
+    enabled: true,
   },
   {
     name: 'رضا کمالی',
@@ -75,6 +77,7 @@ const BUSINESS_PARTNERS_FA = [
     achievements: 'کیفیت بالا\nتعهد قوی',
     description: 'کیفیت بالا و تعهد قوی به تعهدات. همکاری بسیار رضایت‌بخش.',
     sort_order: 3,
+    enabled: true,
   },
   {
     name: 'زهرا محمدی',
@@ -84,6 +87,7 @@ const BUSINESS_PARTNERS_FA = [
     achievements: 'ارتباطات خوب\nاجرای دقیق',
     description: 'ارتباطات بسیار خوب و اجرای دقیق پروژه‌ها در زمان مقرر.',
     sort_order: 4,
+    enabled: true,
   },
 ];
 
@@ -94,6 +98,7 @@ const BUSINESS_PARTNERS_EN = [
     location: 'Tehran',
     achievements: 'Long-term partnership\nMultiple successful projects',
     description: 'Highly effective and professional collaboration. A dynamic team with strong technical expertise.',
+    enabled: true,
   },
   {
     name: 'Narges Hasani',
@@ -101,6 +106,7 @@ const BUSINESS_PARTNERS_EN = [
     location: 'Isfahan',
     achievements: 'Innovative solutions\nSuccessful project delivery',
     description: 'Providing innovative solutions and successful project execution.',
+    enabled: true,
   },
   {
     name: 'Reza Kamali',
@@ -108,6 +114,7 @@ const BUSINESS_PARTNERS_EN = [
     location: 'Mashhad',
     achievements: 'High quality\nStrong commitment',
     description: 'High quality and strong commitment. A very satisfying partnership.',
+    enabled: true,
   },
   {
     name: 'Zahra Mohammadi',
@@ -115,6 +122,7 @@ const BUSINESS_PARTNERS_EN = [
     location: 'Shiraz',
     achievements: 'Great communication\nPrecise execution',
     description: 'Excellent communication and precise project delivery on time.',
+    enabled: true,
   },
 ];
 
@@ -128,6 +136,7 @@ const SMART_PACKAGES_FA = [
     price_range: '۱ تا ۳ میلیون تومان',
     min_budget: 1000000,
     sort_order: 1,
+    enabled: true,
   },
   {
     package_key: 'standard' as const,
@@ -138,6 +147,7 @@ const SMART_PACKAGES_FA = [
     price_range: '۳ تا ۷ میلیون تومان',
     min_budget: 3000000,
     sort_order: 2,
+    enabled: true,
   },
   {
     package_key: 'professional' as const,
@@ -148,6 +158,7 @@ const SMART_PACKAGES_FA = [
     price_range: '۷ تا ۱۵ میلیون تومان',
     min_budget: 7000000,
     sort_order: 3,
+    enabled: true,
   },
   {
     package_key: 'enterprise' as const,
@@ -158,6 +169,7 @@ const SMART_PACKAGES_FA = [
     price_range: '۱۵ تا ۵۰ میلیون تومان',
     min_budget: 15000000,
     sort_order: 4,
+    enabled: true,
   },
   {
     package_key: 'premium' as const,
@@ -168,6 +180,7 @@ const SMART_PACKAGES_FA = [
     price_range: 'بیش از ۵۰ میلیون تومان',
     min_budget: 50000000,
     sort_order: 5,
+    enabled: true,
   },
 ];
 
@@ -178,6 +191,7 @@ const SMART_PACKAGES_EN = [
     advantage: 'The best option to start with minimal cost and basic visitor management.',
     response_time: '48 hours',
     price_range: '1 to 3 million IRT',
+    enabled: true,
   },
   {
     name: 'Standard Package',
@@ -185,6 +199,7 @@ const SMART_PACKAGES_EN = [
     advantage: 'Perfect balance between price and features for growing businesses.',
     response_time: '24 hours',
     price_range: '3 to 7 million IRT',
+    enabled: true,
   },
   {
     name: 'Professional Package',
@@ -192,6 +207,7 @@ const SMART_PACKAGES_EN = [
     advantage: 'An exceptional experience for prominent brands seeking differentiation.',
     response_time: '12 hours',
     price_range: '7 to 15 million IRT',
+    enabled: true,
   },
   {
     name: 'Enterprise Package',
@@ -199,6 +215,7 @@ const SMART_PACKAGES_EN = [
     advantage: 'A comprehensive and scalable solution for large chains and enterprises.',
     response_time: '4 hours',
     price_range: '15 to 50 million IRT',
+    enabled: true,
   },
   {
     name: 'Premium Package',
@@ -206,17 +223,20 @@ const SMART_PACKAGES_EN = [
     advantage: 'The most luxurious and advanced service level for the most exclusive clients.',
     response_time: 'Instant',
     price_range: 'Over 50 million IRT',
+    enabled: true,
   },
 ];
 
 const FEATURES_CONFIG_FA = {
   section_title: 'چرا فانی‌ویت؟',
   section_subtitle: 'ویژگی‌هایی که ما را متمایز می‌کنند',
+  enabled: true,
 };
 
 const FEATURES_CONFIG_EN = {
   section_title: 'Why FunnyWait?',
   section_subtitle: 'Features that set us apart',
+  enabled: true,
 };
 
 const FEATURE_CARDS_FA = [
@@ -227,6 +247,7 @@ const FEATURE_CARDS_FA = [
     content_description:
       'ما با استفاده از شبکه‌های توزیع محتوا (CDN) و بهینه‌سازی‌های فنی، سرعت عمل بالایی را برای کاربران فراهم می‌کنیم. این شامل کش‌کردن اطلاعات، کاهش زمان بارگذاری و بهینه‌سازی کدها می‌شود.',
     sort_order: 1,
+           enabled: true,
   },
   {
     title: 'چگونه امنیت داده‌ها را تضمین می‌کنید؟',
@@ -235,6 +256,7 @@ const FEATURE_CARDS_FA = [
     content_description:
       'حفاظت از داده‌های کاربران اولویت اصلی ما است. ما از روش‌های رمزگذاری پیشرفته، مدیریت دسترسی مبتنی بر نقش (RBAC) و پروتکل‌های امنیتی صنعتی برای تضمین امنیت کامل استفاده می‌کنیم.',
     sort_order: 2,
+           enabled: true,
   },
   {
     title: 'چگونه مقیاس‌پذیری سیستم را ارائه می‌دهید؟',
@@ -243,6 +265,7 @@ const FEATURE_CARDS_FA = [
     content_description:
       'سیستم ما بر پایه معماری میکروسرویس و ابر محور طراحی شده است که امکان مقیاس‌پذیری افقی و عمودی را فراهم می‌کند. این امر باعث می‌شود بدون توقف سرویس، قابلیت گسترش به راحتی انجام شود.',
     sort_order: 3,
+           enabled: true,
   },
   {
     title: 'چگونه با سیستم‌های دیگر یکپارچه می‌شوید؟',
@@ -251,6 +274,7 @@ const FEATURE_CARDS_FA = [
     content_description:
       'ما از APIهای RESTful و WebSocket برای یکپارچه‌سازی با سیستم‌های مختلف استفاده می‌کنیم. این امکان را فراهم می‌کند تا سیستم‌های موجود به راحتی با خدمات ما ارتباط برقرار کنند.',
     sort_order: 4,
+           enabled: true,
   },
 ];
 
@@ -296,6 +320,7 @@ const TESTIMONIALS_FA = [
     rating: 5,
     featured: true,
     sort_order: 1,
+    enabled: true,
   },
   {
     author_name: 'فاطمه رضایی',
@@ -305,6 +330,7 @@ const TESTIMONIALS_FA = [
     rating: 5,
     featured: true,
     sort_order: 2,
+    enabled: true,
   },
   {
     author_name: 'محمد حسن‌زاده',
@@ -314,6 +340,7 @@ const TESTIMONIALS_FA = [
     rating: 5,
     featured: true,
     sort_order: 3,
+    enabled: true,
   },
   {
     author_name: 'نازنین کریمی',
@@ -323,6 +350,7 @@ const TESTIMONIALS_FA = [
     rating: 4,
     featured: false,
     sort_order: 4,
+    enabled: true,
   },
   {
     author_name: 'سعید مرادی',
@@ -332,6 +360,7 @@ const TESTIMONIALS_FA = [
     rating: 5,
     featured: false,
     sort_order: 5,
+    enabled: true,
   },
 ];
 
@@ -344,6 +373,7 @@ const TESTIMONIALS_EN = [
     rating: 5,
     featured: true,
     sort_order: 1,
+    enabled: true,
   },
   {
     author_name: 'Fateme Rezaei',
@@ -353,6 +383,7 @@ const TESTIMONIALS_EN = [
     rating: 5,
     featured: true,
     sort_order: 2,
+    enabled: true,
   },
   {
     author_name: 'Mohammad Hasanzadeh',
@@ -362,6 +393,7 @@ const TESTIMONIALS_EN = [
     rating: 5,
     featured: true,
     sort_order: 3,
+    enabled: true,
   },
   {
     author_name: 'Nazanin Karimi',
@@ -371,6 +403,7 @@ const TESTIMONIALS_EN = [
     rating: 4,
     featured: false,
     sort_order: 4,
+    enabled: true,
   },
   {
     author_name: 'Saeed Moradi',
@@ -380,6 +413,7 @@ const TESTIMONIALS_EN = [
     rating: 5,
     featured: false,
     sort_order: 5,
+    enabled: true,
   },
 ];
 
@@ -400,6 +434,7 @@ const HERO_FA = {
   morph_1_threshold: 0.15,
   morph_2_threshold: 0.45,
   morph_3_threshold: 0.75,
+  enabled: true,
 };
 
 const HERO_EN = {
@@ -411,6 +446,7 @@ const HERO_EN = {
   subtitle_highlight_2: 'profitable',
   cta_text: 'Discover FunnyWait',
   scroll_hint: 'Scroll',
+  enabled: true,
 };
 
 const CALC_FA = {
@@ -425,12 +461,14 @@ const CALC_FA = {
   high_profit_msg: 'سرمایه‌گذاری کاملاً توجیه‌پذیر است',
   mid_profit_msg: 'پتانسیل رشد بالا با بهینه‌سازی مشارکت',
   low_profit_msg: 'نیاز به افزایش تعامل کاربران',
+  enabled: true,
 };
 
 const CALC_EN = {
   high_profit_msg: 'Investment is fully justified',
   mid_profit_msg: 'High growth potential with participation optimization',
   low_profit_msg: 'User engagement needs improvement',
+  enabled: true,
 };
 
 const PRODUCTS_FA = [
@@ -441,6 +479,7 @@ const PRODUCTS_FA = [
     price: '۹۵۰,۰۰۰ تومان / ماه',
     shop_url: 'https://shop.funnywait.ir/basic',
     long_description: '## پکیج پایه فانی‌ویت\n\nاین پکیج مناسب کسب‌وکارهای کوچک و نوپاست که می‌خواهند با کمترین هزینه، تجربه انتظار مشتریان خود را بهبود دهند.\n\n### امکانات\n- **مدیریت صف پایه**: سیستم نوبت‌دهی ساده و کاربرپسند\n- **۳ بازی کلاسیک انتخابی**: سرگرمی‌های متنوع برای کاهش حس انتظار\n- **گزارش‌دهی ماهانه**: آمار کلی عملکرد سیستم\n- **پشتیبانی ایمیلی**: پاسخگویی در ساعات اداری\n\n### مزایا\nبا هزینه بسیار مناسب، اولین قدم را به سمت مدیریت هوشمند زمان انتظار بردارید.',
+    enabled: true,
   },
   {
     title: 'پکیج حرفه‌ای فانی‌ویت',
@@ -449,6 +488,7 @@ const PRODUCTS_FA = [
     price: '۲,۴۰۰,۰۰۰ تومان / ماه',
     shop_url: 'https://shop.funnywait.ir/pro',
     long_description: '## پکیج حرفه‌ای فانی‌ویت\n\nراهکاری جامع و حرفه‌ای برای مراکز خدماتی پرتردد که به دنبال تجربه‌ای متمایز هستند.\n\n### امکانات\n- **تمامی بازی‌های موجود**: دسترسی نامحدود به کتابخانه بازی‌ها\n- **شخصی‌سازی کامل برند**: لوگو، رنگ‌ها و محتوای اختصاصی\n- **پنل مدیریت پیشرفته**: کنترل کامل بر تمام جنبه‌های سیستم\n- **پشتیبانی VIP**: پاسخگویی سریع و اختصاصی\n- **تحلیل رفتار مشتریان**: بینش عمیق از الگوهای رفتاری\n\n### مزایا\nبرند خود را متمایز کنید و تجربه‌ای فراموش‌نشدنی برای مشتریانتان بسازید.',
+    enabled: true,
   },
   {
     title: 'پکیج مراکز درمانی',
@@ -457,6 +497,7 @@ const PRODUCTS_FA = [
     price: '۳,۸۰۰,۰۰۰ تومان / ماه',
     shop_url: 'https://shop.funnywait.ir/medical',
     long_description: '## پکیج مراکز درمانی\n\nاین پکیج به‌طور ویژه برای محیط‌های بهداشتی و درمانی طراحی شده است.\n\n### امکانات\n- **محتوای آموزشی تعاملی**: اطلاعات سلامت و بهداشت به صورت جذاب\n- **سیستم نوبت‌دهی هوشمند**: مدیریت دقیق نوبت‌ها و زمان انتظار\n- **بازی‌های آرامش‌بخش**: کاهش اضطراب و استرس بیماران\n- **اطلاع‌رسانی خودکار**: پیامک و نوتیفیکیشن برای بیماران\n\n### مزایا\nمحیط انتظار کلینیک خود را به فضایی آرام و آموزنده تبدیل کنید.',
+    enabled: true,
   },
 ];
 
@@ -467,6 +508,7 @@ const PRODUCTS_EN = [
     features: 'Basic queue management, 3 selected games, monthly report',
     price: '950,000 IRT / month',
     long_description: '## FunnyWait Basic Package\n\nPerfect for small businesses getting started with smart wait management.\n\n### Features\n- **Basic queue management**: Simple and user-friendly queuing system\n- **3 classic games**: Fun entertainment to reduce perceived wait time\n- **Monthly reporting**: Overview of system performance\n- **Email support**: Business hours response\n\n### Benefits\nTake the first step toward smart wait-time management at minimal cost.',
+    enabled: true,
   },
   {
     title: 'FunnyWait Professional Package',
@@ -474,6 +516,7 @@ const PRODUCTS_EN = [
     features: 'All games, brand customization, advanced management panel, VIP support',
     price: '2,400,000 IRT / month',
     long_description: '## FunnyWait Professional Package\n\nA comprehensive solution for high-traffic service centers seeking distinction.\n\n### Features\n- **All available games**: Unlimited access to the game library\n- **Full brand customization**: Logo, colors, and custom content\n- **Advanced management panel**: Complete control over all system aspects\n- **VIP support**: Fast and dedicated response\n- **Customer behavior analytics**: Deep insights into behavioral patterns\n\n### Benefits\nDifferentiate your brand and build an unforgettable experience for your customers.',
+    enabled: true,
   },
   {
     title: 'Medical Centers Package',
@@ -481,6 +524,7 @@ const PRODUCTS_EN = [
     features: 'Interactive educational content, smart appointment system, relaxing games',
     price: '3,800,000 IRT / month',
     long_description: '## Medical Centers Package\n\nSpecially designed for healthcare environments.\n\n### Features\n- **Interactive health education**: Engaging health and wellness information\n- **Smart appointment system**: Precise appointment and wait-time management\n- **Relaxing games**: Reduce patient anxiety and stress\n- **Automatic notifications**: SMS and push notifications for patients\n\n### Benefits\nTransform your clinic waiting room into a calm and educational space.',
+    enabled: true,
   },
 ];
 
@@ -617,36 +661,42 @@ const SERVICES_FA = [
     description: 'سیستم نوبت‌دهی هوشمند که مدیریت صف‌های شلوغ را ساده می‌کند و تجربه مشتری را بهبود می‌بخشد.',
     features: 'نوبت‌دهی خودکار، ردیابی صف بلادرنگ، اطلاع‌رسانی خودکار، یکپارچگی سیستم‌های پذیرش',
     icon: 'Code' as const,
+    enabled: true,
   },
   {
     title: 'بازی‌های تعاملی و سرگرمی',
     description: 'مجموعه بازی‌های متنوع و سرگرم‌کننده برای کاهش احساس انتظار مشتریان.',
     features: 'بازی‌های کلاسیک، بازی‌های آموزشی، بازی‌های سفارشی، گیم‌ها برای تمام سنین',
     icon: 'Package' as const,
+    enabled: true,
   },
   {
     title: 'پنل مدیریت پیشرفته',
     description: 'داشبورد جامع برای کنترل کامل سیستم و نمایش آمار بلادرنگ.',
     features: 'داشبورد تحلیلی، گزارش‌های دقیق، مدیریت محتوا، کنترل سطح دسترسی',
     icon: 'Server' as const,
+    enabled: true,
   },
   {
     title: 'شخصی‌سازی برند',
     description: 'تطابق کامل سیستم با هویت بصری برند شما.',
     features: 'لوگو و رنگ‌های اختصاصی، پوسترهای سفارشی، متن و پیام‌های شرکتی، تم‌های مختلف',
     icon: 'Smartphone' as const,
+    enabled: true,
   },
   {
     title: 'تحلیل رفتار مشتری',
     description: 'درک عمیق از رفتار و ترجیحات مشتریان برای بهینه‌سازی خدمات.',
     features: 'آمار بازدید، تحلیل بازی‌های محبوب، زمان تعامل، نرخ رضایت مشتری',
     icon: 'Wrench' as const,
+    enabled: true,
   },
   {
     title: 'پشتیبانی ۲۴/۷',
     description: 'تیم پشتیبانی مجرب همیشه آماده کمک و حل مشکلات.',
     features: 'پاسخگویی سریع، پشتیبانی تلفنی و ایمیلی، راهنمایی فنی، آپدیت رایگان',
     icon: 'Star' as const,
+    enabled: true,
   },
 ];
 
@@ -656,36 +706,42 @@ const SERVICES_EN = [
     description: 'Intelligent appointment system that simplifies managing busy queues and improves customer experience.',
     features: 'Automatic appointment scheduling, Real-time queue tracking, Automatic notifications, POS system integration',
     icon: 'Code' as const,
+    enabled: true,
   },
   {
     title: 'Interactive Games & Entertainment',
     description: 'A variety of engaging games and entertainment to reduce customer perception of wait time.',
     features: 'Classic games, Educational games, Custom games, Games for all ages',
     icon: 'Package' as const,
+    enabled: true,
   },
   {
     title: 'Advanced Management Panel',
     description: 'Comprehensive dashboard for complete system control and real-time analytics display.',
     features: 'Analytical dashboard, Detailed reports, Content management, Access level control',
     icon: 'Server' as const,
+    enabled: true,
   },
   {
     title: 'Brand Customization',
     description: 'Full system alignment with your brand visual identity.',
     features: 'Custom logo and colors, Custom posters, Company messages and text, Various themes',
     icon: 'Smartphone' as const,
+    enabled: true,
   },
   {
     title: 'Customer Behavior Analytics',
     description: 'Deep understanding of customer behavior and preferences to optimize your services.',
     features: 'Visit statistics, Popular games analysis, Engagement time, Customer satisfaction rate',
     icon: 'Wrench' as const,
+    enabled: true,
   },
   {
     title: '24/7 Support',
     description: 'Experienced support team always ready to help and resolve issues.',
     features: 'Fast response, Phone and email support, Technical guidance, Free updates',
     icon: 'Star' as const,
+    enabled: true,
   },
 ];
 
@@ -713,6 +769,7 @@ async function seedCustomers(strapi: Core.Strapi) {
           email: 'contact@techcompany.com',
           partnership_date: '2023-01-15',
           sort_order: 1,
+           enabled: true,
         },
         {
           name: 'شرکت نرم‌افزاری آرمان',
@@ -730,6 +787,7 @@ async function seedCustomers(strapi: Core.Strapi) {
           email: 'info@softwarecompany.ir',
           partnership_date: '2022-08-20',
           sort_order: 2,
+           enabled: true,
         },
         {
           name: 'استارتاپ هوش مصنوعی',
@@ -747,6 +805,7 @@ async function seedCustomers(strapi: Core.Strapi) {
           email: 'hello@aistartup.ir',
           partnership_date: '2023-03-10',
           sort_order: 3,
+           enabled: true,
         },
         {
           name: 'شرکت دیجیتال نوین',
@@ -764,6 +823,7 @@ async function seedCustomers(strapi: Core.Strapi) {
           email: 'support@digitalcompany.ir',
           partnership_date: '2023-06-01',
           sort_order: 4,
+           enabled: true,
         },
         {
           name: 'گروه فناوری مدرن',
@@ -781,6 +841,7 @@ async function seedCustomers(strapi: Core.Strapi) {
           email: 'contact@modern-tech.ir',
           partnership_date: '2022-01-05',
           sort_order: 5,
+           enabled: true,
         },
         {
           name: 'شرکت ابری پیشرو',
@@ -798,6 +859,7 @@ async function seedCustomers(strapi: Core.Strapi) {
           email: 'info@cloudcompany.ir',
           partnership_date: '2023-02-14',
           sort_order: 6,
+           enabled: true,
         }
       ];
 
@@ -818,6 +880,7 @@ async function seedCustomers(strapi: Core.Strapi) {
           email: 'contact@techcompany.com',
           partnership_date: '2023-01-15',
           sort_order: 1,
+           enabled: true,
         },
         {
           name: 'Software Solutions Co.',
@@ -835,6 +898,7 @@ async function seedCustomers(strapi: Core.Strapi) {
           email: 'info@softwarecompany.ir',
           partnership_date: '2022-08-20',
           sort_order: 2,
+           enabled: true,
         },
         {
           name: 'AI Startup Inc.',
@@ -1046,9 +1110,37 @@ async function seedServices(strapi: Core.Strapi) {
 // ─── Bootstrap ────────────────────────────────────────────────────────────────
 
 async function seedPublicPermissions(strapi: Core.Strapi) {
-  strapi.log.info('[seed] ⚠️  Permissions must be manually configured in Admin panel:');
-  strapi.log.info('[seed] Settings → Users & Permissions → Roles → Public');
-  strapi.log.info('[seed] Enable "find" and "findOne" for all Content Types');
+  try {
+    // Get SQLite database and enable public permissions directly via SQL
+    const db = strapi.db.connection;
+    
+    // Get the Public role ID (should be 2)
+    const publicRoleId = 2;
+    
+    // Get all permissions and link them to the public role
+    const allPermissions = await db.raw(`
+      SELECT id FROM up_permissions
+      WHERE action LIKE 'api::%'
+      AND (action LIKE '%.find' OR action LIKE '%.findOne')
+    `);
+
+    if (allPermissions && allPermissions.length > 0) {
+      for (const perm of allPermissions) {
+        try {
+          await db.raw(`
+            INSERT OR IGNORE INTO up_permissions_role_lnk (permission_id, role_id)
+            VALUES (${perm.id}, ${publicRoleId})
+          `);
+        } catch (e) {
+          // Ignore duplicate entries
+        }
+      }
+      strapi.log.info(`[seed] Public API permissions enabled for ${allPermissions.length} actions`);
+    }
+  } catch (e) {
+    // Silently fail - permissions can be set manually in admin panel
+    strapi.log.warn('[seed] Could not auto-enable permissions:', e);
+  }
 }
 
 export default {

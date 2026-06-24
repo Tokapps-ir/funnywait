@@ -93,17 +93,19 @@ export async function getTestimonials(locale = 'fa'): Promise<StrapiResponse<Tes
       return MOCK_TESTIMONIALS[locale] ?? MOCK_TESTIMONIALS.fa;
     }
     // Map API fields to Testimonial interface
-    const mappedData = response.data.map((item: any) => ({
-      id: item.id,
-      documentId: item.documentId,
-      name: item.author_name,
-      role: item.company + (item.position ? ` - ${item.position}` : ''),
-      text: item.comment,
-      rating: item.rating,
-      avatar: item.avatar || null,
-      sort_order: item.sort_order,
-      locale: item.locale,
-    }));
+    const mappedData = response.data
+      .filter((item: any) => item.enabled !== false)
+      .map((item: any) => ({
+        id: item.id,
+        documentId: item.documentId,
+        name: item.author_name,
+        role: item.company + (item.position ? ` - ${item.position}` : ''),
+        text: item.comment,
+        rating: item.rating,
+        avatar: item.avatar || null,
+        sort_order: item.sort_order,
+        locale: item.locale,
+      }));
     return { data: mappedData, meta: response.meta };
   } catch (error) {
     console.warn('Using mock testimonials due to API error:', error);

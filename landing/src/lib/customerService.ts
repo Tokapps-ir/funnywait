@@ -151,11 +151,16 @@ const MOCK_CUSTOMERS: Record<string, StrapiResponse<any[]>> = {
 export async function getCustomers(locale = 'fa'): Promise<StrapiResponse<any[]>> {
   try {
     const customers=strapiSDK.collection('customers');
-    return await customers.find({
+    const response = await customers.find({
       populate:'gallery',
       sort:'sort_order:asc',
       locale:locale
     });
+    // Filter by enabled field
+    if (response.data && Array.isArray(response.data)) {
+      response.data = response.data.filter((item: any) => item.enabled !== false);
+    }
+    return response;
   } catch {
     console.warn('Using mock customers due to API error');
     return MOCK_CUSTOMERS[locale] ?? MOCK_CUSTOMERS.fa;

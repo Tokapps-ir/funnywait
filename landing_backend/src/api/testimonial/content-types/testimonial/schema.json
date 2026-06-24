@@ -18,52 +18,78 @@
   "attributes": {
     "author_name": {
       "type": "string",
-      "required": true,
-      "description": "نام مشتری — نام کامل یا نام تجاری فردی که نظر ارائه داده است. روی کارت نمایش داده می‌شود.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
     },
     "company": {
       "type": "string",
-      "description": "نام شرکت یا سازمان متعلق مشتری — نمایش‌داده‌شده زیر نام در کارت نظر.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "position": {
       "type": "string",
-      "description": "سمت یا عنوان شغلی مشتری در شرکت — مثلاً «مدیر بازاریابی» یا «مالک».",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "comment": {
       "type": "text",
-      "required": true,
-      "description": "متن نظر و تجربه مشتری — توضیح کامل درباره تجربه استفاده از FunnyWait و تأثیر آن بر کسب‌وکار.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
     },
     "rating": {
       "type": "integer",
-      "min": 1,
-      "max": 5,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "required": true,
-      "description": "امتیاز (۱ تا ۵ ستاره) — مشترک بین زبان‌ها. برای نمایش تعداد ستاره‌های طلایی استفاده می‌شود.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "min": 1,
+      "max": 5
     },
     "featured": {
       "type": "boolean",
-      "default": false,
-      "description": "نمایش در صفحه اصلی؟ — اگر true باشد در بخش «نظرات برتر» نمایش داده می‌شود. مشترک بین زبان‌ها.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": false
     },
     "avatar": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "multiple": false,
-      "allowedTypes": ["images"],
-      "description": "تصویر یا آواتار مشتری — عکسی کوچک که روی کارت نمایش داده می‌شود. فرمت‌های مجاز: JPG, PNG, WebP. ابعاد پیشنهادی: ۱۲۰×۱۲۰ پیکسل. مشترک بین زبان‌ها.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "allowedTypes": [
+        "images"
+      ]
     },
     "sort_order": {
       "type": "integer",
-      "default": 0,
-      "description": "ترتیب نمایش — عدد کمتر = نمایش زودتر. مشترک بین زبان‌ها.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0
     }
   }
 }

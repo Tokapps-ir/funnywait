@@ -15,10 +15,15 @@ interface Service {
 export async function getServices(locale = 'fa'): Promise<StrapiResponse<Service|any[]>> {
   try {
     const services=strapiSDK.collection('services');
-    return await services.find({
+    const response = await services.find({
       populate:'*',
       locale:locale
     });
+    // Filter by enabled field
+    if (response.data && Array.isArray(response.data)) {
+      response.data = response.data.filter((item: any) => item.enabled !== false);
+    }
+    return response;
   } catch {
     console.warn('Using mock services due to API error');
     // Return mock data structure similar to other components

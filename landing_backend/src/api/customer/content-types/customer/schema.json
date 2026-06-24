@@ -18,88 +18,138 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true,
-      "description": "نام کامل مشتری یا شرکت — نمایش‌داده‌شده روی کارت و مدال",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
     },
     "logo_text": {
       "type": "string",
-      "description": "حروف اختصاری لوگو — حداکثر ۳ حرف، مثلاً «PF» یا «SA». برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "description": {
       "type": "string",
-      "description": "توضیح کوتاه درباره کسب‌وکار مشتری — یک جمله زیر نام در کارت",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "website": {
       "type": "string",
-      "description": "آدرس وب‌سایت مشتری — مثلاً https://example.com. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "industry": {
       "type": "string",
-      "description": "صنعت یا حوزه فعالیت مشتری — نمایش‌داده‌شده در تب «اطلاعات کسب‌وکار»",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "employees": {
       "type": "integer",
-      "description": "تعداد کارمندان — عدد صحیح. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "revenue": {
       "type": "string",
-      "description": "درآمد سالانه مشتری به صورت متن — مثلاً «۵ میلیارد تومان»",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "founded": {
       "type": "string",
-      "description": "سال تأسیس — مثلاً «۱۳۹۷» یا «2018». برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "street": {
       "type": "string",
-      "description": "آدرس خیابان — نمایش‌داده‌شده در تب «آدرس و نقشه»",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "city": {
       "type": "string",
-      "description": "نام شهر",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "country": {
       "type": "string",
-      "description": "نام کشور",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "phone": {
       "type": "string",
-      "description": "شماره تماس — مثلاً +98 21 1234 5678. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "email": {
       "type": "email",
-      "description": "آدرس ایمیل تماس. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "gallery": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images"],
-      "description": "تصاویر گالری مشتری — از Media Center ادمین آپلود کنید. فرمت‌های مجاز: JPG، PNG، WebP. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "allowedTypes": [
+        "images"
+      ]
     },
     "partnership_date": {
       "type": "date",
-      "description": "تاریخ آغاز همکاری با فانی‌ویت. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "sort_order": {
       "type": "integer",
-      "default": 0,
-      "description": "ترتیب نمایش کارت مشتری — عدد کمتر = نمایش زودتر. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0
     }
   }
 }

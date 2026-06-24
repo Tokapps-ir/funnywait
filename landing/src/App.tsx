@@ -371,6 +371,7 @@ export default function App() {
                     </nav>
 
                     {/* Hero Section — driven by Strapi HeroConfig */}
+
                     <Hero
                         config={heroConfig}
                         opacity={opacity}
@@ -389,59 +390,73 @@ export default function App() {
 
                     <SectionDivider/>
 
+
                     {/* Features - 3D Canvas Cards — driven by Strapi FeaturesConfig + FeatureCards */}
-                    {featuresConfig && featureCards.length > 0 && (
-                        <section id="features" className="py-24 px-6 max-w-7xl mx-auto">
-                            <SectionReveal>
-                                <FeatureCards3D config={featuresConfig} cards={featureCards}/>
-                            </SectionReveal>
-                        </section>
+                    {featureCards.length > 0 && (
+                        <>
+                            <section id="features" className="py-24 px-6 max-w-7xl mx-auto">
+                                <SectionReveal>
+                                    <FeatureCards3D config={featuresConfig} cards={featureCards}/>
+                                </SectionReveal>
+                            </section>
+
+                            <SectionDivider/>
+                        </>
                     )}
 
-                    <SectionDivider/>
-
                     {/* Calculator Section */}
-                    <SectionReveal>
-                        <div id="calculator">
-                            <Calculator config={calcConfig} resultSound={resultSound} clickSound={clickSound}/>
-                        </div>
-                    </SectionReveal>
+                    {false && (
+                        <>
+                            <SectionReveal>
+                                <div id="calculator">
+                                    <Calculator config={calcConfig} resultSound={resultSound} clickSound={clickSound}/>
+                                </div>
+                            </SectionReveal>
 
-                    <SectionDivider/>
+                            <SectionDivider/>
 
-                    {/* Smart Calculator Section */}
-                    <SectionReveal>
-                        <div id="smart-calculator">
-                            <SmartCalculator clickSound={clickSound} successSound={successSound}/>
-                        </div>
-                    </SectionReveal>
+                            <SectionReveal>
+                                <div id="smart-calculator">
+                                    <SmartCalculator clickSound={clickSound} successSound={successSound}/>
+                                </div>
+                            </SectionReveal>
 
-                    <SectionDivider/>
+                            <SectionDivider/>
+                        </>
+                    )}
+
+
+
 
                     {/* Products Section */}
-                    <section id="products" className="py-24 px-6 max-w-7xl mx-auto">
-                        <SectionReveal>
-                            <div className="text-center mb-16">
-                                <h2 className="text-5xl font-black mb-4">پکیج‌های هوشمند</h2>
-                                <p className="text-white/40">انتخاب بهترین راهکار متناسب با نیاز کسب‌وکار شما</p>
-                            </div>
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {products.map((product, i) => (
-                                    <motion.div
-                                        key={product.id}
-                                        initial={{opacity: 0, y: 40}}
-                                        whileInView={{opacity: 1, y: 0}}
-                                        viewport={{once: true}}
-                                        transition={{delay: i * 0.15, duration: 0.6, ease: [0.16, 1, 0.3, 1]}}
-                                    >
-                                        <ProductCard product={product}/>
-                                    </motion.div>
-                                ))}
-                            </div>
-                        </SectionReveal>
-                    </section>
+                    {products.length > 0 && (
+                        <>
+                            <section id="products" className="py-24 px-6 max-w-7xl mx-auto">
+                                <SectionReveal>
+                                    <div className="text-center mb-16">
+                                        <h2 className="text-5xl font-black mb-4">پکیج‌های هوشمند</h2>
+                                        <p className="text-white/40">انتخاب بهترین راهکار متناسب با نیاز کسب‌وکار شما</p>
+                                    </div>
+                                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                        {products
+                                            .map((product, i) => (
+                                            <motion.div
+                                                key={product.id}
+                                                initial={{opacity: 0, y: 40}}
+                                                whileInView={{opacity: 1, y: 0}}
+                                                viewport={{once: true}}
+                                                transition={{delay: i * 0.15, duration: 0.6, ease: [0.16, 1, 0.3, 1]}}
+                                            >
+                                                <ProductCard product={product}/>
+                                            </motion.div>
+                                        ))}
+                                    </div>
+                                </SectionReveal>
+                            </section>
 
-                    <SectionDivider/>
+                            <SectionDivider/>
+                        </>
+                    )}
 
                     {/* 3D Gallery Section */}
                     {galleryItems.length > 0 && (
@@ -502,7 +517,7 @@ export default function App() {
                     </section>
 
                     {/* WebGL Footer */}
-                    {/*<FooterWebGL/>*/}
+                    <FooterWebGL/>
 
                     {/* Custom Cursor Effect */}
                     <div className="fixed inset-0 pointer-events-none z-[100] lg:block">

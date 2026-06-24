@@ -41,6 +41,7 @@ export interface Product {
   shop_url: string;
   image: { url: string } | null;
   long_description: string | null;
+  enabled?: boolean;
   locale: string;
 }
 
@@ -61,6 +62,7 @@ export interface HeroConfig {
   morph_1_threshold: number;
   morph_2_threshold: number;
   morph_3_threshold: number;
+  enabled?: boolean;
   locale: string;
 }
 
@@ -78,6 +80,7 @@ export interface CalculatorConfig {
   high_profit_msg: string;
   mid_profit_msg: string;
   low_profit_msg: string;
+  enabled?: boolean;
   locale: string;
 }
 
@@ -86,6 +89,7 @@ export interface FeaturesConfig {
   documentId: string;
   section_title: string;
   section_subtitle: string;
+  enabled?: boolean;
   locale: string;
 }
 
@@ -100,6 +104,7 @@ export interface SmartPackage {
   price_range: string;
   min_budget: number;
   sort_order: number;
+  enabled?: boolean;
   locale: string;
 }
 
@@ -126,6 +131,7 @@ export interface BusinessPartner {
   description: string;
   logo: { url: string } | null;
   sort_order: number;
+  enabled?: boolean;
   locale: string;
 }
 
@@ -135,6 +141,7 @@ export interface GalleryGroup {
   name: string;
   slug: string;
   sort_order: number;
+  enabled?: boolean;
   locale: string;
 }
 
@@ -146,6 +153,7 @@ export interface GalleryItem {
   category: string | null;
   image: { id?: number; url: string; width?: number; height?: number } | null;
   sort_order: number;
+  enabled?: boolean;
   locale: string;
   gallery_groups?: Array<{ id: number; documentId: string; slug: string; name: string }>;
 }
@@ -176,12 +184,39 @@ export interface CalculatorResults {
 export interface Testimonial {
   id: number;
   documentId: string;
-  name: string;
-  role: string;
-  text: string;
+  author_name: string;
+  company: string | null;
+  position: string | null;
+  comment: string;
   rating: number;
   avatar: { url: string } | null;
   sort_order: number;
+  featured?: boolean;
+  enabled?: boolean;
+  locale: string;
+}
+
+export interface Service {
+  id: number;
+  documentId: string;
+  title: string;
+  description: string;
+  features: string;
+  icon: 'Code' | 'Wrench' | 'Server' | 'Smartphone' | 'Package' | 'Star';
+  enabled?: boolean;
+  locale: string;
+}
+
+export interface Customer {
+  id: number;
+  documentId: string;
+  name: string;
+  company: string | null;
+  avatar: { url: string } | null;
+  logo: { url: string } | null;
+  testimonial: string | null;
+  sort_order: number;
+  enabled?: boolean;
   locale: string;
 }
 
@@ -202,6 +237,7 @@ export interface Footer {
   copyright_text: string;
   terms_link: string;
   privacy_link: string;
+  enabled?: boolean;
   locale: string;
 }
 

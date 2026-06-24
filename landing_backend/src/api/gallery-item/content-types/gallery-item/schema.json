@@ -20,38 +20,59 @@
       "type": "string",
       "required": true,
       "description": "عنوان تصویر — نمایش‌داده‌شده روی کارت گالری هنگام hover و در لایت‌باکس",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "caption": {
       "type": "text",
       "description": "توضیح کوتاه تصویر — نمایش‌داده‌شده در لایت‌باکس زیر عنوان",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "category": {
       "type": "string",
       "description": "دسته‌بندی تصویر — برای فیلتر کردن گالری استفاده می‌شود. مثال: بازی و سرگرمی، رضایت مشتری، مدیریت، رشد کسب‌وکار. مشترک بین زبان‌ها نیست — برای هر زبان جداگانه تنظیم کنید.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "image": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "description": "تصویر اصلی — از Media Center ادمین آپلود کنید. فرمت‌های مجاز: JPG، PNG، WebP. ابعاد پیشنهادی: ۸۰۰×۶۰۰ یا بزرگتر. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "sort_order": {
       "type": "integer",
       "default": 0,
       "description": "ترتیب نمایش در گالری — عدد کمتر = نمایش زودتر. برای همه زبان‌ها یکسان است.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "gallery_groups": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::gallery-group.gallery-group",
-      "inversedBy": "gallery_items",
-      "description": "گروه‌هایی که این تصویر به آن‌ها تعلق دارد — هر تصویر می‌تواند عضو چند گروه باشد."
+      "inversedBy": "gallery_items"
     }
   }
 }

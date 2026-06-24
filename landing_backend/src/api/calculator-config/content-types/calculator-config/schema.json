@@ -18,66 +18,99 @@
   "attributes": {
     "default_visitors": {
       "type": "integer",
-      "default": 50,
-      "description": "تعداد بازدیدکنندگان روزانه پیش‌فرض — مقدار اولیه اسلایدر «بازدیدکنندگان روزانه» در ماشین‌حساب. نشان‌دهنده تعداد مشتریانی است که در روز وارد محل کسب‌وکار می‌شوند.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 50
     },
     "default_wait_time": {
       "type": "integer",
-      "default": 20,
-      "description": "زمان انتظار پیش‌فرض به دقیقه — مقدار اولیه اسلایدر «میانگین زمان انتظار». نشان می‌دهد هر مشتری به طور معمول چند دقیقه منتظر می‌ماند تا نوبتش برسد.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 20
     },
     "default_participation": {
       "type": "integer",
-      "default": 40,
-      "description": "نرخ مشارکت پیش‌فرض به درصد — مقدار اولیه اسلایدر «نرخ مشارکت». درصدی از بازدیدکنندگانی که با محتوای FunnyWait (بازی، آزمون و ...) تعامل می‌کنند.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 40
     },
     "default_engagement": {
       "type": "integer",
-      "default": 10,
-      "description": "زمان تعامل پیش‌فرض به دقیقه — مقدار اولیه اسلایدر «زمان تعامل». میانگین مدت‌زمانی که هر کاربر با محتوای FunnyWait فعالانه درگیر می‌ماند.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 10
     },
     "default_attention_value": {
       "type": "integer",
-      "default": 500,
-      "description": "ارزش توجه پیش‌فرض به تومان — مقدار اولیه اسلایدر «ارزش هر دقیقه توجه». هر دقیقه توجه کامل یک مشتری به تبلیغ یا محتوا چه ارزش تبلیغاتی برای برند دارد.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 500
     },
     "default_conversion": {
       "type": "integer",
-      "default": 5,
-      "description": "نرخ تبدیل پیش‌فرض به درصد — مقدار اولیه اسلایدر «نرخ تبدیل». درصد کاربرانی که پس از تعامل با محتوا در نهایت خرید انجام می‌دهند یا اقدام دلخواه را انجام می‌دهند.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 5
     },
     "default_profit": {
       "type": "integer",
-      "default": 50000,
-      "description": "سود خالص هر فروش پیش‌فرض به تومان — مقدار اولیه اسلایدر «سود هر فروش». میانگین سود خالصی که کسب‌وکار از هر تراکنش فروش موفق کسب می‌کند.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 50000
     },
     "subscription_cost": {
       "type": "integer",
-      "default": 1500000,
-      "description": "هزینه اشتراک ماهانه FunnyWait به تومان — این مبلغ از سود محاسبه‌شده کسر می‌شود تا سود خالص ماهانه مشخص شود. برای بروزرسانی قیمت‌ها این مقدار را تغییر دهید.",
-      "pluginOptions": { "i18n": { "localized": false } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 1500000
     },
     "high_profit_msg": {
       "type": "string",
-      "description": "پیام نمایش داده شده وقتی ROI بالاست — این پیام زمانی ظاهر می‌شود که سود ماهانه محاسبه‌شده به وضوح هزینه اشتراک را توجیه می‌کند. ترغیب‌کننده و مثبت باشد.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "mid_profit_msg": {
       "type": "string",
-      "description": "پیام نمایش داده شده وقتی ROI متوسط است — این پیام زمانی ظاهر می‌شود که سود محاسبه‌شده مثبت است اما بهبودپذیر است. باید راهنمایی عملی برای افزایش بهره‌وری ارائه دهد.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "low_profit_msg": {
       "type": "string",
-      "description": "پیام نمایش داده شده وقتی ROI پایین یا منفی است — این پیام زمانی ظاهر می‌شود که با تنظیمات فعلی سود قابل توجهی حاصل نمی‌شود. باید دلسوزانه و کمک‌کننده باشد، نه دلسرد‌کننده.",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
