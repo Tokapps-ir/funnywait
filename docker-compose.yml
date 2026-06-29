@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./landing_backend
+      dockerfile: Dockerfile
+    container_name: strapi-backend
+    ports:
+      - "1337:1337"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=1337
+      - NODE_ENV=production
+    volumes:
+      - ./landing_backend/.tmp:/app/.tmp
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./landing
+      dockerfile: Dockerfile
+    container_name: landing-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped

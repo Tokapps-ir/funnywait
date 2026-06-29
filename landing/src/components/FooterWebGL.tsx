@@ -95,7 +95,7 @@ export const FooterWebGL: React.FC = () => {
           <div>
             <h4 className="font-bold mb-6 text-white">لینک‌های سریع</h4>
             <ul className="space-y-4 text-white/40 text-sm">
-              {footerData.quick_links.length>0 && footerData.quick_links.map((link, index) => (
+              {false && footerData.quick_links.map((link, index) => (
                 <li key={index}>
                   <div className="relative group">
                     <PixelCanvas
