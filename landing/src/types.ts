@@ -48,7 +48,8 @@ export interface Settings {
     publishedAt?: string | null; // Can be a long timestamp that loses precision in some cases, or very large text
     locale: string; // Can be a long custom value that loses precision in some cases, or very large text
     brand_name?: string | null; // Can be a long custom value that loses precision in some cases, or very large text
-  }>; // Can be a complex object with many nested properties, or very large data
+  }>
+} // Can be a complex object with many nested properties, or very large data
 export interface Product {
   id: number;
   documentId: string;
