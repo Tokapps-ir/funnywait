@@ -208,20 +208,20 @@ export default function App() {
                 getTestimonials(locale),
             ]);
             // @ts-ignore
-            setProducts(prodRes.data);
-            setCalcConfig(calcRes.data);
-            setHeroConfig(heroRes.data);
-            setFeaturesConfig(featuresConfigRes.data);
+            setProducts(prodRes?.data ?? []);
+            setCalcConfig(calcRes?.data ?? null);
+            setHeroConfig(heroRes?.data ?? null);
+            setFeaturesConfig(featuresConfigRes?.data ?? null);
             // @ts-ignore
-            setFeatureCards(featureCardsRes.data);
+            setFeatureCards(featureCardsRes?.data ?? []);
             // @ts-ignore
-            setGalleryItems(galleryRes.data);
+            setGalleryItems(galleryRes?.data ?? []);
             // @ts-ignore
-            setGalleryGroups(galleryGroupsRes.data);
-            setTestimonials(testimonialsRes.data);
+            setGalleryGroups(galleryGroupsRes?.data ?? []);
+            setTestimonials(testimonialsRes?.data ?? []);
 
 
-            const mapped = smartPkgRes.data
+            const mapped = (smartPkgRes?.data ?? [])
                 // @ts-ignore
                 .filter((sp: SmartPackage) => sp.package_key && sp.name)
                 .map((sp: SmartPackage) => ({
