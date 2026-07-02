@@ -1,0 +1,8 @@
+### Services
+GET http://{{client.url}}/api/services
+    HTTP/1.1
+Authorization: {{client.token}}
+### Settings
+GET http://{{client.url}}/api/setting?locale=fa&populate=*
+    HTTP/1.1
+Authorization: {{client.token}}

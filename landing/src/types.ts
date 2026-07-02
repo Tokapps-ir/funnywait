@@ -31,6 +31,24 @@ export interface RecommendationResult {
 }
 
 // Strapi 5 REST API returns flat objects (no attributes wrapper)
+export interface Settings {
+  id: number; // Can be a large integer that loses precision in JS, or string for very precise values
+  documentId: string; // Can be a long UUID that loses precision in JS, or string
+  createdAt?: string | null; // Can be a long timestamp that loses precision in some cases, or very large text
+  updatedAt?: string | null; // Can be a long timestamp that loses precision in some cases, or very large text
+  publishedAt?: string | null; // Can be a long timestamp that loses precision in some cases, or very large text
+  locale: string; // Can be a long custom value that loses precision in some cases, or very large text
+  brand_name: string; // Can be a long custom value that loses precision in some cases, or very large text
+  brand_logo?: Media | null; // Can be a complex object with many nested properties, or very large data
+  localizations?: Array<{ // Can be a complex object with many nested properties, or very large data
+    id: number; // Can be a long integer that loses precision in JS, or string for very precise values
+    documentId: string; // Can be a long UUID that loses precision in JS, or string
+    createdAt?: string | null; // Can be a long timestamp that loses precision in some cases, or very large text
+    updatedAt?: string | null; // Can be a long timestamp that loses precision in some cases, or very large text
+    publishedAt?: string | null; // Can be a long timestamp that loses precision in some cases, or very large text
+    locale: string; // Can be a long custom value that loses precision in some cases, or very large text
+    brand_name?: string | null; // Can be a long custom value that loses precision in some cases, or very large text
+  }>; // Can be a complex object with many nested properties, or very large data
 export interface Product {
   id: number;
   documentId: string;
@@ -241,5 +259,38 @@ export interface Footer {
   locale: string;
 }
 
+export interface MediaFormat {
+  name: string;
+  hash?: number | null; // Can be a large integer that loses precision in JS, or string
+  ext: string;
+  mime?: string | null; // Can be undefined for non-image files in some cases, or "data:application/pdf;base64..."
+  path?: string | null; // Can be a URL for remote files or "data:..."
+  width?: number | null; // Can be undefined if format doesn't have dimensions (e.g., PDF)
+  height?: number | null; // Can be undefined if format doesn't have dimensions (e.g., PDF)
+  size?: number | null; // Size in KB, can be a large decimal that loses precision
+  sizeInBytes?: number | null; // Size in bytes, can be a large integer that loses precision
+  url: string | null; // Can include "data:" prefix for base64 encoded images
+}
 
-
+export interface Media {
+  id: number; // Can be a large integer that loses precision in JS, or string for very precise values
+  documentId: string; // Can be a long UUID that loses precision in JS, or string
+  name?: string | null; // Can be a long filename that loses precision in some cases, or very large text
+  alternativeText?: string | null; // Can be a long description that loses precision in some cases, or very large text
+  caption?: string | null; // Can be a long description that loses precision in some cases, or very large text
+  focalPoint?: { x: number | null; y: number | null } | null; // Can have very precise coordinates
+  width?: number | null; // Width in pixels, can be a large integer that loses precision
+  height?: number | null; // Height in pixels, can be a large integer that loses precision
+  formats?: { [key: string]: MediaFormat }; // Can have many different format sizes, some with very large values
+  hash?: string | number; // Can be a long hex value that loses precision in JS, or very large integer
+  ext: string; // Can be a long extension for unusual file types, or very large text
+  mime?: string | null; // Can be a long MIME type for unusual file types, or very large text
+  size?: number | null; // Size in KB as decimal string that loses precision, or very large value
+  url?: string | null; // Can be a long URL for remote files, or very large text
+  previewUrl?: string | null; // Can be a long URL for remote files, or very large text
+  provider?: string | null; // Can be a long custom value that loses precision in some cases, or very large text
+  provider_metadata?: any; // Can be a complex object with many nested properties, or very large data
+  createdAt?: string; // Can be a long timestamp that loses precision in some cases, or very large text
+  updatedAt?: string; // Can be a long timestamp that loses precision in some cases, or very large text
+  publishedAt?: string | null; // Can be a long timestamp that loses precision in some cases, or very large text
+}

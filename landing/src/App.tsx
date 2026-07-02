@@ -28,8 +28,10 @@ import {getFeatureCards} from './lib/featureCardService';
 import {getSmartPackages} from './lib/smartPackageService';
 import {getGalleryItems, getGalleryGroups} from './lib/galleryService';
 import {getTestimonials} from './lib/testimonialService';
+import {getSettings} from "@/src/lib/settingsService.ts";
 import {toPersianDigits} from './lib/helpers';
 import {
+    Settings,
     Product,
     CalculatorConfig,
     HeroConfig,
@@ -45,6 +47,7 @@ import {LanguageContext, translations, type Locale} from './lib/i18n';
 import {Zap} from 'lucide-react';
 import {Howl} from 'howler';
 import {Quote, Star, Image as ImageIcon} from 'lucide-react';
+import {getDefaultSettings} from "node:http2";
 
 // --- Audio instances ---
 // Use reliable CDN sources for audio
@@ -138,6 +141,7 @@ const SectionDivider = () => (
 export default function App() {
 
     const [locale, setLocale] = useState<Locale>('fa');
+    const [settings, setSettings] = useState<Settings>();
     const [products, setProducts] = useState<Product[]>([]);
     const [calcConfig, setCalcConfig] = useState<CalculatorConfig | null>(null);
     const [heroConfig, setHeroConfig] = useState<HeroConfig | null>(null);
@@ -196,7 +200,8 @@ export default function App() {
 
         const fetchData = async () => {
             setLoading(true);
-            const [prodRes, calcRes, heroRes, featuresConfigRes, featureCardsRes, smartPkgRes, galleryRes, galleryGroupsRes, testimonialsRes] = await Promise.all([
+            const [settingsRes,prodRes, calcRes, heroRes, featuresConfigRes, featureCardsRes, smartPkgRes, galleryRes, galleryGroupsRes, testimonialsRes] = await Promise.all([
+                getSettings(locale),
                 getProducts(locale),
                 getCalculatorConfig(locale),
                 getHeroConfig(locale),
@@ -209,6 +214,7 @@ export default function App() {
             ]);
             // @ts-ignore
             setProducts(prodRes.data);
+            setSettings(settingsRes.data);
             setCalcConfig(calcRes.data);
             setHeroConfig(heroRes.data);
             setFeaturesConfig(featuresConfigRes.data);
@@ -313,7 +319,7 @@ export default function App() {
                             <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
                                 <Zap className="text-black w-5 h-5 fill-current"/>
                             </div>
-                            <span>{heroConfig.heading}</span>
+                            <span>{settings.brand_name}</span>
                         </div>
                         <div className="hidden md:flex gap-8 text-sm font-medium text-white/60">
                             <a href="#features"
