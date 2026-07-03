@@ -41,7 +41,9 @@ import {
     Package,
     GalleryItem,
     GalleryGroup,
-    Testimonial
+    Testimonial,
+    Media,
+    getBrandLogoUrl
 } from './types';
 import {LanguageContext, translations, type Locale} from './lib/i18n';
 import {Zap} from 'lucide-react';
@@ -316,14 +318,22 @@ export default function App() {
                     <nav
                         className="fixed top-0 left-0 right-0 z-50 px-8 py-5 flex justify-between items-center backdrop-blur-xl bg-black/20 border-b border-white/5">
                         <div className="text-2xl font-black tracking-tighter flex items-center gap-2">
-                            <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
-                                <Zap className="text-black w-5 h-5 fill-current"/>
-                            </div>
+                            {settings.brand_logo ? (
+                                <img 
+                                    src={getBrandLogoUrl(settings.brand_logo)} 
+                                    alt={settings.brand_name}
+                                    className=" w-75 h-40 rounded-lg object-cover "
+                                />
+                            ) : (
+                                <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
+                                    <Zap className="text-black w-5 h-5 fill-current"/>
+                                </div>
+                            )}
                             <span>{settings.brand_name}</span>
                         </div>
-                        <div className="hidden md:flex gap-8 text-sm font-medium text-white/60">
+                        <div className="hidden md:flex gap-8 text-lg font-medium text-white ">
                             <a href="#features"
-                               className="hover:text-emerald-400 transition-colors">{t('nav_features')}</a>
+                               className="hover:text-emerald-600 transition-colors">{t('nav_features')}</a>
                             <a href="#calculator"
                                className="hover:text-emerald-400 transition-colors">{t('nav_calculator')}</a>
                             <a href="#smart-calculator"

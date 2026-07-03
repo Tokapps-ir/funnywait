@@ -1,3 +1,4 @@
+import {getStrapiMediaUrl} from "@/src/lib/helpers.ts";
 
 export interface StrapiResponse<T> {
   data: T;
@@ -294,4 +295,30 @@ export interface Media {
   createdAt?: string; // Can be a long timestamp that loses precision in some cases, or very large text
   updatedAt?: string; // Can be a long timestamp that loses precision in some cases, or very large text
   publishedAt?: string | null; // Can be a long timestamp that loses precision in some cases, or very large text
+}
+
+/**
+ * Extracts the standard size image URL from a Media object.
+ * Strapi uses format names like 'small', 'medium', 'large', 'lg', 'thumbnail', etc.
+ * 'lg' is typically the standard/large size used in headers.
+ */
+export function getBrandLogoUrl(media: Media | null): string | null {
+  if (!media) return null;
+  
+  // Try to get the 'lg' (large) format first, then fallback to other common sizes
+  if (media.formats?.lg) {
+    return getStrapiMediaUrl(media.formats.lg.url);
+  }
+  if (media.formats?.large) {
+    return getStrapiMediaUrl(media.formats.large.url);
+  }
+  if (media.formats?.medium) {
+    return getStrapiMediaUrl(media.formats.medium.url);
+  }
+  if (media.formats?.small) {
+    return getStrapiMediaUrl(media.formats.small.url);
+  }
+  
+  // Fallback to the main image URL
+  return media.url;
 }
