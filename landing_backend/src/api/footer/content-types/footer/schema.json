@@ -75,22 +75,6 @@
         }
       }
     },
-    "terms_link": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "privacy_link": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "certificates": {
       "type": "component",
       "pluginOptions": {
@@ -101,6 +85,17 @@
       "component": "footer.slider",
       "repeatable": true,
       "required": false
+    },
+    "copyright_links": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "footer.link",
+      "repeatable": true,
+      "max": 4
     }
   }
 }
