@@ -16,7 +16,7 @@ class Pixel {
   private delay: number;
   private counter: number = 0;
   private counterStep: number;
-  private isIdle: boolean = false;
+  isIdle: boolean = false;
   private isReverse: boolean = false;
   private isShimmer: boolean = false;
 

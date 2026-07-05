@@ -251,6 +251,7 @@ export interface Footer {
   brand_name: string;
   brand_description: string;
   quick_links: FooterLink[];
+  certificates: Certificate[];
   contact_address: string;
   contact_phone: string;
   contact_email: string;
@@ -259,6 +260,11 @@ export interface Footer {
   privacy_link: string;
   enabled?: boolean;
   locale: string;
+}
+
+
+export interface Certificate{
+  certificate: string;
 }
 
 export interface MediaFormat {

@@ -6,3 +6,8 @@ Authorization: {{client.token}}
 GET http://{{client.url}}/api/setting?locale=fa&populate=*
     HTTP/1.1
 Authorization: {{client.token}}
+
+### Footer
+GET http://{{client.url}}/api/footer?locale=fa&populate=*
+    HTTP/1.1
+Authorization: {{client.token}}

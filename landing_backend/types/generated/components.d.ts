@@ -24,10 +24,22 @@ export interface FooterLink extends Struct.ComponentSchema {
   };
 }
 
+export interface FooterSlider extends Struct.ComponentSchema {
+  collectionName: 'components_footer_sliders';
+  info: {
+    displayName: 'certificates';
+    icon: 'code';
+  };
+  attributes: {
+    certificate: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'footer.link': FooterLink;
+      'footer.slider': FooterSlider;
     }
   }
 }

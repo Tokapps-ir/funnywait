@@ -90,6 +90,17 @@
           "localized": true
         }
       }
+    },
+    "certificates": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "footer.slider",
+      "repeatable": true,
+      "required": false
     }
   }
 }

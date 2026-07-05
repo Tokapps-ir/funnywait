@@ -1,16 +1,16 @@
 # Graph Report - funnywait  (2026-07-05)
 
 ## Corpus Check
-- 177 files · ~133,398 words
+- 179 files · ~257,971 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2503 nodes · 2952 edges · 232 communities (211 shown, 21 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.8)
+- 4527 nodes · 7342 edges · 353 communities (258 shown, 95 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 76 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d6f7c496`
+- Built from commit: `d1d1aad0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -193,18 +193,135 @@
 - [[_COMMUNITY_Community 178|Community 178]]
 - [[_COMMUNITY_Community 185|Community 185]]
 - [[_COMMUNITY_Community 187|Community 187]]
+- [[_COMMUNITY_Community 232|Community 232]]
+- [[_COMMUNITY_Community 233|Community 233]]
+- [[_COMMUNITY_Community 234|Community 234]]
+- [[_COMMUNITY_Community 235|Community 235]]
+- [[_COMMUNITY_Community 236|Community 236]]
+- [[_COMMUNITY_Community 237|Community 237]]
+- [[_COMMUNITY_Community 238|Community 238]]
+- [[_COMMUNITY_Community 239|Community 239]]
+- [[_COMMUNITY_Community 240|Community 240]]
+- [[_COMMUNITY_Community 241|Community 241]]
+- [[_COMMUNITY_Community 242|Community 242]]
+- [[_COMMUNITY_Community 243|Community 243]]
+- [[_COMMUNITY_Community 244|Community 244]]
+- [[_COMMUNITY_Community 245|Community 245]]
+- [[_COMMUNITY_Community 246|Community 246]]
+- [[_COMMUNITY_Community 247|Community 247]]
+- [[_COMMUNITY_Community 248|Community 248]]
+- [[_COMMUNITY_Community 249|Community 249]]
+- [[_COMMUNITY_Community 250|Community 250]]
+- [[_COMMUNITY_Community 251|Community 251]]
+- [[_COMMUNITY_Community 252|Community 252]]
+- [[_COMMUNITY_Community 253|Community 253]]
+- [[_COMMUNITY_Community 254|Community 254]]
+- [[_COMMUNITY_Community 255|Community 255]]
+- [[_COMMUNITY_Community 256|Community 256]]
+- [[_COMMUNITY_Community 257|Community 257]]
+- [[_COMMUNITY_Community 258|Community 258]]
+- [[_COMMUNITY_Community 259|Community 259]]
+- [[_COMMUNITY_Community 260|Community 260]]
+- [[_COMMUNITY_Community 261|Community 261]]
+- [[_COMMUNITY_Community 262|Community 262]]
+- [[_COMMUNITY_Community 263|Community 263]]
+- [[_COMMUNITY_Community 264|Community 264]]
+- [[_COMMUNITY_Community 265|Community 265]]
+- [[_COMMUNITY_Community 266|Community 266]]
+- [[_COMMUNITY_Community 267|Community 267]]
+- [[_COMMUNITY_Community 268|Community 268]]
+- [[_COMMUNITY_Community 269|Community 269]]
+- [[_COMMUNITY_Community 270|Community 270]]
+- [[_COMMUNITY_Community 271|Community 271]]
+- [[_COMMUNITY_Community 272|Community 272]]
+- [[_COMMUNITY_Community 273|Community 273]]
+- [[_COMMUNITY_Community 274|Community 274]]
+- [[_COMMUNITY_Community 275|Community 275]]
+- [[_COMMUNITY_Community 276|Community 276]]
+- [[_COMMUNITY_Community 277|Community 277]]
+- [[_COMMUNITY_Community 278|Community 278]]
+- [[_COMMUNITY_Community 279|Community 279]]
+- [[_COMMUNITY_Community 280|Community 280]]
+- [[_COMMUNITY_Community 281|Community 281]]
+- [[_COMMUNITY_Community 282|Community 282]]
+- [[_COMMUNITY_Community 283|Community 283]]
+- [[_COMMUNITY_Community 284|Community 284]]
+- [[_COMMUNITY_Community 285|Community 285]]
+- [[_COMMUNITY_Community 286|Community 286]]
+- [[_COMMUNITY_Community 287|Community 287]]
+- [[_COMMUNITY_Community 288|Community 288]]
+- [[_COMMUNITY_Community 289|Community 289]]
+- [[_COMMUNITY_Community 290|Community 290]]
+- [[_COMMUNITY_Community 291|Community 291]]
+- [[_COMMUNITY_Community 292|Community 292]]
+- [[_COMMUNITY_Community 293|Community 293]]
+- [[_COMMUNITY_Community 294|Community 294]]
+- [[_COMMUNITY_Community 295|Community 295]]
+- [[_COMMUNITY_Community 296|Community 296]]
+- [[_COMMUNITY_Community 297|Community 297]]
+- [[_COMMUNITY_Community 298|Community 298]]
+- [[_COMMUNITY_Community 299|Community 299]]
+- [[_COMMUNITY_Community 300|Community 300]]
+- [[_COMMUNITY_Community 301|Community 301]]
+- [[_COMMUNITY_Community 302|Community 302]]
+- [[_COMMUNITY_Community 303|Community 303]]
+- [[_COMMUNITY_Community 304|Community 304]]
+- [[_COMMUNITY_Community 305|Community 305]]
+- [[_COMMUNITY_Community 306|Community 306]]
+- [[_COMMUNITY_Community 307|Community 307]]
+- [[_COMMUNITY_Community 308|Community 308]]
+- [[_COMMUNITY_Community 309|Community 309]]
+- [[_COMMUNITY_Community 310|Community 310]]
+- [[_COMMUNITY_Community 311|Community 311]]
+- [[_COMMUNITY_Community 312|Community 312]]
+- [[_COMMUNITY_Community 313|Community 313]]
+- [[_COMMUNITY_Community 314|Community 314]]
+- [[_COMMUNITY_Community 315|Community 315]]
+- [[_COMMUNITY_Community 316|Community 316]]
+- [[_COMMUNITY_Community 317|Community 317]]
+- [[_COMMUNITY_Community 318|Community 318]]
+- [[_COMMUNITY_Community 319|Community 319]]
+- [[_COMMUNITY_Community 320|Community 320]]
+- [[_COMMUNITY_Community 321|Community 321]]
+- [[_COMMUNITY_Community 322|Community 322]]
+- [[_COMMUNITY_Community 323|Community 323]]
+- [[_COMMUNITY_Community 324|Community 324]]
+- [[_COMMUNITY_Community 325|Community 325]]
+- [[_COMMUNITY_Community 326|Community 326]]
+- [[_COMMUNITY_Community 327|Community 327]]
+- [[_COMMUNITY_Community 328|Community 328]]
+- [[_COMMUNITY_Community 329|Community 329]]
+- [[_COMMUNITY_Community 330|Community 330]]
+- [[_COMMUNITY_Community 331|Community 331]]
+- [[_COMMUNITY_Community 332|Community 332]]
+- [[_COMMUNITY_Community 333|Community 333]]
+- [[_COMMUNITY_Community 334|Community 334]]
+- [[_COMMUNITY_Community 335|Community 335]]
+- [[_COMMUNITY_Community 336|Community 336]]
+- [[_COMMUNITY_Community 337|Community 337]]
+- [[_COMMUNITY_Community 338|Community 338]]
+- [[_COMMUNITY_Community 339|Community 339]]
+- [[_COMMUNITY_Community 341|Community 341]]
+- [[_COMMUNITY_Community 342|Community 342]]
+- [[_COMMUNITY_Community 344|Community 344]]
+- [[_COMMUNITY_Community 345|Community 345]]
+- [[_COMMUNITY_Community 346|Community 346]]
+- [[_COMMUNITY_Community 347|Community 347]]
+- [[_COMMUNITY_Community 348|Community 348]]
+- [[_COMMUNITY_Community 349|Community 349]]
+- [[_COMMUNITY_Community 351|Community 351]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `x` - 21 edges
-2. `u` - 21 edges
-3. `v` - 21 edges
-4. `y` - 21 edges
-5. `R` - 21 edges
-6. `w` - 20 edges
-7. `y` - 20 edges
-8. `x` - 20 edges
-9. `x` - 20 edges
-10. `i18n` - 18 edges
+1. `w` - 80 edges
+2. `kt()` - 71 edges
+3. `$` - 59 edges
+4. `$t` - 53 edges
+5. `de()` - 47 edges
+6. `pt` - 39 edges
+7. `gu()` - 39 edges
+8. `ke` - 38 edges
+9. `Dt` - 38 edges
+10. `qd` - 36 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `strapiGet()` --calls--> `fetch`  [INFERRED]
@@ -218,7 +335,7 @@
 - `config()` --calls--> `env`  [INFERRED]
   landing_backend/config/server.ts → landing/vite.config.ts
 
-## Communities (232 total, 21 thin omitted)
+## Communities (353 total, 95 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -261,8 +378,8 @@ Cohesion: 0.05
 Nodes (43): API Reference, Buffer, code:bash (npm install @types/node --save-dev), code:typescript (import dns from 'node:dns';), code:typescript (import https from 'node:https';), code:typescript (import crypto from 'node:crypto';), code:typescript (import * as process from 'node:process';), code:typescript (import { EventEmitter } from 'node:events';) (+35 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.05
-Nodes (43): attributes, brand_description, brand_name, contact_address, contact_email, contact_phone, copyright_text, privacy_link (+35 more)
+Cohesion: 0.18
+Nodes (10): collectionName, info, description, displayName, pluralName, singularName, kind, options (+2 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.05
@@ -279,10 +396,6 @@ Nodes (42): pluginOptions, type, attributes, advantage, min_budget, name, packag
 ### Community 14 - "Community 14"
 Cohesion: 0.08
 Nodes (13): A(), b(), D(), E, F(), k, L(), M() (+5 more)
-
-### Community 15 - "Community 15"
-Cohesion: 0.08
-Nodes (13): b(), C(), D, E, F(), I, L(), M() (+5 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.08
@@ -326,19 +439,19 @@ Nodes (31): attributes, gallery_items, name, slug, sort_order, collectionName, d
 
 ### Community 26 - "Community 26"
 Cohesion: 0.11
-Nodes (24): FeatureCards3DComponent(), FeatureCards3DProps, mediaUrl(), iconMap, OurServices(), Service, getFeatureCards(), MOCK_FEATURE_CARDS (+16 more)
+Nodes (22): Customer, OurCustomers(), getCustomers(), MOCK_CUSTOMERS, MockCustomer, getFeaturesConfig(), MOCK_FEATURES_CONFIG, getHeroConfig() (+14 more)
 
 ### Community 27 - "Community 27"
 Cohesion: 0.06
 Nodes (30): 🎯 Actionable Tasks, 🏗️ Architecture Overview, 🗄️ Backend (`landing_backend`), Backend (`landing_backend`):, Backend (`landing_backend` - funnywait-backend), code:block1 (┌─────────────────────────────────────────────────────────┐), code:json ({), code:json ({) (+22 more)
 
 ### Community 28 - "Community 28"
-Cohesion: 0.09
-Nodes (24): Hero(), Props, SmoothScroll(), TestimonialCarousel(), TestimonialCarouselProps, VideoIntroduction(), VideoIntroductionProps, getHeroConfig() (+16 more)
+Cohesion: 0.08
+Nodes (24): Hero(), Props, iconMap, OurServices(), Service, SmoothScroll(), TestimonialCarousel(), TestimonialCarouselProps (+16 more)
 
 ### Community 29 - "Community 29"
-Cohesion: 0.12
-Nodes (24): Calculator(), InputGroup(), Props, Props, SmartCalculator(), calculateRecommendation(), fetchPackages(), StrapiSmartPackage (+16 more)
+Cohesion: 0.13
+Nodes (22): Calculator(), InputGroup(), Props, SmartCalculator(), calculateRecommendation(), fetchPackages(), StrapiSmartPackage, StrapiSmartPackageAttributes (+14 more)
 
 ### Community 30 - "Community 30"
 Cohesion: 0.08
@@ -361,8 +474,8 @@ Cohesion: 0.14
 Nodes (4): f, R(), S(), v
 
 ### Community 35 - "Community 35"
-Cohesion: 0.10
-Nodes (18): buildUrl(), CardProps, Gallery(), GalleryCard(), GalleryProps, Lightbox(), LightboxProps, PALETTE (+10 more)
+Cohesion: 0.09
+Nodes (19): buildUrl(), CardProps, Gallery(), GalleryCard(), GalleryProps, Lightbox(), LightboxProps, PALETTE (+11 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.09
@@ -385,8 +498,8 @@ Cohesion: 0.11
 Nodes (18): attributes, text, url, collectionName, localized, info, description, displayName (+10 more)
 
 ### Community 41 - "Community 41"
-Cohesion: 0.33
-Nodes (5): Customer, OurCustomers(), getCustomers(), MOCK_CUSTOMERS, MockCustomer
+Cohesion: 0.25
+Nodes (9): FeatureCards3DComponent(), FeatureCards3DProps, mediaUrl(), getFeatureCards(), MOCK_FEATURE_CARDS, MockFeatureCard, MockFeaturesConfig, FeatureCard (+1 more)
 
 ### Community 42 - "Community 42"
 Cohesion: 0.11
@@ -425,8 +538,8 @@ Cohesion: 0.14
 Nodes (14): 1. Routing, 2. Link Component, 3. NavLink Component, 4. Outlet, 5. Routes, 6. Navigation, code:tsx (<Routes>), code:tsx (import { NavLink, Link } from 'react-router-dom';) (+6 more)
 
 ### Community 51 - "Community 51"
-Cohesion: 0.17
-Nodes (13): EC, MorphGlass(), ProductCard(), Props, Rect, renderMarkdown(), SHIFT_SPRING, TILT_SPRING (+5 more)
+Cohesion: 0.21
+Nodes (11): EC, MorphGlass(), ProductCard(), Props, Rect, renderMarkdown(), SHIFT_SPRING, TILT_SPRING (+3 more)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.15
@@ -497,8 +610,8 @@ Cohesion: 0.18
 Nodes (8): __dirname, files, gltf, inputFile, io, outputFile, resultsDir, root
 
 ### Community 69 - "Community 69"
-Cohesion: 0.18
-Nodes (11): API Reference, API Routes, code:tsx (import { RouterProvider, createBrowserRouter } from 'react-r), code:tsx (import { Link } from 'react-router-dom';), code:tsx (<Router>), code:tsx (function Layout() {), code:tsx (<Route path="products" element={), Default Outlet Route (+3 more)
+Cohesion: 0.14
+Nodes (13): attributes, certificate, item, required, type, collectionName, config, info (+5 more)
 
 ### Community 70 - "Community 70"
 Cohesion: 0.20
@@ -557,8 +670,8 @@ Cohesion: 0.22
 Nodes (9): scroll_hint, subtitle, localized, i18n, pluginOptions, type, pluginOptions, pluginOptions (+1 more)
 
 ### Community 84 - "Community 84"
-Cohesion: 0.25
-Nodes (7): FooterWebGL(), Window, PixelCanvas(), PixelCanvasProps, SliderDive(), getFooter(), Footer
+Cohesion: 0.17
+Nodes (11): FooterWebGL(), Window, PixelCanvas(), PixelCanvasProps, containerRef, [images, setImages], [scrollLeft, setScrollLeft], SliderDive() (+3 more)
 
 ### Community 85 - "Community 85"
 Cohesion: 0.25
@@ -605,8 +718,8 @@ Cohesion: 0.29
 Nodes (6): code:bash (npm install typescript react @types/react react-dom @types/r), Installation, Overview, Related Packages, Resources, TypeScript Types for React
 
 ### Community 97 - "Community 97"
-Cohesion: 0.43
-Nodes (5): OurBusinessPartners(), getBusinessPartners(), MOCK_BUSINESS_PARTNERS, MockBusinessPartner, BusinessPartner
+Cohesion: 0.18
+Nodes (11): API Reference, API Routes, code:tsx (import { RouterProvider, createBrowserRouter } from 'react-r), code:tsx (import { Link } from 'react-router-dom';), code:tsx (<Router>), code:tsx (function Layout() {), code:tsx (<Route path="products" element={), Default Outlet Route (+3 more)
 
 ### Community 98 - "Community 98"
 Cohesion: 0.29
@@ -661,8 +774,8 @@ Cohesion: 0.33
 Nodes (5): animations, cameras, materials, meshes, objects
 
 ### Community 112 - "Community 112"
-Cohesion: 0.28
-Nodes (7): contentTypes, fetch, setupPermissions(), getCalculatorConfig(), MOCK_CALC, strapiGet(), strapiGet()
+Cohesion: 0.14
+Nodes (7): dc, hr, on, contentTypes, fetch, setupPermissions(), strapiGet()
 
 ### Community 113 - "Community 113"
 Cohesion: 0.33
@@ -840,6 +953,10 @@ Nodes (3): code:typescript (interface HTMLDivElement extends ElementAttributes {
 Cohesion: 0.67
 Nodes (3): 7. Test Coverage, code:bash (# Generate coverage report), code:typescript (// Coverage with source maps)
 
+### Community 161 - "Community 161"
+Cohesion: 0.50
+Nodes (3): ComponentSchemas, FooterLink, FooterSlider
+
 ### Community 162 - "Community 162"
 Cohesion: 0.67
 Nodes (3): cta_text, pluginOptions, type
@@ -848,25 +965,197 @@ Nodes (3): cta_text, pluginOptions, type
 Cohesion: 0.67
 Nodes (3): heading, pluginOptions, type
 
+### Community 232 - "Community 232"
+Cohesion: 0.43
+Nodes (5): OurBusinessPartners(), getBusinessPartners(), MOCK_BUSINESS_PARTNERS, MockBusinessPartner, BusinessPartner
+
+### Community 233 - "Community 233"
+Cohesion: 0.33
+Nodes (6): attributes, contact_email, privacy_link, pluginOptions, type, type
+
+### Community 234 - "Community 234"
+Cohesion: 0.33
+Nodes (6): certificates, component, pluginOptions, repeatable, required, type
+
+### Community 235 - "Community 235"
+Cohesion: 0.33
+Nodes (6): contact_address, pluginOptions, type, localized, i18n, pluginOptions
+
+### Community 236 - "Community 236"
+Cohesion: 0.40
+Nodes (5): quick_links, component, pluginOptions, repeatable, type
+
+### Community 237 - "Community 237"
+Cohesion: 0.50
+Nodes (4): brand_name, pluginOptions, required, type
+
+### Community 238 - "Community 238"
+Cohesion: 0.67
+Nodes (3): brand_description, pluginOptions, type
+
+### Community 239 - "Community 239"
+Cohesion: 0.67
+Nodes (3): contact_phone, pluginOptions, type
+
+### Community 240 - "Community 240"
+Cohesion: 0.67
+Nodes (3): copyright_text, pluginOptions, type
+
+### Community 241 - "Community 241"
+Cohesion: 0.67
+Nodes (3): terms_link, pluginOptions, type
+
+### Community 242 - "Community 242"
+Cohesion: 0.01
+Nodes (123): af, Ah, ar, au, ba, bh, Bs, bx (+115 more)
+
+### Community 243 - "Community 243"
+Cohesion: 0.04
+Nodes (4): Bt, Dt, fp(), yc
+
+### Community 244 - "Community 244"
+Cohesion: 0.06
+Nodes (10): Aa, Ao, ms, Oa(), pr, ru, sd, to (+2 more)
+
+### Community 245 - "Community 245"
+Cohesion: 0.06
+Nodes (5): ay, de(), io(), mu(), u0()
+
+### Community 246 - "Community 246"
+Cohesion: 0.07
+Nodes (5): bd(), el(), kp(), Ta(), We
+
+### Community 247 - "Community 247"
+Cohesion: 0.04
+Nodes (11): an, Fe, gl, ic, il, md, pd, ul (+3 more)
+
+### Community 249 - "Community 249"
+Cohesion: 0.06
+Nodes (3): Je, ke, yv()
+
+### Community 251 - "Community 251"
+Cohesion: 0.10
+Nodes (3): dd(), _l, nd
+
+### Community 253 - "Community 253"
+Cohesion: 0.04
+Nodes (4): $, ap(), rp(), sp()
+
+### Community 255 - "Community 255"
+Cohesion: 0.07
+Nodes (22): ad(), av(), cv(), ec(), Ei(), ev(), He, ir() (+14 more)
+
+### Community 257 - "Community 257"
+Cohesion: 0.11
+Nodes (3): dp(), Vi(), Wt
+
+### Community 260 - "Community 260"
+Cohesion: 0.07
+Nodes (10): al, ax(), dl, eu(), Ia(), Jh(), tl, tu() (+2 more)
+
+### Community 262 - "Community 262"
+Cohesion: 0.07
+Nodes (9): by, dy, gy, hy, my, py, vy, Y_() (+1 more)
+
+### Community 264 - "Community 264"
+Cohesion: 0.10
+Nodes (4): Ae, cy, ku, qa()
+
+### Community 265 - "Community 265"
+Cohesion: 0.09
+Nodes (10): Ch, di, fc, Fs(), gc(), lc, Mh(), Qo() (+2 more)
+
+### Community 267 - "Community 267"
+Cohesion: 0.05
+Nodes (11): er, go, iy, Jl, ld(), Rh, ts(), ud (+3 more)
+
+### Community 268 - "Community 268"
+Cohesion: 0.11
+Nodes (4): bi, bo, id, xv()
+
+### Community 271 - "Community 271"
+Cohesion: 0.17
+Nodes (3): ge, rv(), wv
+
+### Community 272 - "Community 272"
+Cohesion: 0.24
+Nodes (11): a0(), b0(), e0(), G_(), k_(), pa, q_(), t0() (+3 more)
+
+### Community 274 - "Community 274"
+Cohesion: 0.09
+Nodes (4): Ju, V_(), wo, yo
+
+### Community 275 - "Community 275"
+Cohesion: 0.10
+Nodes (19): c0(), d0(), du(), f0(), fu(), h0(), J0(), k0() (+11 more)
+
+### Community 279 - "Community 279"
+Cohesion: 0.14
+Nodes (5): bv(), cr, ed, rc(), sc()
+
+### Community 280 - "Community 280"
+Cohesion: 0.22
+Nodes (3): dv(), fv(), pv()
+
+### Community 282 - "Community 282"
+Cohesion: 0.16
+Nodes (3): Cn(), or, ti
+
+### Community 283 - "Community 283"
+Cohesion: 0.14
+Nodes (4): gn, gp(), rf(), uy
+
+### Community 284 - "Community 284"
+Cohesion: 0.08
+Nodes (3): gu(), Si(), up()
+
+### Community 288 - "Community 288"
+Cohesion: 0.10
+Nodes (10): Js, Jx(), kl, ll, ql, qx(), td(), tr() (+2 more)
+
+### Community 298 - "Community 298"
+Cohesion: 0.18
+Nodes (12): b(), C(), E, I, L(), M(), R, S() (+4 more)
+
+### Community 300 - "Community 300"
+Cohesion: 0.25
+Nodes (4): C_(), gx(), $i, ix()
+
+### Community 305 - "Community 305"
+Cohesion: 0.22
+Nodes (3): bp, Ve(), Vs()
+
+### Community 308 - "Community 308"
+Cohesion: 0.40
+Nodes (3): cd(), hd(), vn
+
+### Community 335 - "Community 335"
+Cohesion: 0.22
+Nodes (3): Ns(), pl(), tp()
+
+### Community 338 - "Community 338"
+Cohesion: 0.38
+Nodes (6): Props, getCalculatorConfig(), MOCK_CALC, MockCalc, strapiGet(), CalculatorConfig
+
 ## Knowledge Gaps
-- **1130 isolated node(s):** `build-docker.sh script`, `latest`, `lastUpdateCheck`, `lastNotification`, `name` (+1125 more)
+- **1269 isolated node(s):** `build-docker.sh script`, `latest`, `lastUpdateCheck`, `lastNotification`, `name` (+1264 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **95 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Framer Motion` connect `Community 58` to `Community 90`, `Community 133`, `Community 46`, `Community 63`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `ac` connect `Community 35` to `Community 242`?**
+  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+- **Why does `$t` connect `Community 254` to `Community 242`, `Community 252`, `Community 245`, `Community 276`, `Community 251`, `Community 284`, `Community 253`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Are the 2 inferred relationships involving `w` (e.g. with `Ve()` and `Ye`) actually correct?**
+  _`w` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 2 inferred relationships involving `$` (e.g. with `Ve()` and `Ye`) actually correct?**
+  _`$` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `build-docker.sh script`, `Write HDR file with proper format.`, `latest` to the rest of the system?**
-  _1131 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1270 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06458635703918723 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.05660377358490566 - nodes in this community are weakly interconnected._
-- **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.05660377358490566 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
-- **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._

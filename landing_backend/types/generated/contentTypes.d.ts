@@ -907,6 +907,12 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    certificates: Schema.Attribute.Component<'footer.slider', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     contact_address: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

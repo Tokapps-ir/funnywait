@@ -25,6 +25,7 @@ export const SmoothScroll: React.FC<{ children: React.ReactNode }> = ({ children
         if (hash) {
           const element = document.querySelector(hash);
           if (element) {
+            // @ts-ignore
             lenisRef.current?.scrollTo(element, {
               offset: -100,
               immediate: false,

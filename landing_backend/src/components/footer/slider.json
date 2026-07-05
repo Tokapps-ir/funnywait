@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_footer_sliders",
+  "info": {
+    "displayName": "certificates",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "certificate": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

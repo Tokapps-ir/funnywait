@@ -4,7 +4,7 @@ import strapiSDK from "@/src/lib/strapi.ts";
 export async function getFooter(locale = 'fa'): Promise<StrapiResponse<Footer | any>> {
   try {
     const footer = strapiSDK.single('footer');
-    return await footer.find({ locale: locale });
+    return await footer.find({ locale: locale ,populate:"*" });
   } catch {
     console.warn('Using mock footer due to API error');
     return {
@@ -18,6 +18,12 @@ export async function getFooter(locale = 'fa'): Promise<StrapiResponse<Footer | 
           { text: 'ماشین حساب', url: '#calculator' },
           { text: 'محصولات', url: '#products' },
           { text: 'تماس با ما', url: '#' },
+        ],
+        certificates:
+        [
+          {
+            certificate:'<img src="https://images.unsplash.com/photo-1518021327-9c5e18750b6a?w=50&h=150&fit=crop" />'
+          },
         ],
         contact_address: 'تهران، خیابان آزادی، ناحیه نوآوری شریف',
         contact_phone: '۰۲۱-۱۲۳۴۵۶۷۸',

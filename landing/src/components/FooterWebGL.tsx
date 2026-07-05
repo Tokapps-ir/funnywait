@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { PixelCanvas } from './PixelCanvas';
+import { SliderDive } from './SliderDive';
 import { getFooter } from '@/src/lib/footerService';
 import { Footer } from '@/src/types';
+import {Certificate} from "node:crypto";
 
 declare global {
   interface Window {
@@ -47,8 +49,7 @@ export const FooterWebGL: React.FC = () => {
         console.error('Failed to initialize WebGL background:', error);
       }
     };
-
-    initWebGLBackground();
+    setTimeout(fn=>initWebGLBackground(),1000)
   }, []);
 
   useEffect(() => {
@@ -63,6 +64,8 @@ export const FooterWebGL: React.FC = () => {
     return null;
   }
 
+  // @ts-ignore
+  // @ts-ignore
   return (
     <footer className="relative py-24 px-6 border-t border-white/5 bg-black/20 backdrop-blur-lg overflow-hidden">
       {/* WebGL Background Canvas */}
@@ -154,6 +157,11 @@ export const FooterWebGL: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Horizontal Slider Section */}
+        <div className="mb-8">
+          <SliderDive certificates={footerData?.certificates} />
         </div>
 
         <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/20 uppercase tracking-widest">
