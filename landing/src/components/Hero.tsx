@@ -40,10 +40,10 @@ export const Hero: React.FC<Props> = ({
       <>
         {parts.map((part, i) => {
           if (part === subtitle_highlight_1) {
-            return <span data-tooltip="Hello" key={i} className="text-white font-medium">{part}</span>;
+            return <span data-tooltip="Hello" key={i} className="text-white font-semibold">{part}</span>;
           }
           if (part === subtitle_highlight_2) {
-            return <span data-tooltip="Hello" key={i} className="text-emerald-400 font-medium">{part}</span>;
+            return <span data-tooltip="Hello" key={i} className="text-emerald-400 font-semibold">{part}</span>;
           }
           return <span data-tooltip="Hello" key={i}>{part}</span>;
         })}
@@ -73,7 +73,7 @@ export const Hero: React.FC<Props> = ({
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-7xl md:text-[10rem] font-black cinematic-text mb-8 tracking-tighter"
+          className="text-7xl md:text-[4rem] font-black cinematic-text mb-8 tracking-tighter"
         >
           {heading}
         </motion.h1>
@@ -82,7 +82,7 @@ export const Hero: React.FC<Props> = ({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="text-xl md:text-3xl text-white/60 max-w-3xl mx-auto leading-relaxed font-light"
+          className="text-xl md:text-3xl text-white/80 max-w-3xl mx-auto leading-relaxed font-semibold"
         >
           {renderedSubtitle()}
         </motion.p>
@@ -100,7 +100,7 @@ export const Hero: React.FC<Props> = ({
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-12 flex flex-col items-center gap-2 text-white/30"
+        className="absolute bottom-12 flex flex-col items-center gap-2 text-white font-bold"
       >
         <span className="text-[10px] uppercase tracking-[0.3em]">{scroll_hint}</span>
         <ChevronDown className="w-5 h-5" />

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 class Pixel {
   private width: number;
- private height: number;
+  private height: number;
   private ctx: CanvasRenderingContext2D;
   private x: number;
   private y: number;
@@ -34,7 +34,7 @@ class Pixel {
     this.counterStep = Math.random() * 4 + (this.width + this.height) * 0.01;
   }
 
- private getRandomValue(min: number, max: number): number {
+  private getRandomValue(min: number, max: number): number {
     return Math.random() * (max - min) + min;
   }
 
@@ -43,10 +43,10 @@ class Pixel {
 
     this.ctx.fillStyle = this.color;
     this.ctx.fillRect(
-      this.x + centerOffset,
-      this.y + centerOffset,
-      this.size,
-      this.size
+        this.x + centerOffset,
+        this.y + centerOffset,
+        this.size,
+        this.size
     );
   }
 
@@ -108,16 +108,23 @@ interface PixelCanvasProps {
   className?: string;
 }
 
-export const PixelCanvas: React.FC<PixelCanvasProps> = ({ 
-  colors = ["#f8fafc", "#f1f5f9", "#cbd5e1"], 
-  gap = 5,
-  speed = 35,
-  noFocus = false,
-  className = ""
-}) => {
+const getDistanceToCanvasCenter = (x: number, y: number, width: number, height: number): number => {
+  const dx = x - width / 2;
+  const dy = y - height / 2;
+  const distance = Math.sqrt(dx * dx + dy * dy);
+  return distance;
+};
+
+export const PixelCanvas: React.FC<PixelCanvasProps> = ({
+                                                          colors = ["#f8fafc", "#f1f5f9", "#cbd5e1"],
+                                                          gap = 5,
+                                                          speed = 35,
+                                                          noFocus = false,
+                                                          className = ""
+                                                        }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pixelsRef = useRef<Pixel[]>([]);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | null>(null);
   const reducedMotionRef = useRef<boolean>(false);
 
   const throttledSpeed = speed > 0 ? speed * 0.001 : 0;
@@ -143,24 +150,17 @@ export const PixelCanvas: React.FC<PixelCanvasProps> = ({
       if (!ctx) return;
 
       pixelsRef.current = [];
-      
+
       for (let x = 0; x < width; x += gap) {
         for (let y = 0; y < height; y += gap) {
           const color = colors[Math.floor(Math.random() * colors.length)];
           const delay = reducedMotionRef.current ? 0 : getDistanceToCanvasCenter(x, y, width, height);
 
           pixelsRef.current.push(
-            new Pixel(canvas, ctx, x, y, color, throttledSpeed, delay)
+              new Pixel(canvas, ctx, x, y, color, throttledSpeed, delay)
           );
         }
       }
-    };
-
-    const getDistanceToCanvasCenter = (x: number, y: number, width: number, height: number): number => {
-      const dx = x - width / 2;
-      const dy = y - height / 2;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      return distance;
     };
 
     const animate = (fnName: 'appear' | 'disappear') => {
@@ -181,6 +181,7 @@ export const PixelCanvas: React.FC<PixelCanvasProps> = ({
       if (pixelsRef.current.every(pixel => pixel.isIdle)) {
         if (animationRef.current) {
           cancelAnimationFrame(animationRef.current);
+          animationRef.current = null;
         }
       }
     };
@@ -188,6 +189,7 @@ export const PixelCanvas: React.FC<PixelCanvasProps> = ({
     const handleMouseEnter = () => {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
+        animationRef.current = null;
       }
       animate('appear');
     };
@@ -195,16 +197,20 @@ export const PixelCanvas: React.FC<PixelCanvasProps> = ({
     const handleMouseLeave = () => {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
+        animationRef.current = null;
       }
       animate('disappear');
     };
 
     const resizeObserver = new ResizeObserver(initCanvas);
     const canvas = canvasRef.current;
-    
+
     if (canvas) {
       resizeObserver.observe(canvas);
       initCanvas();
+
+      // Start the appear animation initially
+      animate('appear');
 
       canvas.addEventListener('mouseenter', handleMouseEnter);
       canvas.addEventListener('mouseleave', handleMouseLeave);
@@ -220,7 +226,7 @@ export const PixelCanvas: React.FC<PixelCanvasProps> = ({
       if (canvas) {
         canvas.removeEventListener('mouseenter', handleMouseEnter);
         canvas.removeEventListener('mouseleave', handleMouseLeave);
-        
+
         if (!noFocus) {
           canvas.removeEventListener('focusin', handleMouseEnter);
           canvas.removeEventListener('focusout', handleMouseLeave);
@@ -233,10 +239,10 @@ export const PixelCanvas: React.FC<PixelCanvasProps> = ({
   }, [colors, gap, throttledSpeed, noFocus]);
 
   return (
-    <canvas
-      ref={canvasRef}
-      className={className}
-      style={{ display: 'block', width: '100%', height: '100%' }}
-    />
+      <canvas
+          ref={canvasRef}
+          className={className}
+          style={{ display: 'block', width: '100%', height: '100%' }}
+      />
   );
 };

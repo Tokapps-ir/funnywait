@@ -3,7 +3,31 @@
 @theme {
   --font-sans: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
 }
+/* Disable text selection */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+/* Allow selection on specific elements if needed */
+input, textarea, [contenteditable="true"] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* Disable drag on images and other elements */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+* {
+  -webkit-touch-callout: none;
+}
 @layer base {
   html {
     direction: rtl;

@@ -84,8 +84,30 @@ export interface HeroConfig {
   morph_3_threshold: number;
   enabled?: boolean;
   locale: string;
+  video?: Video;
 }
-
+export interface Video {
+  id: number;
+  documentId: string;
+  name: string;
+  alternativeText: string | null;
+  caption: string | null;
+  focalPoint: any | null;
+  width: number | null;
+  height: number | null;
+  formats: any | null;
+  hash: string;
+  ext: string;
+  mime: string;
+  size: number;
+  url: string;
+  previewUrl: string | null;
+  provider: string;
+  provider_metadata: any | null;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+}
 export interface CalculatorConfig {
   id: number;
   documentId: string;
@@ -256,8 +278,7 @@ export interface Footer {
   contact_phone: string;
   contact_email: string;
   copyright_text: string;
-  terms_link: string;
-  privacy_link: string;
+  copyright_links: FooterLink[];
   enabled?: boolean;
   locale: string;
 }
@@ -327,4 +348,8 @@ export function getBrandLogoUrl(media: Media | null): string | null {
   
   // Fallback to the main image URL
   return media.url;
+}
+
+export function videoUrl(video: Video){
+  return getStrapiMediaUrl(video.url);
 }

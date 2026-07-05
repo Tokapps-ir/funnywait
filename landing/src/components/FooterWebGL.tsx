@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { PixelCanvas } from './PixelCanvas';
 import { SliderDive } from './SliderDive';
 import { getFooter } from '@/src/lib/footerService';
-import { Footer } from '@/src/types';
+import {Footer, FooterLink} from '@/src/types';
 import {Certificate} from "node:crypto";
 
 declare global {
@@ -89,27 +89,27 @@ export const FooterWebGL: React.FC = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-4 gap-12">
           <div className="col-span-2">
-            <div className="text-3xl font-black mb-6 text-white">{footerData.brand_name}</div>
-            <p className="text-white/40 max-w-md leading-loose">
+            <div className="text-3xl font-black mb-6 text-white ">{footerData.brand_name}</div>
+            <p className="text-white/50 font-bold max-w-md leading-loose">
               {footerData.brand_description}
             </p>
           </div>
 
           <div>
             <h4 className="font-bold mb-6 text-white">لینک‌های سریع</h4>
-            <ul className="space-y-4 text-white/40 text-sm">
-              {false && footerData.quick_links.map((link, index) => (
+            <ul className="space-y-4 text-white/70 text-sm font-bold">
+              {footerData.quick_links.map((link, index) => (
                 <li key={index}>
                   <div className="relative group">
                     <PixelCanvas
                       colors={["#e0f2fe", "#7dd3fc", "#0ea5e9"]}
                       gap={10}
-                      speed={25}
+                      speed={45}
                       className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
                     />
                     <a
                       href={link.url}
-                      className="relative z-10 hover:text-emerald-400 transition-colors block py-2 px-3 rounded-lg hover:bg-white/5"
+                      className="relative  z-10 hover:text-emerald-400 transition-colors block py-2 px-3 rounded-lg bg-white/20"
                     >
                       {link.text}
                     </a>
@@ -121,12 +121,12 @@ export const FooterWebGL: React.FC = () => {
 
           <div>
             <h4 className="font-bold mb-6 text-white">ارتباط با ما</h4>
-            <div className="space-y-4 text-white/40 text-sm">
+            <div className="space-y-4 text-white/80 text-md">
               <div className="relative group">
                 <PixelCanvas
-                  colors={["#fef08a", "#fde047", "#eab308"]}
-                  gap={3}
-                  speed={20}
+                  colors={["#383415", "#54480e", "#85680e"]}
+                  gap={10}
+                  speed={10}
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
                 />
                 <div className="relative z-10 block py-2 px-3 rounded-lg hover:bg-white/5">
@@ -135,24 +135,24 @@ export const FooterWebGL: React.FC = () => {
               </div>
               <div className="relative group">
                 <PixelCanvas
-                  colors={["#fef08a", "#fde047", "#eab308"]}
-                  gap={3}
-                  speed={20}
+                  colors={["#383415", "#54480e", "#85680e"]}
+                  gap={10}
+                  speed={10}
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
                 />
-                <div className="relative z-10 block py-2 px-3 rounded-lg hover:bg-white/5">
-                  تلفن: {footerData.contact_phone}
-                </div>
+                <a href={"tell://"+footerData.contact_phone} className="relative z-10 block py-2 px-3 rounded-lg hover:bg-white/5">
+                  {footerData.contact_phone}
+                </a>
               </div>
               <div className="relative group">
                 <PixelCanvas
-                  colors={["#fef08a", "#fde047", "#eab308"]}
-                  gap={3}
-                  speed={20}
+                  colors={["#383415", "#54480e", "#85680e"]}
+                  gap={10}
+                  speed={10}
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
                 />
                 <div className="relative z-10 block py-2 px-3 rounded-lg hover:bg-white/5">
-                  ایمیل: {footerData.contact_email}
+                   {footerData.contact_email}
                 </div>
               </div>
             </div>
@@ -164,39 +164,26 @@ export const FooterWebGL: React.FC = () => {
           <SliderDive certificates={footerData?.certificates} />
         </div>
 
-        <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/20 uppercase tracking-widest">
+        <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[15px] text-white font-bold uppercase tracking-widest">
           <div>{footerData.copyright_text}</div>
           <div className="flex gap-8">
-            <div className="relative group">
-              <PixelCanvas
-                colors={["#fecdd3", "#fda4af", "#e11d48"]}
-                gap={6}
-                speed={80}
-                noFocus={true}
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
-              />
-              <a
-                href={footerData.terms_link}
-                className="relative z-10 hover:text-white/40 transition-colors block py-1 px-2 rounded-lg"
-              >
-                قوانین و مقررات
-              </a>
-            </div>
-            <div className="relative group">
-              <PixelCanvas
-                colors={["#fecdd3", "#fda4af", "#e11d48"]}
-                gap={6}
-                speed={80}
-                noFocus={true}
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
-              />
-              <a
-                href={footerData.privacy_link}
-                className="relative z-10 hover:text-white/40 transition-colors block py-1 px-2 rounded-lg"
-              >
-                حریم خصوصی
-              </a>
-            </div>
+            {footerData?.copyright_links?.map((link:FooterLink) => (
+                <div className="relative group">
+                  <PixelCanvas
+                      colors={["#fecdd3", "#fda4af", "#e11d48"]}
+                      gap={6}
+                      speed={80}
+                      noFocus={true}
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                  />
+                  <a
+                      href={link.url}
+                      className="relative z-10 hover:text-white/90 transition-colors block py-1 px-2 rounded-lg"
+                  >
+                    {link.text}
+                  </a>
+                </div>
+            ))}
           </div>
         </div>
       </div>

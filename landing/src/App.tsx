@@ -50,6 +50,7 @@ import {Zap} from 'lucide-react';
 import {Howl} from 'howler';
 import {Quote, Star, Image as ImageIcon} from 'lucide-react';
 import {getDefaultSettings} from "node:http2";
+import {PixelCanvas} from "@/src/components/PixelCanvas.tsx";
 
 // --- Audio instances ---
 // Use reliable CDN sources for audio
@@ -157,7 +158,7 @@ export default function App() {
     var [isMuted, setIsMuted] = useState(false);
     const [activeTestimonial, setActiveTestimonial] = useState(0);
     const [showVideoIntro, setShowVideoIntro] = useState(false);
-    var Playing=false;
+    var Playing = false;
     const dir = locale === 'fa' ? 'rtl' : 'ltr';
     const t = useMemo(() => {
         const dict = translations[locale];
@@ -190,11 +191,10 @@ export default function App() {
     useEffect(() => {
 
 
-
         window.addEventListener('click', () => {
             // Attempt to play
-            if (!Playing){
-                Playing=true;
+            if (!Playing) {
+                Playing = true;
                 bgMusic.play();
             }
         });
@@ -202,7 +202,7 @@ export default function App() {
 
         const fetchData = async () => {
             setLoading(true);
-            const [settingsRes,prodRes, calcRes, heroRes, featuresConfigRes, featureCardsRes, smartPkgRes, galleryRes, galleryGroupsRes, testimonialsRes] = await Promise.all([
+            const [settingsRes, prodRes, calcRes, heroRes, featuresConfigRes, featureCardsRes, smartPkgRes, galleryRes, galleryGroupsRes, testimonialsRes] = await Promise.all([
                 getSettings(locale),
                 getProducts(locale),
                 getCalculatorConfig(locale),
@@ -281,6 +281,7 @@ export default function App() {
 
     // Auto-rotate testimonials
     useEffect(() => {
+
         if (testimonials.length === 0) return;
         const interval = setInterval(() => {
             setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -307,7 +308,7 @@ export default function App() {
             </div>
         );
     }
-
+    document.title=settings.brand_name;
     return (
         <LanguageContext.Provider value={i18nValue}>
             <SmoothScroll>
@@ -319,8 +320,8 @@ export default function App() {
                         className="fixed top-0 left-0 right-0 z-50 px-8 py-5 flex justify-between items-center backdrop-blur-xl bg-black/20 border-b border-white/5">
                         <div className="text-2xl font-black tracking-tighter flex items-center gap-2">
                             {settings.brand_logo ? (
-                                <img 
-                                    src={getBrandLogoUrl(settings.brand_logo)} 
+                                <img
+                                    src={getBrandLogoUrl(settings.brand_logo)}
                                     alt={settings.brand_name}
                                     className=" w-75 h-40 rounded-lg object-cover "
                                 />
@@ -332,6 +333,7 @@ export default function App() {
                             <span>{settings.brand_name}</span>
                         </div>
                         <div className="hidden md:flex gap-8 text-lg font-medium text-white ">
+
                             <a href="#features"
                                className="hover:text-emerald-600 transition-colors">{t('nav_features')}</a>
                             <a href="#calculator"
@@ -347,12 +349,17 @@ export default function App() {
                         </div>
                         <div className="flex items-center gap-4">
                             {/* Language toggle */}
-                            <button
-                                onClick={() => setLocale(locale === 'fa' ? 'en' : 'fa')}
-                                className="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-bold hover:bg-emerald-500/20 hover:border-emerald-500/40 transition-all"
-                            >
-                                {t('lang_switch')}
-                            </button>
+                            {false && (
+
+                                <button
+                                    onClick={() => setLocale(locale === 'fa' ? 'en' : 'fa')}
+                                    className="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-bold hover:bg-emerald-500/20 hover:border-emerald-500/40 transition-all"
+                                >
+                                    {t('lang_switch')}
+                                </button>
+
+                            )}
+
                             <div className="hidden lg:flex flex-col items-end">
                                 <span
                                     className="text-[10px] text-white/40 uppercase tracking-widest">{t('nav_music_label')}</span>
@@ -402,6 +409,7 @@ export default function App() {
                         bgMusic={bgMusic}
                         isVisible={showVideoIntro}
                         onClose={() => setShowVideoIntro(false)}
+                        video={heroConfig?.video}
                     />
 
                     <SectionDivider/>
@@ -442,8 +450,6 @@ export default function App() {
                     )}
 
 
-
-
                     {/* Products Section */}
                     {products.length > 0 && (
                         <>
@@ -451,21 +457,26 @@ export default function App() {
                                 <SectionReveal>
                                     <div className="text-center mb-16">
                                         <h2 className="text-5xl font-black mb-4">پکیج‌های هوشمند</h2>
-                                        <p className="text-white/40">انتخاب بهترین راهکار متناسب با نیاز کسب‌وکار شما</p>
+                                        <p className="text-white/40">انتخاب بهترین راهکار متناسب با نیاز کسب‌وکار
+                                            شما</p>
                                     </div>
                                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                                         {products
                                             .map((product, i) => (
-                                            <motion.div
-                                                key={product.id}
-                                                initial={{opacity: 0, y: 40}}
-                                                whileInView={{opacity: 1, y: 0}}
-                                                viewport={{once: true}}
-                                                transition={{delay: i * 0.15, duration: 0.6, ease: [0.16, 1, 0.3, 1]}}
-                                            >
-                                                <ProductCard product={product}/>
-                                            </motion.div>
-                                        ))}
+                                                <motion.div
+                                                    key={product.id}
+                                                    initial={{opacity: 0, y: 40}}
+                                                    whileInView={{opacity: 1, y: 0}}
+                                                    viewport={{once: true}}
+                                                    transition={{
+                                                        delay: i * 0.15,
+                                                        duration: 0.6,
+                                                        ease: [0.16, 1, 0.3, 1]
+                                                    }}
+                                                >
+                                                    <ProductCard product={product}/>
+                                                </motion.div>
+                                            ))}
                                     </div>
                                 </SectionReveal>
                             </section>
@@ -483,7 +494,7 @@ export default function App() {
                                         <ImageIcon className="text-emerald-500"/>
                                         گالری تصاویر
                                     </h2>
-                                    <p className="text-white/40">لحظات شاد مشتریان ما</p>
+                                    <p className="text-white/90 font-semibold">لحظات شاد مشتریان ما</p>
                                 </div>
                                 <Gallery items={galleryItems} groups={galleryGroups}/>
                             </SectionReveal>

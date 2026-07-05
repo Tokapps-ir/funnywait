@@ -269,7 +269,7 @@ const GalleryCard: React.FC<CardProps> = ({ item, index, onClick }) => {
         >
           <p className="text-white font-bold text-sm leading-tight drop-shadow">{item.title}</p>
           {item.caption && (
-            <p className="text-white/65 text-xs mt-0.5 line-clamp-2">{item.caption}</p>
+            <p className="text-white/90 font-semibold text-xs mt-0.5 line-clamp-2">{item.caption}</p>
           )}
         </motion.div>
 
@@ -542,8 +542,8 @@ export const Gallery: React.FC<GalleryProps> = ({ items, groups = [] }) => {
                 <motion.button
                   key={slug}
                   onClick={() => setActiveFilter(slug)}
-                  className="relative px-5 py-2 rounded-full text-sm font-medium focus:outline-none"
-                  style={{ color: isActive ? '#fff' : 'rgba(255,255,255,0.55)' }}
+                  className="relative px-5 py-2 rounded-full text-md font-semibold focus:outline-none"
+                  style={{ color: isActive ? '#fff' : 'rgba(255,255,255,0.72)' }}
                   whileHover={{ color: '#fff' }}
                   transition={{ duration: 0.18 }}
                 >

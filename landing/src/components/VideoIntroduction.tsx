@@ -2,17 +2,19 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import { Howl } from 'howler';
-
+import {Video, videoUrl} from '../types';
 interface VideoIntroductionProps {
   bgMusic: Howl;
   isVisible: boolean;
   onClose: () => void;
+  video?: Video
 }
 
 export const VideoIntroduction: React.FC<VideoIntroductionProps> = ({
   bgMusic,
   isVisible,
-  onClose
+  onClose,
+    video
 }) => {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -83,7 +85,7 @@ export const VideoIntroduction: React.FC<VideoIntroductionProps> = ({
             {/* Video player */}
             <video
               ref={videoRef}
-              src="https://cdn.pixabay.com/download/video/2024/01/15/video_f5e6c6c69c.mp4?filename=abstract-background-loop-1920x1080-30fps-48481_medium.mp4"
+              src={videoUrl(video)}
               autoPlay
               muted={false}
               loop={false}
