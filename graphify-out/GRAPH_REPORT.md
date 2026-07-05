@@ -1,16 +1,16 @@
-# Graph Report - funnywait  (2026-07-04)
+# Graph Report - funnywait  (2026-07-05)
 
 ## Corpus Check
-- 176 files · ~133,174 words
+- 177 files · ~133,398 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2499 nodes · 2947 edges · 232 communities (211 shown, 21 thin omitted)
+- 2503 nodes · 2952 edges · 232 communities (211 shown, 21 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7a7522ed`
+- Built from commit: `d6f7c496`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -305,8 +305,8 @@ Cohesion: 0.05
 Nodes (35): BUSINESS_PARTNER_FIELD_META, BUSINESS_PARTNERS_EN, BUSINESS_PARTNERS_FA, CALC_EN, CALC_FA, CALC_FIELD_META, CUSTOMER_FIELD_META, FEATURE_CARD_FIELD_META (+27 more)
 
 ### Community 21 - "Community 21"
-Cohesion: 0.06
-Nodes (35): dependencies, better-sqlite3, pg, react, react-dom, react-router-dom, @strapi/plugin-cloud, @strapi/plugin-users-permissions (+27 more)
+Cohesion: 0.05
+Nodes (37): dependencies, better-sqlite3, pg, react, react-dom, react-router-dom, @sensinum/strapi-plugin-mcp, @strapi/plugin-cloud (+29 more)
 
 ### Community 22 - "Community 22"
 Cohesion: 0.06
@@ -325,20 +325,20 @@ Cohesion: 0.07
 Nodes (31): attributes, gallery_items, name, slug, sort_order, collectionName, description, mappedBy (+23 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 0.10
-Nodes (22): Customer, OurCustomers(), iconMap, OurServices(), Service, getCustomers(), MOCK_CUSTOMERS, MockCustomer (+14 more)
+Cohesion: 0.11
+Nodes (24): FeatureCards3DComponent(), FeatureCards3DProps, mediaUrl(), iconMap, OurServices(), Service, getFeatureCards(), MOCK_FEATURE_CARDS (+16 more)
 
 ### Community 27 - "Community 27"
 Cohesion: 0.06
 Nodes (30): 🎯 Actionable Tasks, 🏗️ Architecture Overview, 🗄️ Backend (`landing_backend`), Backend (`landing_backend`):, Backend (`landing_backend` - funnywait-backend), code:block1 (┌─────────────────────────────────────────────────────────┐), code:json ({), code:json ({) (+22 more)
 
 ### Community 28 - "Community 28"
-Cohesion: 0.10
-Nodes (22): Hero(), Props, SmoothScroll(), TestimonialCarousel(), TestimonialCarouselProps, VideoIntroduction(), VideoIntroductionProps, getSettings() (+14 more)
+Cohesion: 0.09
+Nodes (24): Hero(), Props, SmoothScroll(), TestimonialCarousel(), TestimonialCarouselProps, VideoIntroduction(), VideoIntroductionProps, getHeroConfig() (+16 more)
 
 ### Community 29 - "Community 29"
-Cohesion: 0.13
-Nodes (22): Calculator(), InputGroup(), Props, Props, SmartCalculator(), calculateRecommendation(), fetchPackages(), StrapiSmartPackage (+14 more)
+Cohesion: 0.12
+Nodes (24): Calculator(), InputGroup(), Props, Props, SmartCalculator(), calculateRecommendation(), fetchPackages(), StrapiSmartPackage (+16 more)
 
 ### Community 30 - "Community 30"
 Cohesion: 0.08
@@ -385,8 +385,8 @@ Cohesion: 0.11
 Nodes (18): attributes, text, url, collectionName, localized, info, description, displayName (+10 more)
 
 ### Community 41 - "Community 41"
-Cohesion: 0.14
-Nodes (15): FeatureCards3DComponent(), FeatureCards3DProps, mediaUrl(), contentTypes, fetch, setupPermissions(), getFeatureCards(), MOCK_FEATURE_CARDS (+7 more)
+Cohesion: 0.33
+Nodes (5): Customer, OurCustomers(), getCustomers(), MOCK_CUSTOMERS, MockCustomer
 
 ### Community 42 - "Community 42"
 Cohesion: 0.11
@@ -425,8 +425,8 @@ Cohesion: 0.14
 Nodes (14): 1. Routing, 2. Link Component, 3. NavLink Component, 4. Outlet, 5. Routes, 6. Navigation, code:tsx (<Routes>), code:tsx (import { NavLink, Link } from 'react-router-dom';) (+6 more)
 
 ### Community 51 - "Community 51"
-Cohesion: 0.21
-Nodes (11): EC, MorphGlass(), ProductCard(), Props, Rect, renderMarkdown(), SHIFT_SPRING, TILT_SPRING (+3 more)
+Cohesion: 0.17
+Nodes (13): EC, MorphGlass(), ProductCard(), Props, Rect, renderMarkdown(), SHIFT_SPRING, TILT_SPRING (+5 more)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.15
@@ -481,8 +481,8 @@ Cohesion: 0.18
 Nodes (11): Cloud Deployment, code:bash (# Start strapi in development mode), code:bash (npm run deploy:cloud), code:bash (# Build and run with Docker), code:bash (# Deploy with npx), code:bash (# Connect to Strapi Cloud), Deploy Commands, Deployment (+3 more)
 
 ### Community 65 - "Community 65"
-Cohesion: 0.18
-Nodes (11): API Reference, API Routes, code:tsx (import { RouterProvider, createBrowserRouter } from 'react-r), code:tsx (import { Link } from 'react-router-dom';), code:tsx (<Router>), code:tsx (function Layout() {), code:tsx (<Route path="products" element={), Default Outlet Route (+3 more)
+Cohesion: 0.50
+Nodes (4): default_attention_value, default, pluginOptions, type
 
 ### Community 66 - "Community 66"
 Cohesion: 0.18
@@ -497,8 +497,8 @@ Cohesion: 0.18
 Nodes (8): __dirname, files, gltf, inputFile, io, outputFile, resultsDir, root
 
 ### Community 69 - "Community 69"
-Cohesion: 0.20
-Nodes (10): Active Parameters, Active Route Params, ActiveLink Component, code:tsx (<NavLink), code:tsx (<NavLink to="/" isActive={isActive => active === '/'}>), code:tsx (<NavLink to="/product/:id" isActive={(location, { pathname }), code:tsx (<Route path="users" element={), code:tsx (<Outlet route={[) (+2 more)
+Cohesion: 0.18
+Nodes (11): API Reference, API Routes, code:tsx (import { RouterProvider, createBrowserRouter } from 'react-r), code:tsx (import { Link } from 'react-router-dom';), code:tsx (<Router>), code:tsx (function Layout() {), code:tsx (<Route path="products" element={), Default Outlet Route (+3 more)
 
 ### Community 70 - "Community 70"
 Cohesion: 0.20
@@ -557,8 +557,8 @@ Cohesion: 0.22
 Nodes (9): scroll_hint, subtitle, localized, i18n, pluginOptions, type, pluginOptions, pluginOptions (+1 more)
 
 ### Community 84 - "Community 84"
-Cohesion: 0.31
-Nodes (6): FooterWebGL(), Window, PixelCanvas(), PixelCanvasProps, getFooter(), Footer
+Cohesion: 0.25
+Nodes (7): FooterWebGL(), Window, PixelCanvas(), PixelCanvasProps, SliderDive(), getFooter(), Footer
 
 ### Community 85 - "Community 85"
 Cohesion: 0.25
@@ -570,7 +570,7 @@ Nodes (4): config(), config(), config(), env
 
 ### Community 87 - "Community 87"
 Cohesion: 0.29
-Nodes (7): attributes, default_attention_value, mid_profit_msg, default, type, pluginOptions, type
+Nodes (7): attributes, default_profit, mid_profit_msg, default, type, pluginOptions, type
 
 ### Community 89 - "Community 89"
 Cohesion: 0.29
@@ -661,8 +661,8 @@ Cohesion: 0.33
 Nodes (5): animations, cameras, materials, meshes, objects
 
 ### Community 112 - "Community 112"
-Cohesion: 0.47
-Nodes (5): getCalculatorConfig(), MOCK_CALC, MockCalc, strapiGet(), CalculatorConfig
+Cohesion: 0.28
+Nodes (7): contentTypes, fetch, setupPermissions(), getCalculatorConfig(), MOCK_CALC, strapiGet(), strapiGet()
 
 ### Community 113 - "Community 113"
 Cohesion: 0.33
@@ -713,8 +713,8 @@ Cohesion: 0.50
 Nodes (4): default_engagement, default, pluginOptions, type
 
 ### Community 126 - "Community 126"
-Cohesion: 0.50
-Nodes (4): default_profit, default, pluginOptions, type
+Cohesion: 0.20
+Nodes (10): Active Parameters, Active Route Params, ActiveLink Component, code:tsx (<NavLink), code:tsx (<NavLink to="/" isActive={isActive => active === '/'}>), code:tsx (<NavLink to="/product/:id" isActive={(location, { pathname }), code:tsx (<Route path="users" element={), code:tsx (<Outlet route={[) (+2 more)
 
 ### Community 127 - "Community 127"
 Cohesion: 0.50
@@ -849,7 +849,7 @@ Cohesion: 0.67
 Nodes (3): heading, pluginOptions, type
 
 ## Knowledge Gaps
-- **1128 isolated node(s):** `build-docker.sh script`, `latest`, `lastUpdateCheck`, `lastNotification`, `name` (+1123 more)
+- **1130 isolated node(s):** `build-docker.sh script`, `latest`, `lastUpdateCheck`, `lastNotification`, `name` (+1125 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -859,7 +859,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Framer Motion` connect `Community 58` to `Community 90`, `Community 133`, `Community 46`, `Community 63`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `build-docker.sh script`, `Write HDR file with proper format.`, `latest` to the rest of the system?**
-  _1129 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1131 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06458635703918723 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
