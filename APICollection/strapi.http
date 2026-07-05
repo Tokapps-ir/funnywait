@@ -11,3 +11,8 @@ Authorization: {{client.token}}
 GET http://{{client.url}}/api/footer?locale=fa&populate=*
     HTTP/1.1
 Authorization: {{client.token}}
+
+### Hero
+GET http://{{client.url}}/api/hero-config?locale=fa&populate=*
+    HTTP/1.1
+Authorization: {{client.token}}
