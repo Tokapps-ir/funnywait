@@ -533,7 +533,7 @@ export default function App() {
                         <SectionReveal>
                             <div className="text-center mb-16">
                                 <h2 className="text-5xl font-black mb-4">نظرات مشتریان</h2>
-                                <p className="text-white/40">آنچه مشتریان درباره ما می‌گویند</p>
+                                <p className="text-white/40 font-semibold">آنچه مشتریان درباره ما می‌گویند</p>
                             </div>
                             <TestimonialCarousel
                                 testimonials={testimonials}

@@ -13,7 +13,7 @@ interface MockHero {
 export async function getHeroConfig(locale = 'fa'): Promise<StrapiResponse<HeroConfig|any>> {
   try {
     const hero=strapiSDK.single('hero-config');
-    return await hero.find({locale:locale});
+    return await hero.find({locale:locale,populate:"*"});
   } catch {
     console.warn('Using mock hero config due to API error');
   }

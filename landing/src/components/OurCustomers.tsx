@@ -216,7 +216,7 @@ export const OurCustomers: React.FC = () => {
             مشتریان ما
           </h2>
         </div>
-        <p className="text-white/70 text-lg max-w-2xl mx-auto">
+        <p className="text-white/70 text-lg font-semibold max-w-2xl mx-auto">
           لیستی از مشتریان ارزشمند که به ما اعتماد کرده‌اند
         </p>
       </motion.div>
@@ -241,7 +241,7 @@ export const OurCustomers: React.FC = () => {
                 <h3 className="font-bold text-white text-lg group-hover:text-emerald-400 transition-colors duration-300">
                   {customer.name}
                 </h3>
-                <p className="text-sm text-white/60">{customer.description}</p>
+                <p className="text-sm font-semibold text-white/80">{customer.description}</p>
               </div>
             </div>
             
@@ -250,7 +250,7 @@ export const OurCustomers: React.FC = () => {
                 href={customer.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 text-sm font-medium transition-colors duration-300"
+                className="inline-flex items-center font-semibold gap-2 text-emerald-400 hover:text-emerald-300 text-sm font-medium transition-colors duration-300"
               >
                 مشاهده وب‌سایت
                 <ExternalLink className="w-4 h-4" />

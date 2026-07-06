@@ -351,5 +351,6 @@ export function getBrandLogoUrl(media: Media | null): string | null {
 }
 
 export function videoUrl(video: Video){
+  console.log(video);
   return getStrapiMediaUrl(video.url);
 }
