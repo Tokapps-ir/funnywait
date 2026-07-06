@@ -19,7 +19,7 @@ const MOCK_SMART_PACKAGES: Record<string, StrapiResponse<SmartPackage[]>> = {
   },
 };
 
-export async function getSmartPackages(locale = 'fa'): Promise<StrapiResponse<SmartPackage|any[]>> {
+export async function getSmartPackages(locale = 'fa'): Promise<StrapiResponse<SmartPackage[]|any[]>> {
   try {
     const smartPackageService=strapiSDK.collection('smart-packages');
     const response = await smartPackageService.find({

@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing_backend/.strapi-updater.json": {
-    "mtime": 1783284839.5913858,
-    "ast_hash": "4719bcefbb554fe4bc82f5846367fc2f",
+    "mtime": 1783348243.464085,
+    "ast_hash": "fc2ecd6859c643589fcbe79924f9f050",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing_backend/package.json": {
@@ -40,12 +40,12 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing_backend/types/generated/contentTypes.d.ts": {
-    "mtime": 1783284841.7141736,
+    "mtime": 1783348248.5752008,
     "ast_hash": "d6bfc5fc798562cb2f9ac0f83fc4fdfd",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing_backend/types/generated/components.d.ts": {
-    "mtime": 1783284841.718117,
+    "mtime": 1783348248.5764647,
     "ast_hash": "99a57e858d0c35efd507af35a8ac3c43",
     "semantic_hash": ""
   },
@@ -80,7 +80,7 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing_backend/.strapi/client/app.js": {
-    "mtime": 1783284841.2257,
+    "mtime": 1783348244.6808772,
     "ast_hash": "e86cff0172ae424f5fe86ac8a3a1b0d0",
     "semantic_hash": ""
   },
@@ -400,8 +400,8 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/package.json": {
-    "mtime": 1783188274.2484934,
-    "ast_hash": "e7cd3683216089affaa6f906af7b1369",
+    "mtime": 1783345788.0490725,
+    "ast_hash": "0d9b83c36e06bb564f7e61325ffce49f",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/vite-env.d.ts": {
@@ -410,8 +410,8 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/tsconfig.json": {
-    "mtime": 1783188274.249583,
-    "ast_hash": "80fb5b9a2198aa48670792f6904a4730",
+    "mtime": 1783345980.7224824,
+    "ast_hash": "faddc3ecc02f0f07c3d349e6c057dc9a",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/vite.config.ts": {
@@ -569,29 +569,9 @@
     "ast_hash": "8ef102469fd905d18c9b210bce2af889",
     "semantic_hash": ""
   },
-  "/Users/apple/Documents/projectsLocal/funnywait/landing/.vite/deps/_metadata.json": {
-    "mtime": 1772062193.9434865,
-    "ast_hash": "8290ee7b8110fbf5ba24450c4c779168",
-    "semantic_hash": ""
-  },
-  "/Users/apple/Documents/projectsLocal/funnywait/landing/.vite/deps/package.json": {
-    "mtime": 1772062193.896274,
-    "ast_hash": "d0707362e90f00edd12435e9d3b9d71c",
-    "semantic_hash": ""
-  },
-  "/Users/apple/Documents/projectsLocal/funnywait/landing/src/App.tsx": {
-    "mtime": 1783287562.5267818,
-    "ast_hash": "fffbe440694211aa9254cc2ebe21d816",
-    "semantic_hash": ""
-  },
-  "/Users/apple/Documents/projectsLocal/funnywait/landing/src/main.tsx": {
-    "mtime": 1772056073.8838983,
-    "ast_hash": "2b36426d5ad7e08ef79746aa524f4fb7",
-    "semantic_hash": ""
-  },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/types.ts": {
-    "mtime": 1783286263.5421438,
-    "ast_hash": "455d1eb07f23ec12035d7059ef4f8196",
+    "mtime": 1783346932.3571978,
+    "ast_hash": "002ca8a5d636b8ccc810af4ebf1e0b86",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/grid2.cdn.min.js": {
@@ -610,8 +590,8 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/VideoIntroduction.tsx": {
-    "mtime": 1783286296.2274597,
-    "ast_hash": "b2f01c24e790add2ef5f4ffff2c3a877",
+    "mtime": 1783336741.2300515,
+    "ast_hash": "e1b1c0cccd3590b6fd569fb4b4a0c58f",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/CustomCursor.tsx": {
@@ -625,8 +605,8 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/OurBusinessPartners.tsx": {
-    "mtime": 1772164256.6513522,
-    "ast_hash": "39f71831ec66be7aef6bb7d9119037d6",
+    "mtime": 1783375939.8869293,
+    "ast_hash": "907552063a05202b5ff1e9d787f0738c",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/ProductCard.tsx": {
@@ -640,13 +620,13 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/OurCustomers.tsx": {
-    "mtime": 1772164214.7208676,
-    "ast_hash": "7f929a0eb076d8b4ab533956181863f6",
+    "mtime": 1783292353.3741426,
+    "ast_hash": "63521c113adae065df8d335e199e31cc",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/OurServices.tsx": {
-    "mtime": 1773613121.3543365,
-    "ast_hash": "776bd692ec15a48c91b75036f3372ac8",
+    "mtime": 1783293615.7032177,
+    "ast_hash": "3fbc88ffddf0bb09ce8e6b4d6865a526",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/DynamicThreeScene.tsx": {
@@ -665,8 +645,8 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/FeatureCards3D.tsx": {
-    "mtime": 1773611974.250164,
-    "ast_hash": "8556a9f4e94f77852e49da99f67f1071",
+    "mtime": 1783348430.482288,
+    "ast_hash": "4ccae2bfc9a8d8e20044480441d88f97",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/FooterWebGL.tsx": {
@@ -680,8 +660,8 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/TestimonialCarousel.tsx": {
-    "mtime": 1772194463.7172759,
-    "ast_hash": "5b28a0d236b4dc9a6e4e31309106b085",
+    "mtime": 1783293318.028249,
+    "ast_hash": "9b5169d08c2bbd2defc9e9ec536a6ef9",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/GalleryItem.tsx": {
@@ -700,18 +680,18 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/lib/galleryService.ts": {
-    "mtime": 1782133558.9669487,
-    "ast_hash": "294dd6f300bb9585f4fafb967bcb2877",
+    "mtime": 1783347838.204926,
+    "ast_hash": "607d0d9c8478bbe615c477f7e3ec995d",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/lib/strapi.ts": {
-    "mtime": 1772186645.8525724,
-    "ast_hash": "135ab985d8fc09dcb881ef290d74dd01",
+    "mtime": 1783348288.4016693,
+    "ast_hash": "8116684ee86e8d5db15ba51083047d54",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/lib/heroService.ts": {
-    "mtime": 1772190220.879492,
-    "ast_hash": "974dea1c169a1f6dfc877fd004b8a1f1",
+    "mtime": 1783336269.9335117,
+    "ast_hash": "cea277df1f8d29b258bf1afd75666f86",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/lib/calculatorService.ts": {
@@ -725,13 +705,13 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/lib/smartPackageService.ts": {
-    "mtime": 1782133559.0493536,
-    "ast_hash": "380915bdf65eef389f134052591defc0",
+    "mtime": 1783347827.0981755,
+    "ast_hash": "812387b3f54b3d938c821a8be579e6f5",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/lib/featureCardService.ts": {
-    "mtime": 1772191778.7803056,
-    "ast_hash": "d39a29611e53737b6897cab50a1fe1b0",
+    "mtime": 1783348349.1640432,
+    "ast_hash": "32cb325dd79adf8d293a68924453512d",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/lib/api.ts": {
@@ -760,8 +740,8 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/lib/productService.ts": {
-    "mtime": 1772191864.918386,
-    "ast_hash": "d75c672c138c10786c18c2af16f4af66",
+    "mtime": 1783347784.0339293,
+    "ast_hash": "773af87d2c75192d4a3d7c8a75a1f94b",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/src/lib/footerService.ts": {
@@ -810,13 +790,8 @@
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing_backend/.strapi/client/index.html": {
-    "mtime": 1783284841.195371,
+    "mtime": 1783348244.6538632,
     "ast_hash": "eda04f64d11a5c9c5df544c8274f6cc3",
-    "semantic_hash": ""
-  },
-  "/Users/apple/Documents/projectsLocal/funnywait/landing/index.html": {
-    "mtime": 1783286821.2885199,
-    "ast_hash": "97c46aa015292cb30fb27def38bbb566",
     "semantic_hash": ""
   },
   "/Users/apple/Documents/projectsLocal/funnywait/landing/README.md": {
@@ -1187,6 +1162,46 @@
   "/Users/apple/Documents/projectsLocal/funnywait/landing_backend/public/uploads/medium_IMG_5537_ec14f1dce2.JPG": {
     "mtime": 1783288076.3315175,
     "ast_hash": "264609647eb2403d04228a02d344eb8f",
+    "semantic_hash": ""
+  },
+  "/Users/apple/Documents/projectsLocal/funnywait/landing/src/main1.tsx": {
+    "mtime": 1783345718.021495,
+    "ast_hash": "1e68780b5aa57014b8d99be014610a2d",
+    "semantic_hash": ""
+  },
+  "/Users/apple/Documents/projectsLocal/funnywait/landing/src/app/page.tsx": {
+    "mtime": 1783377518.9795504,
+    "ast_hash": "c11e294492a177d74e89bb0d3a694fbd",
+    "semantic_hash": ""
+  },
+  "/Users/apple/Documents/projectsLocal/funnywait/landing/index2.html": {
+    "mtime": 1783286821.2885199,
+    "ast_hash": "97c46aa015292cb30fb27def38bbb566",
+    "semantic_hash": ""
+  },
+  "/Users/apple/Documents/projectsLocal/funnywait/landing/src/App2.tsx": {
+    "mtime": 1783345718.0466976,
+    "ast_hash": "cec93a743f18bfd05db635ce0f22c556",
+    "semantic_hash": ""
+  },
+  "/Users/apple/Documents/projectsLocal/funnywait/landing/next.config.ts": {
+    "mtime": 1783345023.251116,
+    "ast_hash": "2751d7cee8d2f02bff297c3640bf0dd0",
+    "semantic_hash": ""
+  },
+  "/Users/apple/Documents/projectsLocal/funnywait/landing/next-env.d.ts": {
+    "mtime": 1783345980.7246852,
+    "ast_hash": "739b2bb1ae3ad1b2dea03f10280cac4c",
+    "semantic_hash": ""
+  },
+  "/Users/apple/Documents/projectsLocal/funnywait/landing/src/components/client/BusinessMainClient.tsx": {
+    "mtime": 1783375870.765031,
+    "ast_hash": "9bbba082a4849317aae07b02bba61c04",
+    "semantic_hash": ""
+  },
+  "/Users/apple/Documents/projectsLocal/funnywait/landing/src/app/layout.tsx": {
+    "mtime": 1783377463.4652777,
+    "ast_hash": "b2c448db5d4bd82dd5bb05911c278022",
     "semantic_hash": ""
   }
 }

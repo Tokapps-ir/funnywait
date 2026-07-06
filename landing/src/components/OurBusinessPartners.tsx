@@ -266,7 +266,7 @@ const LogoCell: React.FC<LogoCellProps> = ({ item, onSelect }) => {
     const logoUrl = item.partner.logo?.url
         ? item.partner.logo.url.startsWith('http')
             ? item.partner.logo.url
-            : `${import.meta.env.VITE_STRAPI_URL || 'http://localhost:1337'}${item.partner.logo.url}`
+            : `${process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337'}${item.partner.logo.url}`
         : null;
 
     const isActive = isRandomlyGlowing || isHovered;
