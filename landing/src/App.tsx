@@ -46,7 +46,7 @@ import {
     getBrandLogoUrl
 } from './types';
 import {LanguageContext, translations, type Locale} from './lib/i18n';
-import {Zap} from 'lucide-react';
+import {Zap, Menu, X} from 'lucide-react';
 import {Howl} from 'howler';
 import {Quote, Star, Image as ImageIcon} from 'lucide-react';
 import {getDefaultSettings} from "node:http2";
@@ -158,6 +158,7 @@ export default function App() {
     var [isMuted, setIsMuted] = useState(false);
     const [activeTestimonial, setActiveTestimonial] = useState(0);
     const [showVideoIntro, setShowVideoIntro] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     var Playing = false;
     const dir = locale === 'fa' ? 'rtl' : 'ltr';
     const t = useMemo(() => {
@@ -317,7 +318,7 @@ export default function App() {
 
                     {/* Navigation */}
                     <nav
-                        className="fixed top-0 left-0 right-0 z-50 px-8 py-5 flex justify-between items-center backdrop-blur-xl bg-black/20 border-b border-white/5">
+                        className="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-5 flex justify-between items-center backdrop-blur-xl bg-black/20 border-b border-white/5">
                         <div className="text-2xl font-black tracking-tighter flex items-center gap-2">
                             {settings.brand_logo ? (
                                 <img
@@ -347,7 +348,7 @@ export default function App() {
                             <a href="#testimonials"
                                className="hover:text-emerald-400 transition-colors">{t('nav_testimonials')}</a>
                         </div>
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-2 md:gap-4">
                             {/* Language toggle */}
                             {false && (
 
@@ -387,11 +388,42 @@ export default function App() {
                                 </div>
                             </button>
                             <button
-                                className="bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-emerald-500 hover:text-white transition-all">
+                                className="hidden md:block bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-emerald-500 hover:text-white transition-all">
                                 {t('nav_cta')}
+                            </button>
+
+                            {/* Glasses Hamburger Toggle Button for responsive view */}
+                            <button
+                                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                                className="md:hidden p-2.5 rounded-xl backdrop-blur-md bg-white/5 border border-white/10 hover:bg-white/10 transition-all text-white z-50"
+                            >
+                                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                             </button>
                         </div>
                     </nav>
+
+                    {/* Glassmorphism Responsive Mobile Drawer Menu */}
+                    <AnimatePresence>
+                        {mobileMenuOpen && (
+                            <motion.div
+                                initial={{ opacity: 0, y: -20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -20 }}
+                                transition={{ duration: 0.25, ease: 'easeInOut' }}
+                                className="fixed top-[81px] left-0 right-0 z-40 md:hidden flex flex-col p-6 gap-5 backdrop-blur-2xl bg-black/40 border-b border-white/5 shadow-2xl text-white"
+                            >
+                                <a href="#features" onClick={() => setMobileMenuOpen(false)} className="text-lg font-semibold border-b border-white/5 pb-2 hover:text-emerald-400 transition-colors">{t('nav_features')}</a>
+                                <a href="#calculator" onClick={() => setMobileMenuOpen(false)} className="text-lg font-semibold border-b border-white/5 pb-2 hover:text-emerald-400 transition-colors">{t('nav_calculator')}</a>
+                                <a href="#smart-calculator" onClick={() => setMobileMenuOpen(false)} className="text-lg font-semibold border-b border-white/5 pb-2 hover:text-emerald-400 transition-colors">{t('nav_smart')}</a>
+                                <a href="#products" onClick={() => setMobileMenuOpen(false)} className="text-lg font-semibold border-b border-white/5 pb-2 hover:text-emerald-400 transition-colors">{t('nav_products')}</a>
+                                <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="text-lg font-semibold border-b border-white/5 pb-2 hover:text-emerald-400 transition-colors">{t('nav_gallery')}</a>
+                                <a href="#testimonials" onClick={() => setMobileMenuOpen(false)} className="text-lg font-semibold border-b border-white/5 pb-2 hover:text-emerald-400 transition-colors">{t('nav_testimonials')}</a>
+                                <button className="w-full bg-white text-black py-3 rounded-full font-bold hover:bg-emerald-500 hover:text-white transition-all mt-2">
+                                    {t('nav_cta')}
+                                </button>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
 
                     {/* Hero Section — driven by Strapi HeroConfig */}
 
