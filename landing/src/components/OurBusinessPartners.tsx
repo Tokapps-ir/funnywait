@@ -202,7 +202,7 @@ export const OurBusinessPartners: React.FC = () => {
                                     <div className="w-24 h-24 shrink-0 rounded-full bg-gradient-to-br from-blue-500/20 to-indigo-500/20 flex items-center justify-center border-2 border-blue-400/30 overflow-hidden">
                                         {selectedPartner.logo?.url && (
                                             <img
-                                                src={selectedPartner.logo.url.startsWith('http') ? selectedPartner.logo.url : `${import.meta.env.VITE_STRAPI_URL || 'http://localhost:1337'}${selectedPartner.logo.url}`}
+                                                src={selectedPartner.logo.url.startsWith('http') ? selectedPartner.logo.url : `${process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337'}${selectedPartner.logo.url}`}
                                                 alt={selectedPartner.name}
                                                 className="w-full h-full object-cover"
                                             />
