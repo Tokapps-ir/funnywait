@@ -2,34 +2,34 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-
+"use client"
 import React, {useEffect, useState, useRef, useMemo} from 'react';
 import {motion, useScroll, useTransform, AnimatePresence} from 'framer-motion';
-import {ThreeScene} from './components/ThreeScene';
-import {Calculator} from './components/Calculator';
-import {ProductCard} from './components/ProductCard';
-import {SmartCalculator} from './components/SmartCalculator';
-import {SmoothScroll} from './components/SmoothScroll';
-import {FeatureCards3D} from './components/FeatureCards3D';
-import {FooterWebGL} from './components/FooterWebGL';
-import {OurCustomers} from './components/OurCustomers';
-import {OurBusinessPartners} from './components/OurBusinessPartners';
-import {OurServices} from './components/OurServices';
-import {VideoIntroduction} from './components/VideoIntroduction';
-import {Hero} from './components/Hero';
-import {Gallery} from './components/GalleryItem';
-import {TestimonialCarousel} from './components/TestimonialCarousel';
-import {CustomCursor} from './components/CustomCursor';
-import {getProducts} from './lib/productService';
-import {getCalculatorConfig} from './lib/calculatorService';
-import {getHeroConfig} from './lib/heroService';
-import {getFeaturesConfig} from './lib/featuresService';
-import {getFeatureCards} from './lib/featureCardService';
-import {getSmartPackages} from './lib/smartPackageService';
-import {getGalleryItems, getGalleryGroups} from './lib/galleryService';
-import {getTestimonials} from './lib/testimonialService';
+import {ThreeScene} from './../components/ThreeScene';
+import {Calculator} from './../components/Calculator';
+import {ProductCard} from './../components/ProductCard';
+import {SmartCalculator} from './../components/SmartCalculator';
+import {SmoothScroll} from './../components/SmoothScroll';
+import {FeatureCards3D} from './../components/FeatureCards3D';
+import {FooterWebGL} from './../components/FooterWebGL';
+import {OurCustomers} from './../components/OurCustomers';
+import {OurBusinessPartners} from './../components/OurBusinessPartners';
+import {OurServices} from './../components/OurServices';
+import {VideoIntroduction} from './../components/VideoIntroduction';
+import {Hero} from './../components/Hero';
+import {Gallery} from './../components/GalleryItem';
+import {TestimonialCarousel} from './../components/TestimonialCarousel';
+import {CustomCursor} from './../components/CustomCursor';
+import {getProducts} from './../lib/productService';
+import {getCalculatorConfig} from './../lib/calculatorService';
+import {getHeroConfig} from './../lib/heroService';
+import {getFeaturesConfig} from './../lib/featuresService';
+import {getFeatureCards} from './../lib/featureCardService';
+import {getSmartPackages} from './../lib/smartPackageService';
+import {getGalleryItems, getGalleryGroups} from './../lib/galleryService';
+import {getTestimonials} from './../lib/testimonialService';
 import {getSettings} from "@/src/lib/settingsService.ts";
-import {toPersianDigits} from './lib/helpers';
+import {toPersianDigits} from './../lib/helpers';
 import {
     Settings,
     Product,
@@ -44,8 +44,8 @@ import {
     Testimonial,
     Media,
     getBrandLogoUrl
-} from './types';
-import {LanguageContext, translations, type Locale} from './lib/i18n';
+} from './../types';
+import {LanguageContext, translations, type Locale} from './../lib/i18n';
 import {Zap, Menu, X} from 'lucide-react';
 import {Howl} from 'howler';
 import {Quote, Star, Image as ImageIcon} from 'lucide-react';
@@ -141,7 +141,7 @@ const SectionDivider = () => (
     </div>
 );
 
-export default function App() {
+export default function App2() {
 
     const [locale, setLocale] = useState<Locale>('fa');
     const [settings, setSettings] = useState<Settings>();

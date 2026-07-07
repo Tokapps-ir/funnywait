@@ -1,11 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { FeaturesConfig, FeatureCard } from '../types';
+import {getStrapiMediaUrl} from "@/src/lib/helpers.ts";
 
-const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || 'http://127.0.0.1:1337';
 
-function mediaUrl(url: string): string {
-  return url.startsWith('http') ? url : `${STRAPI_URL}${url}`;
-}
 
 interface FeatureCards3DProps {
   config: FeaturesConfig;
@@ -108,13 +105,13 @@ const FeatureCards3DComponent = ({ config, cards }: FeatureCards3DProps) => {
                           <div className="overflow-hidden rounded-xl border border-white/10 shadow-lg">
                             {selected.media.mime.startsWith('image/') ? (
                                 <img
-                                    src={mediaUrl(selected.media.url)}
+                                    src={getStrapiMediaUrl(selected.media.url)}
                                     alt={selected.content_title}
                                     className="w-full h-48 md:h-64 object-cover"
                                 />
                             ) : (
                                 <video
-                                    src={mediaUrl(selected.media.url)}
+                                    src={getStrapiMediaUrl(selected.media.url)}
                                     controls
                                     className="w-full h-48 md:h-64 object-cover"
                                 />

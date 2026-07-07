@@ -19,7 +19,7 @@ const MOCK_PRODUCTS: Record<string, StrapiResponse<Product[]>> = {
   },
 };
 
-export async function getProducts(locale = 'fa'): Promise<StrapiResponse<Product|any[]>> {
+export async function getProducts(locale = 'fa'): Promise<StrapiResponse<Product[]|any[]>> {
   try {
     const products=strapiSDK.collection('products');
     return await products.find({

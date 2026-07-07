@@ -329,8 +329,8 @@ export interface Media {
  * Strapi uses format names like 'small', 'medium', 'large', 'lg', 'thumbnail', etc.
  * 'lg' is typically the standard/large size used in headers.
  */
-export function getBrandLogoUrl(media: Media | null): string | null {
-  if (!media) return null;
+export function getBrandLogoUrl(media: Media | null): string | Blob | undefined  {
+  if (!media) return "#";
   
   // Try to get the 'lg' (large) format first, then fallback to other common sizes
   if (media.formats?.lg) {
@@ -347,10 +347,23 @@ export function getBrandLogoUrl(media: Media | null): string | null {
   }
   
   // Fallback to the main image URL
-  return media.url;
+  return media.url?media.url:"#";
 }
 
 export function videoUrl(video: Video){
   console.log(video);
   return getStrapiMediaUrl(video.url);
+}
+
+export interface MainBusinessPageProps {
+    settings: Settings;
+    products: Product[]|any[];
+    calcConfig: CalculatorConfig;
+    heroConfig: HeroConfig;
+    featuresConfig: FeaturesConfig;
+    featureCards: FeatureCard[]|any[];
+    smartPackages: Package[]|any[];
+    galleryItems: GalleryItem[]|any[];
+    galleryGroups: GalleryGroup[]|any[];
+    testimonials: Testimonial[]|any[];
 }

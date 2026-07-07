@@ -38,7 +38,7 @@ const MOCK_GALLERY_ITEMS: Record<string, StrapiResponse<GalleryItem[]>> = {
 
 // ─── Public API ───────────────────────────────────────────────────────────────
 
-export async function getGalleryGroups(locale = 'fa'): Promise<StrapiResponse<GalleryGroup|any[]>> {
+export async function getGalleryGroups(locale = 'fa'): Promise<StrapiResponse<GalleryGroup[]|any[]>> {
   try {
     const galleryGroup=strapiSDK.collection('gallery-groups');
     const response = await galleryGroup.find({
@@ -57,7 +57,7 @@ export async function getGalleryGroups(locale = 'fa'): Promise<StrapiResponse<Ga
   }
 }
 
-export async function getGalleryItems(locale = 'fa'): Promise<StrapiResponse<GalleryItem|any[]>> {
+export async function getGalleryItems(locale = 'fa'): Promise<StrapiResponse<GalleryItem[]|any[]>> {
   try {
     const galleryItem= strapiSDK.collection('gallery-items');
     const response = await galleryItem.find(
