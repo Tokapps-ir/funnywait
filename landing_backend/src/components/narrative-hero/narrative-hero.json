@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_narrative_hero_narrative_heroes",
+  "info": {
+    "displayName": "narrative-hero"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "subtitle_highlight_1": {
+      "type": "string"
+    },
+    "subtitle_highlight_2": {
+      "type": "string"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "scroll_hint": {
+      "type": "string"
+    },
+    "cta_text": {
+      "type": "string"
+    },
+    "scroll_fade_start": {
+      "type": "decimal"
+    },
+    "scroll_fade_end": {
+      "type": "decimal"
+    },
+    "scroll_scale_end": {
+      "type": "decimal"
+    },
+    "scroll_y_end": {
+      "type": "decimal"
+    },
+    "morph_1_threshold": {
+      "type": "decimal"
+    },
+    "morph_2_threshold": {
+      "type": "decimal"
+    },
+    "morph_3_threshold": {
+      "type": "decimal"
+    }
+  },
+  "config": {}
+}

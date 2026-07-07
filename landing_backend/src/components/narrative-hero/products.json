@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_narrative_hero_products",
+  "info": {
+    "displayName": "products"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

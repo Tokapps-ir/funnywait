@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_narrative_hero_merfy_asbab_bazy_ha",
+  "info": {
+    "displayName": "معرفی اسباب بازی ها"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "product": {
+      "type": "component",
+      "component": "narrative-hero.toy-showcase-products",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

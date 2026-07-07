@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_experiencecards_experiencecards",
+  "info": {
+    "displayName": "experiencecards"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

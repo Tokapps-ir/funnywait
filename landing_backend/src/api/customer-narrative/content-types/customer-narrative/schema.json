@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_narratives",
+  "info": {
+    "singularName": "customer-narrative",
+    "pluralName": "customer-narratives",
+    "displayName": "customer_narrative"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "hero": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "narrative-hero.narrative-hero",
+      "repeatable": false,
+      "required": true
+    },
+    "problemstory": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "narrative-hero.problem-story",
+      "repeatable": false
+    },
+    "experiencegrid": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "narrative-hero.experience-grid",
+      "repeatable": false
+    },
+    "scenarios": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "narrative-hero.scenario-slider",
+      "repeatable": true
+    },
+    "toy_showcase": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "narrative-hero.merfy-asbab-bazy-ha",
+      "repeatable": false
+    },
+    "community": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "narrative-hero.msharkt",
+      "repeatable": false
+    },
+    "map_node": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "narrative-hero.map",
+      "repeatable": true
+    }
+  }
+}

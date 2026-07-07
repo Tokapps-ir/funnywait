@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_narrative_hero_toy_showcase_products",
+  "info": {
+    "displayName": "toy_showcase_products"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

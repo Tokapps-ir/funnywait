@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_narrative_hero_experience_grids",
+  "info": {
+    "displayName": "experience-grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "card": {
+      "type": "component",
+      "component": "experiencecards.experiencecards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

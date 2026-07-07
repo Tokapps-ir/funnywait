@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_narrative_hero_msharkt",
+  "info": {
+    "displayName": "مشارکت"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "step": {
+      "type": "component",
+      "component": "narrative-hero.products",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

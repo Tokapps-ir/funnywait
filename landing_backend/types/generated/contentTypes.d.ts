@@ -631,6 +631,99 @@ export interface ApiCalculatorConfigCalculatorConfig
   };
 }
 
+export interface ApiCustomerNarrativeCustomerNarrative
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'customer_narratives';
+  info: {
+    displayName: 'customer_narrative';
+    pluralName: 'customer-narratives';
+    singularName: 'customer-narrative';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    community: Schema.Attribute.Component<'narrative-hero.msharkt', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    experiencegrid: Schema.Attribute.Component<
+      'narrative-hero.experience-grid',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    hero: Schema.Attribute.Component<'narrative-hero.narrative-hero', false> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::customer-narrative.customer-narrative'
+    >;
+    map_node: Schema.Attribute.Component<'narrative-hero.map', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    problemstory: Schema.Attribute.Component<
+      'narrative-hero.problem-story',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    scenarios: Schema.Attribute.Component<
+      'narrative-hero.scenario-slider',
+      true
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    toy_showcase: Schema.Attribute.Component<
+      'narrative-hero.merfy-asbab-bazy-ha',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCustomerCustomer extends Struct.CollectionTypeSchema {
   collectionName: 'customers';
   info: {
@@ -2109,6 +2202,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::business-partner.business-partner': ApiBusinessPartnerBusinessPartner;
       'api::calculator-config.calculator-config': ApiCalculatorConfigCalculatorConfig;
+      'api::customer-narrative.customer-narrative': ApiCustomerNarrativeCustomerNarrative;
       'api::customer.customer': ApiCustomerCustomer;
       'api::feature-card.feature-card': ApiFeatureCardFeatureCard;
       'api::features-config.features-config': ApiFeaturesConfigFeaturesConfig;

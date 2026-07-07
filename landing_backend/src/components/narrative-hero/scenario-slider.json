@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_narrative_hero_scenario_sliders",
+  "info": {
+    "displayName": "scenario-slider"
+  },
+  "options": {},
+  "attributes": {
+    "place_name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

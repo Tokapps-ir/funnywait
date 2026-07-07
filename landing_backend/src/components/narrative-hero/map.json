@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_narrative_hero_maps",
+  "info": {
+    "displayName": "map"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "location": {
+      "type": "customField",
+      "customField": "plugin::strapi-location-picker.location-picker",
+      "options": {
+        "info": true
+      }
+    }
+  },
+  "config": {}
+}
