@@ -2,6 +2,7 @@
 GET http://{{client.url}}/api/services
     HTTP/1.1
 Authorization: {{client.token}}
+
 ### Settings
 GET http://{{client.url}}/api/setting?locale=fa&populate=*
     HTTP/1.1
@@ -16,3 +17,15 @@ Authorization: {{client.token}}
 GET http://{{client.url}}/api/hero-config?locale=fa&populate=*
     HTTP/1.1
 Authorization: {{client.token}}
+
+### Narratives
+GET http://{{client.url}}/api/customer-narratives?locale=fa&populate=*
+    HTTP/1.1
+Authorization: {{client.token}}
+
+
+### Narrative
+GET http://{{client.url}}/api/customer-narratives?populate[hero][populate]=*&populate[problemstory][populate]=*
+    HTTP/1.1
+Authorization: {{client.token}}
+
